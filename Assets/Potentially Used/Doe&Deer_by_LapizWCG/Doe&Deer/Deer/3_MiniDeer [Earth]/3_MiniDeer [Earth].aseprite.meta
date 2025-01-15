@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 1
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -105,6 +106,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +128,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 168
@@ -146,6 +149,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 50
@@ -166,6 +170,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 96
@@ -186,6 +191,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 191
@@ -206,6 +212,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 208
@@ -226,6 +233,7 @@ ScriptedImporter:
     pivot: {x: 0.57894737, y: -0.1875}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 84
@@ -246,6 +254,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 74
@@ -266,6 +275,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 144
@@ -286,6 +296,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 135
@@ -306,6 +317,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.055555556}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 158
@@ -326,6 +338,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 119
@@ -346,6 +359,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 214
@@ -366,6 +380,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 237
@@ -386,6 +401,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 231
@@ -406,6 +422,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.05}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -426,6 +443,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.05}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 30
@@ -446,6 +464,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -466,6 +485,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 190
@@ -486,6 +506,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -506,6 +527,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 143
@@ -526,6 +548,7 @@ ScriptedImporter:
     pivot: {x: 0.5294118, y: -0.083333336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -546,6 +569,7 @@ ScriptedImporter:
     pivot: {x: 0.4, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 56
@@ -566,6 +590,7 @@ ScriptedImporter:
     pivot: {x: 0.4375, y: -0.05263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 111
@@ -586,6 +611,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 27
@@ -606,6 +632,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 122
@@ -626,6 +653,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 213
@@ -646,6 +674,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 27
@@ -666,6 +695,7 @@ ScriptedImporter:
     pivot: {x: 0.625, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 166
@@ -686,6 +716,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 50
@@ -706,6 +737,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 73
@@ -726,6 +758,7 @@ ScriptedImporter:
     pivot: {x: 0.4375, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 98
@@ -746,6 +779,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 182
@@ -766,6 +800,7 @@ ScriptedImporter:
     pivot: {x: 0.3478261, y: -0.11111111}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -786,6 +821,7 @@ ScriptedImporter:
     pivot: {x: 0.3478261, y: -0.11111111}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 35
@@ -804,13 +840,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 179245357
-    name: 3_MiniDeer [Earth]
+    guid: 1655690785
+    name: '3_MiniDeer [Earth]'
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: 3_MiniDeer [Earth]_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -819,7 +855,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 8bf1cc43523746d4cad41f889101c304
-    - name: 3_MiniDeer [Earth]_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -828,7 +864,7 @@ ScriptedImporter:
         width: 16
         height: 17
       spriteId: d12fd584912b6d0458136ba73ad65124
-    - name: 3_MiniDeer [Earth]_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -837,7 +873,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: f6dd58d0db513a44092d777d73e5079b
-    - name: 3_MiniDeer [Earth]_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -846,7 +882,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: e5f2000844f1ef6439dc2b105830223b
-    - name: 3_MiniDeer [Earth]_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -855,7 +891,7 @@ ScriptedImporter:
         width: 15
         height: 19
       spriteId: e357b604a276a6b49813dc103421c017
-    - name: 3_MiniDeer [Earth]_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -864,7 +900,7 @@ ScriptedImporter:
         width: 19
         height: 16
       spriteId: abec2697c658a534b9c490146621f321
-    - name: 3_MiniDeer [Earth]_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -873,7 +909,7 @@ ScriptedImporter:
         width: 16
         height: 17
       spriteId: 4230365922d710d4d89f31552fe70f06
-    - name: 3_MiniDeer [Earth]_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -882,7 +918,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: 861611d0774a60a4ebc344c75352546b
-    - name: 3_MiniDeer [Earth]_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -891,7 +927,7 @@ ScriptedImporter:
         width: 15
         height: 20
       spriteId: 6a8e7d6dcf46166419c595cf83c27d68
-    - name: 3_MiniDeer [Earth]_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -900,7 +936,7 @@ ScriptedImporter:
         width: 16
         height: 18
       spriteId: f6e732492db8481448e3d3b292d52581
-    - name: 3_MiniDeer [Earth]_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -909,7 +945,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: cbc0b21675924d943970fc69119504ec
-    - name: 3_MiniDeer [Earth]_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -918,7 +954,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 07baebab88dc81d4f824e378565e8e14
-    - name: 3_MiniDeer [Earth]_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -927,7 +963,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 9e020de1938aa964da602f3dc27d60de
-    - name: 3_MiniDeer [Earth]_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -936,7 +972,7 @@ ScriptedImporter:
         width: 15
         height: 19
       spriteId: 97f19d7e72554c04b8a54e41725bd217
-    - name: 3_MiniDeer [Earth]_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -945,7 +981,7 @@ ScriptedImporter:
         width: 18
         height: 20
       spriteId: 2d9343941cef3c4418c8446d6f18a1ad
-    - name: 3_MiniDeer [Earth]_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -954,7 +990,7 @@ ScriptedImporter:
         width: 18
         height: 20
       spriteId: 554486be2725a7349836451ef9a5380b
-    - name: 3_MiniDeer [Earth]_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -963,7 +999,7 @@ ScriptedImporter:
         width: 15
         height: 19
       spriteId: 7a6edf12586cec64aa2e8492522b49c8
-    - name: 3_MiniDeer [Earth]_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -972,7 +1008,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: a56bca2b63f2c0640b5ae5a8235162dc
-    - name: 3_MiniDeer [Earth]_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -981,7 +1017,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 809e18dfb2aaead459af59450e21bd47
-    - name: 3_MiniDeer [Earth]_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -990,7 +1026,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: c0bb388fa37f10d4f8eeca9a8cc1ba57
-    - name: 3_MiniDeer [Earth]_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -999,7 +1035,7 @@ ScriptedImporter:
         width: 17
         height: 12
       spriteId: 18f8cfba2e1e8ca40a72deb1750aa379
-    - name: 3_MiniDeer [Earth]_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -1008,7 +1044,7 @@ ScriptedImporter:
         width: 20
         height: 16
       spriteId: ba7b454487fc69e4288fbe12e668458e
-    - name: 3_MiniDeer [Earth]_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -1017,7 +1053,7 @@ ScriptedImporter:
         width: 16
         height: 19
       spriteId: bd629e2af8034764a8b66aba3d4b8946
-    - name: 3_MiniDeer [Earth]_Frame_23
+    - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -1026,7 +1062,7 @@ ScriptedImporter:
         width: 15
         height: 19
       spriteId: cbb55041ea97e1947ae0147c0a9d605a
-    - name: 3_MiniDeer [Earth]_Frame_24
+    - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -1035,7 +1071,7 @@ ScriptedImporter:
         width: 14
         height: 19
       spriteId: 0fe4d6e55235a4448ad0515b9da350ee
-    - name: 3_MiniDeer [Earth]_Frame_25
+    - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -1044,7 +1080,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 36b2bf885cb052f458a68349420993c4
-    - name: 3_MiniDeer [Earth]_Frame_26
+    - name: Frame_26
       frameIndex: 26
       additiveSortOrder: 0
       cellRect:
@@ -1053,7 +1089,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 2f7358a8bb8676943b5a1e782c624e5d
-    - name: 3_MiniDeer [Earth]_Frame_27
+    - name: Frame_27
       frameIndex: 27
       additiveSortOrder: 0
       cellRect:
@@ -1062,7 +1098,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: 48f39c156641e144fb49252b55932c55
-    - name: 3_MiniDeer [Earth]_Frame_28
+    - name: Frame_28
       frameIndex: 28
       additiveSortOrder: 0
       cellRect:
@@ -1071,7 +1107,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 01eaa8a11edd7844eb179a1c90bf04e3
-    - name: 3_MiniDeer [Earth]_Frame_29
+    - name: Frame_29
       frameIndex: 29
       additiveSortOrder: 0
       cellRect:
@@ -1080,7 +1116,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 91e63727c4673b443a476d0460ec2ce2
-    - name: 3_MiniDeer [Earth]_Frame_30
+    - name: Frame_30
       frameIndex: 30
       additiveSortOrder: 0
       cellRect:
@@ -1089,7 +1125,7 @@ ScriptedImporter:
         width: 16
         height: 17
       spriteId: ac871176d63804447a6ef22a2dd6675f
-    - name: 3_MiniDeer [Earth]_Frame_31
+    - name: Frame_31
       frameIndex: 31
       additiveSortOrder: 0
       cellRect:
@@ -1098,7 +1134,7 @@ ScriptedImporter:
         width: 18
         height: 16
       spriteId: da4fddcb7b6fb4d4297385a5d9464916
-    - name: 3_MiniDeer [Earth]_Frame_32
+    - name: Frame_32
       frameIndex: 32
       additiveSortOrder: 0
       cellRect:
@@ -1107,7 +1143,7 @@ ScriptedImporter:
         width: 23
         height: 9
       spriteId: 1bf7d17f0bccd1c43a433881dc614513
-    - name: 3_MiniDeer [Earth]_Frame_33
+    - name: Frame_33
       frameIndex: 33
       additiveSortOrder: 0
       cellRect:
@@ -1123,3 +1159,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 256, y: 128}

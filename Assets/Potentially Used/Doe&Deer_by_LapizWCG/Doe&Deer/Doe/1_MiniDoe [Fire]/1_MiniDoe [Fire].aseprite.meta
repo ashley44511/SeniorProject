@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 1
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -105,6 +106,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +128,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 49
@@ -146,6 +149,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 73
@@ -166,6 +170,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -186,6 +191,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 93
@@ -206,6 +212,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 96
@@ -226,6 +233,7 @@ ScriptedImporter:
     pivot: {x: 0.57894737, y: -0.23076925}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 56
@@ -246,6 +254,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 106
@@ -266,6 +275,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 48
@@ -286,6 +296,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -306,6 +317,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 83
@@ -326,6 +338,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.09090909}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 48
@@ -346,6 +359,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -366,6 +380,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 93
@@ -386,6 +401,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -406,6 +422,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 30
@@ -426,6 +443,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -446,6 +464,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -466,6 +485,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.083333336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -486,6 +506,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -506,6 +527,7 @@ ScriptedImporter:
     pivot: {x: 0.6666667, y: -0.09090909}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -526,6 +548,7 @@ ScriptedImporter:
     pivot: {x: 0.5714286, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -546,6 +569,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -566,6 +590,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -586,6 +611,7 @@ ScriptedImporter:
     pivot: {x: 0.4117647, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 48
@@ -606,6 +632,7 @@ ScriptedImporter:
     pivot: {x: 0.36363637, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 94
@@ -626,6 +653,7 @@ ScriptedImporter:
     pivot: {x: 0.36363637, y: -0.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -644,13 +672,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2138168713
-    name: 1_MiniDoe [Fire]
+    guid: -622090515
+    name: '1_MiniDoe [Fire]'
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: 1_MiniDoe [Fire]_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -659,7 +687,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: 06f9030add2bf8948ae10a08fca89b91
-    - name: 1_MiniDoe [Fire]_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -668,7 +696,7 @@ ScriptedImporter:
         width: 15
         height: 14
       spriteId: 064324923126ce04aad14b32fc135cac
-    - name: 1_MiniDoe [Fire]_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -677,7 +705,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: ad46490bb253fa1438d5a85686eb11e4
-    - name: 1_MiniDoe [Fire]_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -686,7 +714,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: 041be39668e9d3c45981c924ed41716c
-    - name: 1_MiniDoe [Fire]_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -695,7 +723,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: f85d4bcfaeccaf942a7f0a6a6e239fc1
-    - name: 1_MiniDoe [Fire]_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -704,7 +732,7 @@ ScriptedImporter:
         width: 19
         height: 13
       spriteId: 3828ff4f1ed2d29449ea789f0f443f8e
-    - name: 1_MiniDoe [Fire]_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -713,7 +741,7 @@ ScriptedImporter:
         width: 16
         height: 14
       spriteId: 025cc08b4a258d14c8f690c201cb31f5
-    - name: 1_MiniDoe [Fire]_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -722,7 +750,7 @@ ScriptedImporter:
         width: 15
         height: 13
       spriteId: 03d529f0a19c0f64ab4e275d079d9a6e
-    - name: 1_MiniDoe [Fire]_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -731,7 +759,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: de5184262b89ac54c9243091a23cdda9
-    - name: 1_MiniDoe [Fire]_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -740,7 +768,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 8e12646e6f30dcc43af18f254c8ba799
-    - name: 1_MiniDoe [Fire]_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -749,7 +777,7 @@ ScriptedImporter:
         width: 15
         height: 11
       spriteId: d3e32b51652242341999c4203bd18842
-    - name: 1_MiniDoe [Fire]_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -758,7 +786,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: 97f5531cbc1b4fa4aa2cdcd1593faba3
-    - name: 1_MiniDoe [Fire]_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -767,7 +795,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: 833eb7d8a06d8d14b81198a114662bc6
-    - name: 1_MiniDoe [Fire]_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -776,7 +804,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 1e766c95a931dd94a8f0725aeeb7d53a
-    - name: 1_MiniDoe [Fire]_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -785,7 +813,7 @@ ScriptedImporter:
         width: 18
         height: 16
       spriteId: 6f8fa5c24a2f43843866b608b0eb33a1
-    - name: 1_MiniDoe [Fire]_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -794,7 +822,7 @@ ScriptedImporter:
         width: 18
         height: 17
       spriteId: 1fa68453879603d4587d6cf35720dab9
-    - name: 1_MiniDoe [Fire]_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -803,7 +831,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 7216d93b0da62c84eba46b060f55035f
-    - name: 1_MiniDoe [Fire]_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -812,7 +840,7 @@ ScriptedImporter:
         width: 14
         height: 12
       spriteId: 659464516c8ab6a46bac085528562b75
-    - name: 1_MiniDoe [Fire]_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -821,7 +849,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: 0d1852447d3dd9a4aabadbf5c9ae2c13
-    - name: 1_MiniDoe [Fire]_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -830,7 +858,7 @@ ScriptedImporter:
         width: 15
         height: 11
       spriteId: cc134f7d7c48e064a8e23b767e5625cc
-    - name: 1_MiniDoe [Fire]_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -839,7 +867,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: 28db7efe62881d84e839ed4aa33d47cb
-    - name: 1_MiniDoe [Fire]_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -848,7 +876,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: bca35808bb000d4459d394a1f6eb38af
-    - name: 1_MiniDoe [Fire]_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -857,7 +885,7 @@ ScriptedImporter:
         width: 15
         height: 14
       spriteId: e4e043c3c395c0648ac8af25b4dd98aa
-    - name: 1_MiniDoe [Fire]_Frame_23
+    - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -866,7 +894,7 @@ ScriptedImporter:
         width: 17
         height: 13
       spriteId: 2cce4fe29be316e41b587996d23d3969
-    - name: 1_MiniDoe [Fire]_Frame_24
+    - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -875,7 +903,7 @@ ScriptedImporter:
         width: 22
         height: 6
       spriteId: 4f1916a302752614c82f19e8ed7b4028
-    - name: 1_MiniDoe [Fire]_Frame_25
+    - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -891,3 +919,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 128, y: 128}

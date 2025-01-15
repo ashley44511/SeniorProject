@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 1
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -105,6 +106,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +128,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 49
@@ -146,6 +149,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 73
@@ -166,6 +170,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -186,6 +191,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 93
@@ -206,6 +212,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 96
@@ -226,6 +233,7 @@ ScriptedImporter:
     pivot: {x: 0.57894737, y: -0.23076925}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 56
@@ -246,6 +254,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 106
@@ -266,6 +275,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 48
@@ -286,6 +296,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -306,6 +317,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 83
@@ -326,6 +338,7 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.09090909}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 48
@@ -346,6 +359,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -366,6 +380,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 93
@@ -386,6 +401,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.06666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -406,6 +422,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 30
@@ -426,6 +443,7 @@ ScriptedImporter:
     pivot: {x: 0.3888889, y: -0.05882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -446,6 +464,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -466,6 +485,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.083333336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -486,6 +506,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -506,6 +527,7 @@ ScriptedImporter:
     pivot: {x: 0.6666667, y: -0.09090909}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -526,6 +548,7 @@ ScriptedImporter:
     pivot: {x: 0.5714286, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -546,6 +569,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -566,6 +590,7 @@ ScriptedImporter:
     pivot: {x: 0.4666667, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 26
@@ -586,6 +611,7 @@ ScriptedImporter:
     pivot: {x: 0.4117647, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 48
@@ -606,6 +632,7 @@ ScriptedImporter:
     pivot: {x: 0.36363637, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 94
@@ -626,6 +653,7 @@ ScriptedImporter:
     pivot: {x: 0.36363637, y: -0.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 71
@@ -644,13 +672,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 729636656
-    name: 6_MiniDoe [Gold]
+    guid: -787916816
+    name: '6_MiniDoe [Gold]'
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: 6_MiniDoe [Gold]_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -659,7 +687,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: c7439522b45132343b31c0084b6dde55
-    - name: 6_MiniDoe [Gold]_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -668,7 +696,7 @@ ScriptedImporter:
         width: 15
         height: 14
       spriteId: 3aaf1d1741e5f8c439c468dccce5bab5
-    - name: 6_MiniDoe [Gold]_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -677,7 +705,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: 90065d0880536754d982ebd1607efcfe
-    - name: 6_MiniDoe [Gold]_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -686,7 +714,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: 194894d52932ea4479ea82bd87603878
-    - name: 6_MiniDoe [Gold]_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -695,7 +723,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: aad3e415e22b8be4891d71766adc6ac8
-    - name: 6_MiniDoe [Gold]_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -704,7 +732,7 @@ ScriptedImporter:
         width: 19
         height: 13
       spriteId: 5f1154e0dab4fff428bfda4c300b378d
-    - name: 6_MiniDoe [Gold]_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -713,7 +741,7 @@ ScriptedImporter:
         width: 16
         height: 14
       spriteId: b1cccb33c5e92ab40afa76405406fa6f
-    - name: 6_MiniDoe [Gold]_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -722,7 +750,7 @@ ScriptedImporter:
         width: 15
         height: 13
       spriteId: dbeb4383656b99049b28ad2e092336d2
-    - name: 6_MiniDoe [Gold]_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -731,7 +759,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 385db926caf2e2141aa8519353e3d593
-    - name: 6_MiniDoe [Gold]_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -740,7 +768,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 11a504ded82fe2142ba0c6dcd32cc21f
-    - name: 6_MiniDoe [Gold]_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -749,7 +777,7 @@ ScriptedImporter:
         width: 15
         height: 11
       spriteId: cbfb17f65953f434792c81122729b0c7
-    - name: 6_MiniDoe [Gold]_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -758,7 +786,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: e36ee9f52debc444eab8eec175548113
-    - name: 6_MiniDoe [Gold]_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -767,7 +795,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: aa617eb99b647a047aa59c130498565e
-    - name: 6_MiniDoe [Gold]_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -776,7 +804,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 91e898e1aaa8e5047bf1178615d57541
-    - name: 6_MiniDoe [Gold]_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -785,7 +813,7 @@ ScriptedImporter:
         width: 18
         height: 16
       spriteId: 9ed5587635edd33498ed8b593689efaa
-    - name: 6_MiniDoe [Gold]_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -794,7 +822,7 @@ ScriptedImporter:
         width: 18
         height: 17
       spriteId: a136998a866b8a04d9e06ef75375aa6d
-    - name: 6_MiniDoe [Gold]_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -803,7 +831,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: b75d0401f995c604fae94593c4912e11
-    - name: 6_MiniDoe [Gold]_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -812,7 +840,7 @@ ScriptedImporter:
         width: 14
         height: 12
       spriteId: ffac00a50af6cbd4abafbabdae329acd
-    - name: 6_MiniDoe [Gold]_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -821,7 +849,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: e5d59e7164b8811408d06478e2183df8
-    - name: 6_MiniDoe [Gold]_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -830,7 +858,7 @@ ScriptedImporter:
         width: 15
         height: 11
       spriteId: 43785a6ad96abb348914ecf439a33aa3
-    - name: 6_MiniDoe [Gold]_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -839,7 +867,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: 4d698d87b23df67439bc44f4421ddeeb
-    - name: 6_MiniDoe [Gold]_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -848,7 +876,7 @@ ScriptedImporter:
         width: 14
         height: 14
       spriteId: 1b7fe3e9d5af449498cdc4a9c6037b43
-    - name: 6_MiniDoe [Gold]_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -857,7 +885,7 @@ ScriptedImporter:
         width: 15
         height: 14
       spriteId: 06e2a7f19e7b4a742988add35528eb67
-    - name: 6_MiniDoe [Gold]_Frame_23
+    - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -866,7 +894,7 @@ ScriptedImporter:
         width: 17
         height: 13
       spriteId: b32f481b3a8ad11438e2c1b3b907a77e
-    - name: 6_MiniDoe [Gold]_Frame_24
+    - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -875,7 +903,7 @@ ScriptedImporter:
         width: 22
         height: 6
       spriteId: 1cf5a9b09ca5be7488a942e7032330b7
-    - name: 6_MiniDoe [Gold]_Frame_25
+    - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -891,3 +919,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 128, y: 128}

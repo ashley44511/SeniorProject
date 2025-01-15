@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
 		disabled = isDisabled;
 		if (disabled)
 		{
-			rb.velocity = Vector2.zero;
+			rb.linearVelocity = Vector2.zero;
 			anim.SetBool("isMoving", false);
 		}
 	}
@@ -203,7 +203,7 @@ public class PlayerMovement : MonoBehaviour
 			lastLookDirection = new Vector2(Horizontal, Vertical);
 		}
 
-		rb.velocity = new Vector3(Horizontal * Speed, Vertical * Speed); //Set velocity to move gameobject.
+		rb.linearVelocity = new Vector3(Horizontal * Speed, Vertical * Speed); //Set velocity to move gameobject.
 
 
 		FlipCheck(Horizontal);
@@ -216,9 +216,9 @@ public class PlayerMovement : MonoBehaviour
 			lastLookDirection = new Vector2(move, 0);
 		}
 
-		Vector3 targetVelocity = new Vector3(move * Speed, rb.velocity.y); //Make target velocity how we want to move.
+		Vector3 targetVelocity = new Vector3(move * Speed, rb.linearVelocity.y); //Make target velocity how we want to move.
 
-		rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref currentVelocity, Acceleration); //Use smooth damp to simulate acceleration.
+		rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, targetVelocity, ref currentVelocity, Acceleration); //Use smooth damp to simulate acceleration.
 
 		//If your sprite has an idle where they are facing to the side, then you may need to uncomment this :)
 		FlipCheck(move);
@@ -226,15 +226,15 @@ public class PlayerMovement : MonoBehaviour
 		if (!isGrounded) //if the player is in the air
 		{
 
-			if (rb.velocity.y < 0) //if player is falling
+			if (rb.linearVelocity.y < 0) //if player is falling
 			{
 				//Make gravity harsher so they fall faster.
-				rb.velocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
+				rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
 			}
-			else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) //if player is jumping and holding jump button
+			else if (rb.linearVelocity.y > 0 && !Input.GetButton("Jump")) //if player is jumping and holding jump button
 			{
 				//Make gravity less so they jump higher. Creates variable jump heights.
-				rb.velocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1.5f) * Time.deltaTime;
+				rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1.5f) * Time.deltaTime;
 			}
 
 		}
@@ -242,7 +242,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Jump()
 	{
-		rb.velocity = new Vector2(rb.velocity.x, 0); //Stop any previous vertical movement
+		rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); //Stop any previous vertical movement
 		rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse); //Add force upwards as an impulse.
 		anim.SetBool("isJumping", true); // Jane Apostol 10/12/23
 

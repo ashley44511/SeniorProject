@@ -84,7 +84,7 @@ public class PlayerAttack : MonoBehaviour
 			}
 
 			if (weapon is ProjectileWeapon)
-				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection(), rb.velocity);
+				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection(), rb.linearVelocity);
 			else
 				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());
 
