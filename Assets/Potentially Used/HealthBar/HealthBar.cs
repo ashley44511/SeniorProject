@@ -24,21 +24,13 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Implement later, can load game over scene if the player dies
+        //Implement later, can load game over scene if the player dies or go to different scene (like last checkpoint)
         if(currentHealth <= 0)
         {
             //SceneManager.LoadScene("GameOver");
         }
 
     }
-
-/*     void LateUpdate()
-    {
-        if (transform.parent != null && transform.parent.localScale.x < 0)
-        {
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        }
-    } */
 
     public void SetCurrentHealth(int health)
     {
