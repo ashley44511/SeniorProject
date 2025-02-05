@@ -14,6 +14,8 @@ public class HotbarController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Dictionary itemDictionary = FindObjectOfType<ItemDictionary>();
+
         for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
@@ -25,6 +27,25 @@ public class HotbarController : MonoBehaviour
                 slot.currentItem = item;
             }
         }
+    }
+
+    public bool AddItem(GameObject itemPrefab)
+    {
+        foreach(Transform slotTransform in inventoryPanel.transform)
+        {
+            Debug.Log("Checking slot");
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if(slot != null && slot.currentItem == null)
+            {
+                Debug.Log("Slot is empty");
+                GameObject newItem = Instantiate(itemPrefab, slot.transform);
+                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = newItem;
+                return true;
+            }
+        }
+        Debug.Log("Inventory is full");
+        return false;
     }
 
 }
