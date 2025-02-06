@@ -40,6 +40,7 @@ public class HotbarController : MonoBehaviour
                 Debug.Log("Slot is empty");
                 GameObject newItem = Instantiate(itemPrefab, slot.transform);
                 newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                newItem.transform.localScale = new Vector3(1, 1, 1);
                 slot.currentItem = newItem;
                 return true;
             }
