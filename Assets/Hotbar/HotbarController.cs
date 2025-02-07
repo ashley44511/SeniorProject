@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HotbarController : MonoBehaviour
 {
-    //2 video tutorials that I think are exactly what we want:
+    //2 video tutorials that helped create the inventory system:
     // https://www.youtube.com/watch?v=CcfYUYgaBTw
     // https://www.youtube.com/watch?v=wlBJ0yZOYfM
 
@@ -10,12 +10,12 @@ public class HotbarController : MonoBehaviour
     public GameObject slotPrefab;
     public int slotCount;
     public GameObject[] itemPrefabs;
+    public Color defaultBackgroundColor;
+    public Color selectedBackgroundColor;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Dictionary itemDictionary = FindObjectOfType<ItemDictionary>();
-
         for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
@@ -24,9 +24,12 @@ public class HotbarController : MonoBehaviour
             {
                 GameObject item = Instantiate(itemPrefabs[i], slot.transform);
                 item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                item.transform.localScale = new Vector3(1, 1, 1);
                 slot.currentItem = item;
             }
         }
+
+        SelectSlot(0);
     }
 
     public bool AddItem(GameObject itemPrefab)
@@ -49,4 +52,34 @@ public class HotbarController : MonoBehaviour
         return false;
     }
 
+    public void SelectSlot(int index)
+    {
+        //Hides currently selected item border and changes it to the new one
+        foreach(Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if(slot != null && slot.backgroundImage != null)
+            {
+                slot.backgroundImage.color = defaultBackgroundColor;
+            }
+            if(slot != null && slot.borderFrame != null)
+            {
+                slot.borderFrame.SetActive(false);
+            }
+        }
+
+        //Enables the border of the selected slot
+        Slot selectedSlot = inventoryPanel.transform.GetChild(index).GetComponent<Slot>();
+        
+        if (selectedSlot != null && selectedSlot.backgroundImage != null)
+        {
+            selectedSlot.backgroundImage.color = selectedBackgroundColor;
+        }
+        if(selectedSlot != null && selectedSlot.borderFrame != null)
+        {
+            selectedSlot.borderFrame.SetActive(true);
+        }
+
+        Debug.Log("Selecting slot " + index);
+    }
 }

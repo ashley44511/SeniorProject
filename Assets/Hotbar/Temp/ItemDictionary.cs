@@ -30,7 +30,7 @@ public class ItemDictionary : MonoBehaviour
 
         if(prefab == null)
         {
-            Debug.LogError($"Item with I {itemID} not found in dictionary");
+            Debug.LogError($"Item with {itemID} not found in dictionary");
         }
 
         return prefab;
