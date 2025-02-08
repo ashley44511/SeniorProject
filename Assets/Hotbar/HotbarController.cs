@@ -70,11 +70,12 @@ public class HotbarController : MonoBehaviour
 
         //Enables the border of the selected slot
         Slot selectedSlot = inventoryPanel.transform.GetChild(index).GetComponent<Slot>();
-        
+
         if (selectedSlot != null && selectedSlot.backgroundImage != null)
         {
             selectedSlot.backgroundImage.color = selectedBackgroundColor;
         }
+        
         if(selectedSlot != null && selectedSlot.borderFrame != null)
         {
             selectedSlot.borderFrame.SetActive(true);
@@ -82,4 +83,16 @@ public class HotbarController : MonoBehaviour
 
         Debug.Log("Selecting slot " + index);
     }
+
+public void UseItem(int currentIndex)
+{
+    Slot selectedSlot = inventoryPanel.transform.GetChild(currentIndex).GetComponent<Slot>();
+    
+    if(selectedSlot != null && selectedSlot.currentItem != null)
+    {
+        Debug.Log("Using item in slot " + currentIndex);
+        Destroy(selectedSlot.currentItem);
+        selectedSlot.currentItem = null;
+    }
+}
 }

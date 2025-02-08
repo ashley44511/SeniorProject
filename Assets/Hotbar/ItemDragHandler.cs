@@ -84,7 +84,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
     }
 
-    bool MouseOverInventory(Vector2 mousePosition)
+    public bool MouseOverInventory(Vector2 mousePosition)
     {
         //Useful tutorial: https://www.youtube.com/watch?v=L5phEpQooxw
         RectTransform inventoryRect = originalParent.parent.GetComponent<RectTransform>();
@@ -93,8 +93,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         return RectTransformUtility.RectangleContainsScreenPoint(inventoryRect, mousePosition);
     }
 
-    //TODO: Limit drop area
-    void DropItem(Slot originalSlot,PointerEventData eventData)
+    //TODO: Limit drop area (if we want to)
+    public void DropItem(Slot originalSlot, PointerEventData eventData)
     {
         originalSlot.currentItem = null;
 
@@ -103,9 +103,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         //Failsafe to ensure item is visible to the camera
         dropPosition.z = 0;
 
-        //If, in the future, we want a limited drop area, this is where we'd do it
-
-        //Creates the item on the ground and removes it from the hotbar
+        //Creates the item on the ground and removes it from the hotbar. Also resizes it so it looks normal
         GameObject droppedItem = Instantiate(gameObject, dropPosition, Quaternion.identity);
         droppedItem.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
         Destroy(gameObject);

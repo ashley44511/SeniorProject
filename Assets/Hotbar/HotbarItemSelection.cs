@@ -3,6 +3,7 @@ using UnityEngine;
 public class HotbarItemSelection : MonoBehaviour
 {
     private HotbarController hotbarController;
+    public GameObject hotbar;
     public int currentIndex = 0;
 
     void Start()
@@ -85,8 +86,20 @@ public class HotbarItemSelection : MonoBehaviour
             }
             hotbarController.SelectSlot(currentIndex);
         }
+
+        //Left click outside of the hotbar will consume the item
+        //TODO: Check to see if the item is consumable
+        if (Input.GetMouseButtonDown(0) && !MouseOverHotbar(Input.mousePosition))
+        {
+            hotbarController.UseItem(currentIndex);
+        }
+
+        //Checks if the mouse is over the hotbar
+        bool MouseOverHotbar(Vector2 mousePosition)
+        {
+            RectTransform hotbarRect = hotbar.GetComponent<RectTransform>();
+
+            return RectTransformUtility.RectangleContainsScreenPoint(hotbarRect, mousePosition);
+        }
     }
-
-
-
 }

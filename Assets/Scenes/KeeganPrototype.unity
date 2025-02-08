@@ -1026,6 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c8b84001322034abef0d3ca4799728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hotbar: {fileID: 1118498702}
   currentIndex: 0
 --- !u!1 &882604505
 GameObject:
