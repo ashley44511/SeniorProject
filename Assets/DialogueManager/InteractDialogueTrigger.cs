@@ -1,36 +1,41 @@
-﻿using System.Collections;
-using System.IO;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-//A script by Michael O'Connell, extended by Benjamin Cohen
-
-
-public class DialogueTrigger : MonoBehaviour
+public class InteractDialogueTrigger : MonoBehaviour
 {
-    //Attach this script to an empty gameobject with a 2D collider set to trigger
+    public SpriteRenderer InteractImage;
+    private HotbarController inventoryController;
+
+    private bool playerInTrigger = false;
     DialogueManager manager;
     public TextAsset TextFileAsset; // your imported text file for your NPC
     private Queue<string> dialogue = new Queue<string>(); // stores the dialogue (Great Performance!)
     public float waitTime = 0.5f; // lag time for advancing dialogue so you can actually read it
     private float nextTime = 0f; // used with waitTime to create a timer system
     public bool singleUseDialogue = false;
+    public bool deleteWhenFinished = false;
     [HideInInspector]
     public bool hasBeenUsed = false;
     bool inArea = false;
+    bool triggered = false;
 
-
-    // public bool useCollision; // unused for now
-
-    private void Start()
+    void Start()
     {
+        InteractImage.gameObject.SetActive(false);
         manager = FindObjectOfType<DialogueManager>();
     }
 
-
-    private void Update()
+    void Update()
     {
-        if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad)
+        if (playerInTrigger && Input.GetKeyDown(KeyCode.E) && triggered == false)
+        {
+            InteractImage.gameObject.SetActive(false);
+            triggered = true;
+            manager.currentTriggerInteract = this;
+            TriggerDialogue();
+        }
+        else if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad)
         {
             //Debug.Log("Advance");
             nextTime = Time.timeSinceLevelLoad + waitTime;
@@ -85,29 +90,47 @@ public class DialogueTrigger : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (other.gameObject.tag == "Player" && !hasBeenUsed)
+        if (collision.gameObject.tag == "Player")
         {
-            manager.currentTrigger = this;
-            TriggerDialogue();
-            //Debug.Log("Collision");
-        }
-    }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
+            playerInTrigger = true;
             inArea = true;
         }
     }
-    private void OnTriggerExit2D(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            manager.EndDialogue();
+            InteractImage.gameObject.SetActive(true);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            InteractImage.gameObject.SetActive(false);
+            playerInTrigger = false;
+            
+            if(triggered)
+            {
+                manager.EndDialogue();
+            }
+
+            //Just to show you can remove the object from the scene (if you want)
+            if(singleUseDialogue && deleteWhenFinished && triggered)
+            {
+                Destroy(gameObject);
+            }
+        }
+
         inArea = false;
 
+        if(triggered == true && singleUseDialogue == false)
+        {
+            triggered = false;
+        }
     }
 }
