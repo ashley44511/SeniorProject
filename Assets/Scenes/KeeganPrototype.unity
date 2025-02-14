@@ -2187,6 +2187,8 @@ MonoBehaviour:
   itemPrefabs:
   - {fileID: 1369793862278778109, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
   - {fileID: 3849794480341729887, guid: 7218b2cf98ffcfd4e82c9b9b91804690, type: 3}
+  - {fileID: 6279734211649887789, guid: 72b450155995ac54d88661b4db0f2d5d, type: 3}
+  - {fileID: 7054759007931222999, guid: 612c5817c47777a41b1d20fec406fe70, type: 3}
   defaultBackgroundColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   selectedBackgroundColor: {r: 1, g: 0.971643, b: 0, a: 1}
 --- !u!114 &564000087
