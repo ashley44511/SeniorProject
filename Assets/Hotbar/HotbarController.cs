@@ -84,15 +84,35 @@ public class HotbarController : MonoBehaviour
         Debug.Log("Selecting slot " + index);
     }
 
-public void UseItem(int currentIndex)
-{
-    Slot selectedSlot = inventoryPanel.transform.GetChild(currentIndex).GetComponent<Slot>();
-    
-    if(selectedSlot != null && selectedSlot.currentItem != null)
+    public void UseItem(int currentIndex)
     {
-        Debug.Log("Using item in slot " + currentIndex);
-        Destroy(selectedSlot.currentItem);
-        selectedSlot.currentItem = null;
+        Slot selectedSlot = inventoryPanel.transform.GetChild(currentIndex).GetComponent<Slot>();
+        
+        if(selectedSlot != null && selectedSlot.currentItem != null)
+        {
+            Item item = selectedSlot.currentItem.GetComponent<Item>();
+
+            if(item.itemType == ItemType.Consumable)
+            {
+                Debug.Log("Using consumable in slot " + currentIndex);
+                Destroy(selectedSlot.currentItem);
+                selectedSlot.currentItem = null;
+            }
+
+            if(item.itemType == ItemType.Weapon)
+            {
+                Debug.Log("This is where we'd swing/fire the weapon");
+            }
+
+            if(item.itemType == ItemType.Material)
+            {
+                Debug.Log("Material clicked. Need to do something with it");
+            }
+
+            if(item.itemType == ItemType.Trap)
+            {
+                Debug.Log("Trap clicked. Place trap maybe?");
+            }
+        }
     }
-}
 }

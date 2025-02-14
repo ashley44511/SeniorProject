@@ -1,0 +1,10 @@
+[NAME=You][SPEAKERSPRITE=TheHiker] What's this weird looking note stuck to this tree?
+[NAME=You][SPEAKERSPRITE=TheHiker] *Leans forward to inspect note*
+[NAME=Tree Note][SPEAKERSPRITE=Note] Hey, you mind giving me some space? There aren't any lost kids near here.
+[NAME=You][SPEAKERSPRITE=TheHiker] What a waste of time.
+[NAME=Tree Note][SPEAKERSPRITE=Note] I'll make it up to you. Here's a magic trick.
+[NAME=Bloody Note][SPEAKERSPRITE=BloodNote] *Magically starts bleeding*
+[NAME=Bloody Note][SPEAKERSPRITE=BloodNote] Pretty cool, right? See, now it was worth your time.
+[NAME=You][SPEAKERSPRITE=TheHiker] Not going to lie, that was the coolest thing I've ever seen.
+[NAME=Tree Note][SPEAKERSPRITE=Note] *Unbleeds self*
+[NAME=Tree Note][SPEAKERSPRITE=Note] And that's the end of this demo.
