@@ -35,11 +35,22 @@ public class InteractDialogueTrigger : MonoBehaviour
             manager.currentTriggerInteract = this;
             TriggerDialogue();
         }
-        else if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad)
+        else if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad && dialogue.Count > 0)
         {
             //Debug.Log("Advance");
             nextTime = Time.timeSinceLevelLoad + waitTime;
             manager.AdvanceDialogue();
+        }
+
+            //If the queue is empty, the dialogue has finished
+        if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
+        {
+            manager.EndDialogue();
+
+            if (deleteWhenFinished)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -119,11 +130,10 @@ public class InteractDialogueTrigger : MonoBehaviour
                 manager.EndDialogue();
             }
 
-            //Just to show you can remove the object from the scene (if you want)
-            if(singleUseDialogue && deleteWhenFinished && triggered)
+/*             if(singleUseDialogue && deleteWhenFinished && triggered)
             {
                 Destroy(gameObject);
-            }
+            } */
         }
 
         inArea = false;

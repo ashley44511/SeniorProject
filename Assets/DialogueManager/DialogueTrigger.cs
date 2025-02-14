@@ -31,11 +31,22 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad)
+        if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad && dialogue.Count > 0)
         {
             //Debug.Log("Advance");
             nextTime = Time.timeSinceLevelLoad + waitTime;
             manager.AdvanceDialogue();
+        }
+
+        //If the queue is empty, the dialogue has finished
+        if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
+        {
+            manager.EndDialogue();
+
+            if (deleteWhenFinished)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -106,12 +117,12 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            manager.EndDialogue();
+             manager.EndDialogue();
 
-            if (deleteWhenFinished && singleUseDialogue)
+            /*if (deleteWhenFinished && singleUseDialogue)
             {
                 Destroy(gameObject);
-            }
+            } */
         }
         
         inArea = false;
