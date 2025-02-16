@@ -120,6 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   itemName: MedKit
+  itemType: 0
+  healAmount: 25
 --- !u!212 &5622861690836028989
 SpriteRenderer:
   m_ObjectHideFlags: 0
