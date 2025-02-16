@@ -42,9 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 3051391511
-    locked: 0
   - name: InFront
     uniqueID: 255537779
     locked: 0
@@ -53,6 +50,15 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1033111435
+    locked: 0
+  - name: Trees
+    uniqueID: 2598604153
+    locked: 0
+  - name: Grass
+    uniqueID: 1888173327
+    locked: 0
+  - name: Dirt
+    uniqueID: 3051391511
     locked: 0
   - name: BehindPlayer
     uniqueID: 1521137845
