@@ -12,6 +12,7 @@ public class HotbarController : MonoBehaviour
     public GameObject[] itemPrefabs;
     public Color defaultBackgroundColor;
     public Color selectedBackgroundColor;
+    private GameObject healthBar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +31,7 @@ public class HotbarController : MonoBehaviour
         }
 
         SelectSlot(0);
+        healthBar = GameObject.Find("PlayerHealthBar");
     }
 
     public bool AddItem(GameObject itemPrefab)
@@ -95,6 +97,13 @@ public class HotbarController : MonoBehaviour
             if(item.itemType == ItemType.Consumable)
             {
                 Debug.Log("Using consumable in slot " + currentIndex);
+
+                if(healthBar != null)
+                {
+                    healthBar.GetComponent<HealthBar>().Heal(item.healAmount);
+                    Debug.Log("Healing player for " + item.healAmount + " through an item");
+                }
+
                 Destroy(selectedSlot.currentItem);
                 selectedSlot.currentItem = null;
             }
