@@ -13156,7 +13156,7 @@ GameObject:
   - component: {fileID: 240698419}
   - component: {fileID: 240698418}
   - component: {fileID: 240698417}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13910,7 +13910,7 @@ GameObject:
   - component: {fileID: 358325403}
   - component: {fileID: 358325402}
   - component: {fileID: 358325401}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14372,7 +14372,7 @@ GameObject:
   - component: {fileID: 469569311}
   - component: {fileID: 469569310}
   - component: {fileID: 469569309}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14784,7 +14784,7 @@ GameObject:
   - component: {fileID: 498409054}
   - component: {fileID: 498409053}
   - component: {fileID: 498409052}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15336,7 +15336,7 @@ GameObject:
   - component: {fileID: 734104865}
   - component: {fileID: 734104864}
   - component: {fileID: 734104863}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15958,7 +15958,7 @@ GameObject:
   - component: {fileID: 773974644}
   - component: {fileID: 773974643}
   - component: {fileID: 773974642}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16493,7 +16493,7 @@ GameObject:
   - component: {fileID: 889339608}
   - component: {fileID: 889339607}
   - component: {fileID: 889339606}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17010,7 +17010,7 @@ GameObject:
   - component: {fileID: 910387950}
   - component: {fileID: 910387949}
   - component: {fileID: 910387948}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17532,7 +17532,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.0837387, g: 0.196217, b: 0.36477977, a: 0.96862745}
-  m_Intensity: 5
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000073323b0f8b715d788b07943d798de39a0f3d8b70178ae0b5b5b8aa5a95ade7f5
@@ -17738,7 +17738,7 @@ GameObject:
   - component: {fileID: 1418792964}
   - component: {fileID: 1418792963}
   - component: {fileID: 1418792962}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18286,7 +18286,7 @@ GameObject:
   - component: {fileID: 1723927722}
   - component: {fileID: 1723927721}
   - component: {fileID: 1723927720}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32049,7 +32049,7 @@ GameObject:
   - component: {fileID: 1872000306}
   - component: {fileID: 1872000305}
   - component: {fileID: 1872000304}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: TreeEmpty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32447,6 +32447,10 @@ PrefabInstance:
       value: 0.754717
       objectReference: {fileID: 0}
     - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
       propertyPath: m_ShadowSoftness
       value: 0.61
       objectReference: {fileID: 0}
@@ -32459,8 +32463,52 @@ PrefabInstance:
       value: 0.389
       objectReference: {fileID: 0}
     - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
       propertyPath: m_ShadowSoftnessFalloffIntensity
       value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
+      value: 255537779
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[2]'
+      value: 2019389835
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[3]'
+      value: 1033111435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[4]'
+      value: -1696363143
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[5]'
+      value: 1888173327
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[6]'
+      value: -1243575785
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[7]'
+      value: 1521137845
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163321775805384122, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[8]'
+      value: -169366123
       objectReference: {fileID: 0}
     - target: {fileID: 5493702634770407308, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32517,6 +32565,14 @@ PrefabInstance:
     - target: {fileID: 8651596551901614397, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651596551901614397, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651596551901614397, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
