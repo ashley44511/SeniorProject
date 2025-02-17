@@ -13639,7 +13639,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &272090882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13981,6 +13981,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05a4b5d7e5614245a45ece29348d590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueUI: {fileID: 0}
+  TextBox: {fileID: 0}
+  NameText: {fileID: 0}
+  speaker: {fileID: 0}
+  continueImage: {fileID: 0}
+  isScrollingText: 1
+  typeSpeed: 0.01
+  currentTrigger: {fileID: 0}
+  currentTriggerInteract: {fileID: 0}
+  invisSprite: {fileID: 0}
+  speakerLibrary: {fileID: 0}
+  speakerSpriteNames: []
+  freezePlayerOnDialogue: 1
 --- !u!1 &882604505
 GameObject:
   m_ObjectHideFlags: 0
