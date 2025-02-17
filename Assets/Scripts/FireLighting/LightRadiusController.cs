@@ -5,9 +5,10 @@ public class LightRadiusController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Light2D light2D; // Assign in Inspector or find dynamically
-    public float radiusIncrease = 1.0f; // How much to increase the radius
-    public float maxOuterRadius = 12.0f;
+    public float radiusIncrease = 2.0f; // How much to increase the radius
+    public float maxOuterRadius = 18.0f;
     public float minOuterRadius = 0.0f;
+    public float secondsToWait = 1f;
     private bool isReducing = false; // Track if it's already reducing
 
     void Start()
@@ -42,7 +43,7 @@ public class LightRadiusController : MonoBehaviour
         {
             light2D.pointLightOuterRadius -= radiusIncrease; // Decrease radius
             light2D.pointLightInnerRadius -= (radiusIncrease / 2);
-            yield return new WaitForSeconds(5f); // Wait 2 seconds
+            yield return new WaitForSeconds(secondsToWait); // Wait x second(s)
         }
         isReducing = false; // Allow re-triggering if needed
     }

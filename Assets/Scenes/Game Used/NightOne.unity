@@ -32430,6 +32430,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 200559755289100181, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: maxOuterRadius
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 200559755289100181, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
+      propertyPath: radiusIncrease
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1077028998379939962, guid: a67ffd44726ff6b458e48c059b632e09, type: 3}
       propertyPath: m_IsActive
       value: 1
