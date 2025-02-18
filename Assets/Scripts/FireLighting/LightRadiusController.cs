@@ -9,13 +9,26 @@ public class LightRadiusController : MonoBehaviour
     public float maxOuterRadius = 18.0f;
     public float minOuterRadius = 0.0f;
     public float secondsToWait = 1f;
+    public float startOuterRadius = 18.0f;
+    public float startInnerRadius = 9.0f;
     private bool isReducing = false; // Track if it's already reducing
+
+    //detect if player is in light
+    public CircleCollider2D lightCollider;
 
     void Start()
     {
         if (light2D == null)
         {
             light2D = GetComponent<Light2D>();
+            //light2D.pointLightOuterRadius = startOuterRadius;
+            //light2D.pointLightInnerRadius = startInnerRadius;
+        }
+
+        if (lightCollider == null)
+        {
+            lightCollider = transform.Find("LightDetection").GetComponent<CircleCollider2D>();
+            //lightCollider.radius = startOuterRadius;
         }
     }
 
@@ -24,10 +37,11 @@ public class LightRadiusController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // Left-click
         {
-            if (light2D != null && light2D.pointLightOuterRadius < maxOuterRadius)
+            if (light2D != null && light2D.pointLightOuterRadius < maxOuterRadius && lightCollider != null)
             {
                 light2D.pointLightOuterRadius += radiusIncrease;
                 light2D.pointLightInnerRadius += (radiusIncrease/2);
+                lightCollider.radius += radiusIncrease;
             }
         }
         if (!isReducing)
@@ -43,6 +57,7 @@ public class LightRadiusController : MonoBehaviour
         {
             light2D.pointLightOuterRadius -= radiusIncrease; // Decrease radius
             light2D.pointLightInnerRadius -= (radiusIncrease / 2);
+            lightCollider.radius -= radiusIncrease;
             yield return new WaitForSeconds(secondsToWait); // Wait x second(s)
         }
         isReducing = false; // Allow re-triggering if needed
