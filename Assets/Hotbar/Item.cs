@@ -5,7 +5,8 @@ public enum ItemType
     Consumable,
     Material,
     Weapon,
-    Trap
+    Trap,
+    Firewood
 }
 
 public class Item : MonoBehaviour

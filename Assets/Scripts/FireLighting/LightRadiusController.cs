@@ -62,4 +62,14 @@ public class LightRadiusController : MonoBehaviour
         }
         isReducing = false; // Allow re-triggering if needed
     }
+
+    public void IncreaseRadius()
+    {
+        if (light2D != null && light2D.pointLightOuterRadius < maxOuterRadius && lightCollider != null)
+        {
+            light2D.pointLightOuterRadius += radiusIncrease;
+            light2D.pointLightInnerRadius += (radiusIncrease / 2);
+            lightCollider.radius += radiusIncrease;
+        }
+    }
 }
