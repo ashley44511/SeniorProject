@@ -96,6 +96,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     //TODO: Limit drop area (if we want to)
     public void DropItem(Slot originalSlot, PointerEventData eventData)
     {
+        Item item = originalSlot.currentItem.GetComponent<Item>();
         originalSlot.currentItem = null;
 
         //Gets where the mouse is in the world
@@ -105,7 +106,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         //Creates the item on the ground and removes it from the hotbar. Also resizes it so it looks normal
         GameObject droppedItem = Instantiate(gameObject, dropPosition, Quaternion.identity);
-        droppedItem.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+        droppedItem.transform.localScale = new Vector3(item.imageScale, item.imageScale, item.imageScale);
         Destroy(gameObject);
     }
 }
