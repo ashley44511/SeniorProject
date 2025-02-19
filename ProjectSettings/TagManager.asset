@@ -8,6 +8,8 @@ TagManager:
   - GuardView
   - PlayerHealthBar
   - Fire
+  - Enemy
+  - Cover
   layers:
   - Default
   - TransparentFX
