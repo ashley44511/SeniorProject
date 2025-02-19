@@ -42,6 +42,7 @@ public class EnemyAttack : MonoBehaviour
 		//This is where the weapon is rotated in the right direction that you are facing
 		if (weapon && canAttack)
 		{
+			Debug.Log("Attacking Player!");
 			if (weapon is ProjectileWeapon)
 				weapon.WeaponStart(this.transform, attackDir, Vector2.zero);
 			else
