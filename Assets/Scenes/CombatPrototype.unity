@@ -630,6 +630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deer
       objectReference: {fileID: 0}
+    - target: {fileID: 7121400676056588361, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
+      propertyPath: respawnEnemy
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
