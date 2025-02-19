@@ -76,7 +76,7 @@ public class PlayerAttack : MonoBehaviour
 		//This is where the weapon is rotated in the right direction that you are facing
 		if (weapon && canAttack)
 		{
-			Debug.LogError("Kablammo!");
+			Debug.Log("Kablammo!");
 			if (UsePlayerAttackAnimations)
             {
 				Debug.Log("using player attack animation");

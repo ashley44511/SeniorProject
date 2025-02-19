@@ -23,16 +23,25 @@ public class EnemyHealth : MonoBehaviour
 	public GameObject HealthBar;
 	public RectTransform canvasRectTransform;
 
+	[Header("Respawn Settings")]
+	public bool respawnEnemy = false;
+	[Tooltip("Prefab for respawning")]
+	public GameObject enemyPrefab;
+
+
+
 	private Image healthBarImage;
 	private RectTransform healthRectTransform;
 
 	private Animator anim;
+	private Renderer renderer;
 	
 
 	void Start()
 	{
 		currentHealth = maxHealth;
 		anim = GetComponent<Animator>();
+		renderer = gameObject.GetComponent<Renderer>();
 		if (EnemyHealthBar)
 		{
 			if (canvasRectTransform == null)
@@ -66,6 +75,8 @@ public class EnemyHealth : MonoBehaviour
 	public void DecreaseHealth(int value)
 	{
 		currentHealth -= value;
+		Debug.Log($"Enemy Hit! {currentHealth} hp remaining");
+
 		if (currentHealth <= 0)
 		{
 			currentHealth = 0;
@@ -81,8 +92,24 @@ public class EnemyHealth : MonoBehaviour
 	private IEnumerator DestroyAfterAnimation() // Jane Apostol Fall '23
 	{
 		yield return new WaitForSeconds(2.0f);  // Adjust the delay based on your death animation duration
+
+		if (respawnEnemy) {
+			renderer.enabled = false;
+		
+			yield return new WaitForSeconds(2.0f);  // Adjust the delay based on your death animation duration
+			Debug.Log("Respawning enemy");
+			renderer.enabled = true;
+
+			Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+		}
+		
 		Destroy(this.gameObject);
-		Destroy(healthBarImage.gameObject);
+		if (EnemyHealthBar)
+		{
+			Destroy(healthBarImage.gameObject);
+		};
+
+
 	}
 
 	void UpdateHealthBar()//Updates the health bar according to the new health amounts
