@@ -6,13 +6,14 @@ public class BearTrapHit : MonoBehaviour
     Animator animator;
     GameObject healthBar;
     public GameObject parentTrap;
-    public HealthBar playerHealth;
+    private GameObject playerHealth;
     Item item;
     
     void Start()
     {
         item = parentTrap.GetComponent<Item>();
         animator = parentTrap.GetComponent<Animator>();
+        playerHealth = GameObject.FindWithTag("PlayerHealthBar");
     }
 
     // Update is called once per frame
