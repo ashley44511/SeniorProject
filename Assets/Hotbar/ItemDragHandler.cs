@@ -7,10 +7,12 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
+    private PauseMenu pauseMenu;
 
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -46,6 +48,11 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
 
         Slot originalSlot = originalParent.GetComponent<Slot>();
+
+/*         if(pauseMenu.getOpen())
+        {
+            transform.SetParent(originalParent);
+        } */
 
         if (dropSlot != null)
         {

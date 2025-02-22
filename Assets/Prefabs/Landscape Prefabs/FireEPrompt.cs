@@ -6,18 +6,20 @@ public class FireEPrompt : MonoBehaviour
     public GameObject InventoryPanel;
     private GameObject gameManager;
     private GameObject fire;
+    private PauseMenu pauseMenu;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameObject.Find("GameManagers");
         fire = GameObject.Find("Fire");
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetKeyDown(KeyCode.E) && InteractImage.active)
+         if (Input.GetKeyDown(KeyCode.E) && InteractImage.active && !pauseMenu.getOpen())
             {
                 if(gameManager != null)
                 {
