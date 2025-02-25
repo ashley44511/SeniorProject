@@ -5,12 +5,6 @@ public class PauseMenu : MonoBehaviour
     private bool isOpen = false;
     public GameObject pauseMenu;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -44,5 +38,17 @@ public class PauseMenu : MonoBehaviour
     public bool getOpen()
     {
         return isOpen;
+    }
+
+    public void setOpen(bool open)
+    {
+        if(open)
+        {
+            OpenPauseMenu();
+        }
+        else
+        {
+            ClosePauseMenu();
+        }
     }
 }
