@@ -42,9 +42,8 @@ public class FireEPrompt : MonoBehaviour
                             
                             Destroy(slot.currentItem);
                             slot.currentItem = null;
-
                             firewoodCount--;
-
+                            
                             if(firewoodCount == 0)
                             {
                                 isFirewood = false;
@@ -66,9 +65,32 @@ public class FireEPrompt : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //This could be optimized, might cause FPS issues later on
+        //Ensures the player still have firewood in their inventory when they're at the campfire
         if (collision.gameObject.tag == "Player")
         {
-            if(isFirewood == false)
+            firewoodCount = 0;
+            isFirewood = false;
+            
+            for(int i = 0; i < InventoryPanel.transform.childCount; i++)
+            {
+                Slot slot = InventoryPanel.transform.GetChild(i).GetComponent<Slot>();
+                
+                if(slot.currentItem == null)
+                {
+                    continue;
+                }
+                
+                Item item = slot.currentItem.GetComponent<Item>();
+
+                if(slot.currentItem != null && item.itemType == ItemType.Firewood)
+                {
+                    isFirewood = true;
+                    firewoodCount++;
+                }
+            }
+
+            if(!isFirewood)
             {
                 InteractImage.gameObject.SetActive(false);
             }
@@ -79,6 +101,9 @@ public class FireEPrompt : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            firewoodCount = 0;
+            isFirewood = false;
+            
             for(int i = 0; i < InventoryPanel.transform.childCount; i++)
             {
                 Slot slot = InventoryPanel.transform.GetChild(i).GetComponent<Slot>();

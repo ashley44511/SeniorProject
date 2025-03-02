@@ -13,10 +13,19 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         canvasGroup = GetComponent<CanvasGroup>();
         pauseMenu = FindObjectOfType<PauseMenu>();
+        originalParent = transform.parent;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        //Prevents dragging from starting when the pause menu is open
+        if(pauseMenu.getOpen())
+        {
+            Debug.Log("Trying to drag item while pause menu is open");
+            eventData.pointerDrag = null;
+            return;
+        }
+
         originalParent = transform.parent;
         transform.SetParent(transform.root);
         canvasGroup.blocksRaycasts = false;
@@ -26,12 +35,34 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
+        //If the pause menu is open, it snaps back to the original item slot
+        if(pauseMenu.getOpen())
+        {
+            transform.SetParent(originalParent);
+            GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            canvasGroup.blocksRaycasts = true;
+            canvasGroup.alpha = 1f;
+         
+            return;
+        }
+
         //Follow the mouse
         transform.position = eventData.position; 
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+         //If the pause menu is open, it snaps back to the original item slot
+        if(pauseMenu.getOpen())
+        {
+            transform.SetParent(originalParent);
+            GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            canvasGroup.blocksRaycasts = true;
+            canvasGroup.alpha = 1f;
+            
+            return;
+        }
+
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
@@ -41,6 +72,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         if (dropSlot == null)
         {
             GameObject dropItem = eventData.pointerEnter;
+
             if (dropItem != null)
             {
                 dropSlot = dropItem.GetComponentInParent<Slot>();
@@ -49,14 +81,10 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         Slot originalSlot = originalParent.GetComponent<Slot>();
 
-/*         if(pauseMenu.getOpen())
-        {
-            transform.SetParent(originalParent);
-        } */
-
-        if (dropSlot != null)
+        if (dropSlot != null && pauseMenu.getOpen() == false)
         {
             //Is a slot under drop point
+            //There's an item in the slot
             if (dropSlot.currentItem != null)
             {
                 //Slot has an item so you want to swap items
@@ -66,6 +94,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             }
             else
             {
+                //Drop slot is empty
                 originalSlot.currentItem = null;
             }
 
@@ -76,7 +105,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         else
         {
              //If the item is outside of the hotbar, drop it on the ground
-            if (!MouseOverInventory(eventData.position))
+            if (!MouseOverInventory(eventData.position) && pauseMenu.getOpen() == false)
             {
                 DropItem(originalSlot, eventData);
             }
