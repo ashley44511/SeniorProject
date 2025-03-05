@@ -13,6 +13,7 @@ public class HotbarController : MonoBehaviour
     public Color defaultBackgroundColor;
     public Color selectedBackgroundColor;
     private GameObject healthBar;
+    private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +33,7 @@ public class HotbarController : MonoBehaviour
 
         SelectSlot(0);
         healthBar = GameObject.Find("PlayerHealthBar");
+        audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
     }
 
     public bool AddItem(GameObject itemPrefab)

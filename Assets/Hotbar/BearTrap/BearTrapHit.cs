@@ -6,6 +6,8 @@ public class BearTrapHit : MonoBehaviour
     Animator animator;
     GameObject healthBar;
     public GameObject parentTrap;
+    public AudioClip snapShutSound;
+    private AudioSource audioSource;
     private GameObject playerHealth;
     Item item;
     
@@ -14,6 +16,7 @@ public class BearTrapHit : MonoBehaviour
         item = parentTrap.GetComponent<Item>();
         animator = parentTrap.GetComponent<Animator>();
         playerHealth = GameObject.FindWithTag("PlayerHealthBar");
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +24,11 @@ public class BearTrapHit : MonoBehaviour
     {
         if(item.itemType == ItemType.Trap)
         {
+            if(animator.GetBool("isClosed") == false)
+            {
+                audioSource.PlayOneShot(snapShutSound);
+            }
+            
             if (collision.gameObject.tag == "Player" && animator.GetBool("isClosed") == false)
             {
                 Debug.Log("Player hit the trap!");

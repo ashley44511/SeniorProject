@@ -8,12 +8,14 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     Transform originalParent;
     CanvasGroup canvasGroup;
     private PauseMenu pauseMenu;
+    private AudioSource audioSource;
 
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         pauseMenu = FindObjectOfType<PauseMenu>();
         originalParent = transform.parent;
+        audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -134,6 +136,12 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         Item item = originalSlot.currentItem.GetComponent<Item>();
         originalSlot.currentItem = null;
+
+        if(item.placeInWorldSound != null)
+        {
+            Debug.Log("Playing " + item.itemName + " placing sound");
+            audioSource.PlayOneShot(item.placeInWorldSound);
+        }
 
         //Gets where the mouse is in the world
         Vector3 dropPosition = Camera.main.ScreenToWorldPoint(eventData.position);
