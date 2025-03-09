@@ -911,10 +911,10 @@ TextureImporter:
       name: backanglecar1_28
       rect:
         serializedVersion: 2
-        x: 255
-        y: 191
-        width: 40
-        height: 23
+        x: 259
+        y: 188
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1043,10 +1043,10 @@ TextureImporter:
       name: backanglecar1_34
       rect:
         serializedVersion: 2
-        x: 255
-        y: 159
-        width: 68
-        height: 24
+        x: 258
+        y: 153
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1175,10 +1175,10 @@ TextureImporter:
       name: backanglecar1_40
       rect:
         serializedVersion: 2
-        x: 255
-        y: 127
-        width: 40
-        height: 23
+        x: 260
+        y: 126
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
