@@ -108,21 +108,41 @@ public class HotbarController : MonoBehaviour
 
                 Destroy(selectedSlot.currentItem);
                 selectedSlot.currentItem = null;
+
+                if(item.useSound != null)
+                {
+                    audioSource.PlayOneShot(item.useSound);
+                }
             }
 
             if(item.itemType == ItemType.Weapon)
             {
                 Debug.Log("This is where we'd swing/fire the weapon");
+
+                if(item.useSound != null)
+                {
+                    audioSource.PlayOneShot(item.useSound);
+                }
             }
 
             if(item.itemType == ItemType.Material)
             {
                 Debug.Log("Material clicked. Need to do something with it");
+                
+                if(item.useSound != null)
+                {
+                    audioSource.PlayOneShot(item.useSound);
+                }
             }
 
             if(item.itemType == ItemType.Trap)
             {
                 Debug.Log("Trap clicked. Place trap maybe?");
+                
+                if(item.useSound != null)
+                {
+                    audioSource.PlayOneShot(item.useSound);
+                }
             }
         }
     }
