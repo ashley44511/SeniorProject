@@ -8,12 +8,14 @@ public class PickupPrompt : MonoBehaviour
     private HotbarController inventoryController;
     private PauseMenu pauseMenu;
     private bool playerInItem = false;
+    private AudioSource audioSource;
 
     void Start()
     {
         InteractImage.gameObject.SetActive(false);
         inventoryController = FindObjectOfType<HotbarController>();
         pauseMenu = FindObjectOfType<PauseMenu>();
+        audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
     }
 
     void Update()
@@ -32,6 +34,11 @@ public class PickupPrompt : MonoBehaviour
                     if (itemAdded)
                     {
                         Destroy(gameObject);
+                        
+                        if(item.pickupSound != null)
+                        {
+                            audioSource.PlayOneShot(item.pickupSound);
+                        }
                     }
                 }
             }

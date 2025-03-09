@@ -1975,7 +1975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: d62f378731efa68498a2769c2b9afdc4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3628,6 +3628,10 @@ MonoBehaviour:
   - {fileID: 7752576644573984875, guid: f2eae771d37b2ea41b21be2945628a2b, type: 3}
   - {fileID: 1428043824173702671, guid: 5354dbf363a61a94c82fb033734530b4, type: 3}
   - {fileID: 1428043824173702671, guid: 48a08b23d2a3fd143aa693916158c977, type: 3}
+  - {fileID: 1428043824173702671, guid: ff6a3b7febda9054692422750df96e2d, type: 3}
+  - {fileID: 7752576644573984875, guid: c8d77c90b12e09443a8eaf4e78f88faa, type: 3}
+  - {fileID: 1428043824173702671, guid: 5793783a6a347434d91f9a8fae24f397, type: 3}
+  - {fileID: 1428043824173702671, guid: e25d7161991a8d84388d01015dcfc696, type: 3}
   slowestCloudSpeed: 0.1
   fastestCloudSpeed: 1
   timeToSpawn: 8

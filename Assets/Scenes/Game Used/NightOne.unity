@@ -19807,6 +19807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractImage: {fileID: 730327970}
   InventoryPanel: {fileID: 215617032787878441}
+  woodOnFire: {fileID: 8300000, guid: b76adb8b83c9ed84687141819757cdf4, type: 3}
 --- !u!61 &1834817379
 BoxCollider2D:
   m_ObjectHideFlags: 0

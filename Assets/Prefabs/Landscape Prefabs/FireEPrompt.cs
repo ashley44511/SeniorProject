@@ -9,12 +9,15 @@ public class FireEPrompt : MonoBehaviour
     private PauseMenu pauseMenu;
     bool isFirewood = false;
     int firewoodCount = 0;
+    public AudioClip woodOnFire;
+    private AudioSource audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameObject.Find("GameManagers");
         fire = GameObject.Find("Fire");
         pauseMenu = FindObjectOfType<PauseMenu>();
+        audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,6 +46,7 @@ public class FireEPrompt : MonoBehaviour
                             Destroy(slot.currentItem);
                             slot.currentItem = null;
                             firewoodCount--;
+                            audioSource.PlayOneShot(woodOnFire);
                             
                             if(firewoodCount == 0)
                             {
