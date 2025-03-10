@@ -127,7 +127,7 @@ MonoBehaviour:
   damageAmoumt: 0
   placeInWorldSound: {fileID: 0}
   useSound: {fileID: 0}
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
 --- !u!212 &5622861690836028989
 SpriteRenderer:
   m_ObjectHideFlags: 0
