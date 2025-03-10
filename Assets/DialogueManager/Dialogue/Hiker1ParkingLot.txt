@@ -1,0 +1,2 @@
+[NAME=Hiker][SPEAKERSPRITE=TheHiker] Hey man! You dropped a couple things.
+[NAME=Instructions][SPEAKERSPRITE=Radio] Press A to move left. Press W to move up. Press S to move down.
