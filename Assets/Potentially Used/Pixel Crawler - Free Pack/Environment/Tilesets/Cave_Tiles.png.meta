@@ -195,6 +195,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -959,7 +972,41 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cave_Tiles_0: -6200627249816308735
+      Cave_Tiles_1: -7124238528791677575
+      Cave_Tiles_10: 265130151280978047
+      Cave_Tiles_11: 5720328811160550634
+      Cave_Tiles_12: -5085389712505603505
+      Cave_Tiles_13: -5201348922658266882
+      Cave_Tiles_14: -4037364337108371675
+      Cave_Tiles_15: -7255043384389226219
+      Cave_Tiles_16: 3321530330907790101
+      Cave_Tiles_17: 3935149078115025304
+      Cave_Tiles_18: -8155912690175801541
+      Cave_Tiles_19: 495334874760219826
+      Cave_Tiles_2: 8572173773122718655
+      Cave_Tiles_20: 2642848677341457094
+      Cave_Tiles_21: -389147320627643674
+      Cave_Tiles_22: -5916076316510871035
+      Cave_Tiles_23: -1285460216324357679
+      Cave_Tiles_24: 7031301373613588547
+      Cave_Tiles_25: -7364042669286541385
+      Cave_Tiles_26: -7704664520754224149
+      Cave_Tiles_27: 7824105027477306175
+      Cave_Tiles_28: 4653700842387351767
+      Cave_Tiles_29: 4750324903472891212
+      Cave_Tiles_3: -8182175696298921700
+      Cave_Tiles_30: 3758157058886937038
+      Cave_Tiles_31: 1279621572942487823
+      Cave_Tiles_32: 4674211268304098320
+      Cave_Tiles_33: 90917953803228252
+      Cave_Tiles_4: -4429417950466541853
+      Cave_Tiles_5: 2123598017422641096
+      Cave_Tiles_6: 2597446242291652447
+      Cave_Tiles_7: 311566954194450455
+      Cave_Tiles_8: -1565515294422754654
+      Cave_Tiles_9: 7038362803141277424
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
