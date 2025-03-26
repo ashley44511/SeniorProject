@@ -109,7 +109,7 @@ public class HotbarController : MonoBehaviour
                 Destroy(selectedSlot.currentItem);
                 selectedSlot.currentItem = null;
 
-                if(item.useSound != null)
+                if(item.useSound != null && audioSource != null)
                 {
                     audioSource.PlayOneShot(item.useSound);
                 }
@@ -119,7 +119,7 @@ public class HotbarController : MonoBehaviour
             {
                 Debug.Log("This is where we'd swing/fire the weapon");
 
-                if(item.useSound != null)
+                if(item.useSound != null && audioSource != null)
                 {
                     audioSource.PlayOneShot(item.useSound);
                 }
@@ -129,7 +129,7 @@ public class HotbarController : MonoBehaviour
             {
                 Debug.Log("Material clicked. Need to do something with it");
                 
-                if(item.useSound != null)
+                if(item.useSound != null && audioSource != null)
                 {
                     audioSource.PlayOneShot(item.useSound);
                 }
@@ -139,7 +139,7 @@ public class HotbarController : MonoBehaviour
             {
                 Debug.Log("Trap clicked. Place trap maybe?");
                 
-                if(item.useSound != null)
+                if(item.useSound != null && audioSource != null)
                 {
                     audioSource.PlayOneShot(item.useSound);
                 }

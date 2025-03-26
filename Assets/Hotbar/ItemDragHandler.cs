@@ -106,7 +106,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
         else
         {
-             //If the item is outside of the hotbar, drop it on the ground
+            //If the item is outside of the hotbar, drop it on the ground
+            //Also have to check if it's a bear trap (since that's the only item we want to place now)
             if (!MouseOverInventory(eventData.position) && pauseMenu.getOpen() == false)
             {
                 DropItem(originalSlot, eventData);
@@ -135,22 +136,32 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void DropItem(Slot originalSlot, PointerEventData eventData)
     {
         Item item = originalSlot.currentItem.GetComponent<Item>();
-        originalSlot.currentItem = null;
-
-        if(item.placeInWorldSound != null)
+        
+        //Only drop the item if it's the bear trap
+        if(item.itemName == "BearTrap")
         {
-            Debug.Log("Playing " + item.itemName + " placing sound");
-            audioSource.PlayOneShot(item.placeInWorldSound);
+            originalSlot.currentItem = null;
+
+            if(item.placeInWorldSound != null)
+            {
+                Debug.Log("Playing " + item.itemName + " placing sound");
+                audioSource.PlayOneShot(item.placeInWorldSound);
+            }
+
+            //Gets where the mouse is in the world
+            Vector3 dropPosition = Camera.main.ScreenToWorldPoint(eventData.position);
+            //Failsafe to ensure item is visible to the camera
+            dropPosition.z = 0;
+
+            //Creates the item on the ground and removes it from the hotbar. Also resizes it so it looks normal
+            GameObject droppedItem = Instantiate(gameObject, dropPosition, Quaternion.identity);
+            droppedItem.transform.localScale = new Vector3(item.imageScale, item.imageScale, item.imageScale);
+            Destroy(gameObject);
         }
-
-        //Gets where the mouse is in the world
-        Vector3 dropPosition = Camera.main.ScreenToWorldPoint(eventData.position);
-        //Failsafe to ensure item is visible to the camera
-        dropPosition.z = 0;
-
-        //Creates the item on the ground and removes it from the hotbar. Also resizes it so it looks normal
-        GameObject droppedItem = Instantiate(gameObject, dropPosition, Quaternion.identity);
-        droppedItem.transform.localScale = new Vector3(item.imageScale, item.imageScale, item.imageScale);
-        Destroy(gameObject);
+        else
+        {
+            //Back to original slot
+            transform.SetParent(originalParent);
+        }
     }
 }
