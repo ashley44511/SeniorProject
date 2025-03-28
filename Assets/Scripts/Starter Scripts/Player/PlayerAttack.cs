@@ -10,13 +10,18 @@ public class PlayerAttack : MonoBehaviour
 	public bool UsePlayerAttackAnimations = false;
 	public Animator anim;
 	public Rigidbody2D rb;
+
+	public GameObject player;
+
 	public PlayerMovement playerMoveScript;
+
 
 	[Header("Player Weapons")]
 	[Tooltip("This is the list of all the weapons that your player uses")]
-	public List<Damager> weaponList;
+	public List<Item> itemList;
+
 	[Tooltip("This is the current weapon that the player is using")]
-	public Damager weapon;
+	public Item weapon;
 	[Tooltip("The coolDown before you can attack again")]
 	public float coolDown = 0.4f;
 
@@ -32,11 +37,6 @@ public class PlayerAttack : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		playerMoveScript = GetComponent<PlayerMovement>();
 		playerAudio = GetComponent<PlayerAudio>();
-		if (weapon == null && weaponList.Count > 0)
-		{
-			weapon = weaponList[0];
-		}
-		// switchWeaponAtIndex(0);
 	}
 
 	// Update is called once per frame
@@ -44,20 +44,20 @@ public class PlayerAttack : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Alpha1))//Here is where you can hit the "1" key on your keyboard to activate this weapon
 		{
-			if (weaponList.Count > 0)
+			if (itemList.Count > 0)
 			{
 				switchWeaponAtIndex(0);
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.Alpha2))//Remove this if you don't have multiple weapons
 		{
-			if (weaponList.Count > 1)
+			if (itemList.Count > 1)
 			{
 				switchWeaponAtIndex(1);
 			}
 		}
 
-		if (Input.GetKey(KeyCode.Mouse0))
+		if (Input.GetKey(KeyCode.Mouse0) && weapon && weapon.itemType == ItemType.Weapon)
 		{
 			Attack();
 			if (playerAudio && !playerAudio.AttackSource.isPlaying && playerAudio.AttackSource.clip != null)
@@ -103,18 +103,40 @@ public class PlayerAttack : MonoBehaviour
 
 	public void switchWeaponAtIndex(int index)
 	{
-		//Makes sure that if the index exists, then a switch will occur
-		if (index < weaponList.Count && weaponList[index])
+		if (weapon)
 		{
-			//Deactivate current weapon
 			weapon.gameObject.SetActive(false);
+		}
 
+		//Makes sure that if the index exists, then a switch will occur
+		if (index < itemList.Count && itemList[index] != null)
+		{
 			//Switch weapon to index then activate
-			weapon = weaponList[index];
+			weapon = itemList[index];
 			weapon.gameObject.SetActive(true);
 		}
 
 	}
+
+	public void appendItem(GameObject prefab) {
+		Debug.Log(prefab);
+		GameObject item = Instantiate(prefab, player.transform.Find("HandPosition").transform.position + prefab.transform.position, prefab.transform.rotation, player.transform);
+		item.SetActive(false);
+
+		Item weapon = item.GetComponent<Item>();
+
+		itemList.Add(weapon);
+	}
+
+	public void removeItem(int index) {
+		if (index < itemList.Count && itemList[index]) {
+			GameObject item = itemList[index].gameObject;
+			item.SetActive(false);
+			itemList[index] = null;
+			Destroy(item);
+		}
+	}
+	
 
 	private IEnumerator CoolDown()
 	{

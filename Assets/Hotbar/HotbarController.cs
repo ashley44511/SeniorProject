@@ -6,6 +6,8 @@ public class HotbarController : MonoBehaviour
     // https://www.youtube.com/watch?v=CcfYUYgaBTw
     // https://www.youtube.com/watch?v=wlBJ0yZOYfM
 
+    public GameObject player;
+
     public GameObject inventoryPanel;
     public GameObject slotPrefab;
     public int slotCount;
@@ -15,9 +17,13 @@ public class HotbarController : MonoBehaviour
     private GameObject healthBar;
     private AudioSource audioSource;
 
+    private PlayerAttack playerAttack;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerAttack = player.GetComponent<PlayerAttack>();
         for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
@@ -25,9 +31,12 @@ public class HotbarController : MonoBehaviour
             if (i < itemPrefabs.Length)
             {
                 GameObject item = Instantiate(itemPrefabs[i], slot.transform);
+                item.gameObject.SetActive(true);
                 item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
                 item.transform.localScale = new Vector3(1, 1, 1);
+                item.gameObject.SetActive(true);
                 slot.currentItem = item;
+                playerAttack.appendItem(itemPrefabs[i]);
             }
         }
 
@@ -53,6 +62,8 @@ public class HotbarController : MonoBehaviour
             }
         }
         Debug.Log("Inventory is full");
+
+        playerAttack.appendItem(itemPrefab);
         return false;
     }
 
@@ -86,6 +97,7 @@ public class HotbarController : MonoBehaviour
         }
 
         Debug.Log("Selecting slot " + index);
+        playerAttack.switchWeaponAtIndex(index);
     }
 
     public void UseItem(int currentIndex)
@@ -102,8 +114,8 @@ public class HotbarController : MonoBehaviour
 
                 if(healthBar != null)
                 {
-                    healthBar.GetComponent<HealthBar>().Heal(item.healAmount);
-                    Debug.Log("Healing player for " + item.healAmount + " through an item");
+                    healthBar.GetComponent<HealthBar>().Heal(item.healthValue);
+                    Debug.Log("Healing player for " + item.healthValue + " through an item");
                 }
 
                 Destroy(selectedSlot.currentItem);
@@ -144,6 +156,10 @@ public class HotbarController : MonoBehaviour
                     audioSource.PlayOneShot(item.useSound);
                 }
             }
+        }
+
+        if (selectedSlot.currentItem == null) {
+            playerAttack.removeItem(currentIndex);
         }
     }
 }

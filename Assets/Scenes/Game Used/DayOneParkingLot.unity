@@ -16167,6 +16167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeec272a0d9f7744ba8cd438827d2b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2051204883}
   inventoryPanel: {fileID: 1748258487}
   slotPrefab: {fileID: 8659306961215075406, guid: 6af9b517a354b8440b52a2249cf5047d, type: 3}
   slotCount: 10

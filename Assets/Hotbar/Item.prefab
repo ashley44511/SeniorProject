@@ -42,7 +42,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.85, y: 3.05}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8063898221804815697
@@ -121,10 +121,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   itemName: MedKit
-  itemType: 0
   imageScale: 2.5
-  healAmount: 25
-  damageAmoumt: 0
+  alignmnent: 0
+  itemType: 0
+  healthValue: -25
   placeInWorldSound: {fileID: 0}
   useSound: {fileID: 0}
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
@@ -169,8 +169,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1521137845
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2442376644214155571, guid: fe6d7b0df13c4e647a00d0887f8f620a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

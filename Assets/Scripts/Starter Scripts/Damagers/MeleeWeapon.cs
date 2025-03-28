@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeWeapon : Damager
+public class MeleeWeapon : Item
 {
 	[Header("Melee Properties")]
 	public Animator MeleeWeaponAnimator;
@@ -23,10 +23,9 @@ public class MeleeWeapon : Damager
 			MeleeWeaponAnimator.SetFloat("Horizontal", lastLookDirection.x);
 			MeleeWeaponAnimator.SetFloat("Vertical", lastLookDirection.y);
 
-			if (TopDown)
-				MeleeWeaponAnimator.SetTrigger("Attack_TopDown");
-			else
-				MeleeWeaponAnimator.SetTrigger("Attack_SideScroller");
+			
+			MeleeWeaponAnimator.SetTrigger("Attack_TopDown");
+
 		}
 
 		col.enabled = true;
