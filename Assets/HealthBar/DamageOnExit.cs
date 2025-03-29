@@ -62,8 +62,8 @@ public class DamageOnExit : MonoBehaviour
             Debug.Log("Damage on Exit: Player outside light radius for 1s; take dmg");
             playerHealth.TakeDamageOverTime(DamageToPlayer, TimeToDamage);
             Debug.Log(playerHealth.currentHealth);
+            
             yield return new WaitForSeconds(1f); // repeat every second
         }
     }
 }
-
