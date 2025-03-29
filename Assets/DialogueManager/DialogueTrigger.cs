@@ -41,7 +41,7 @@ public class DialogueTrigger : MonoBehaviour
         //If the queue is empty, the dialogue has finished
         if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
         {
-            manager.EndDialogue();
+            //manager.EndDialogue();
 
             if (deleteWhenFinished)
             {
@@ -117,7 +117,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-             manager.EndDialogue();
+            //manager.EndDialogue();
 
             /*if (deleteWhenFinished && singleUseDialogue)
             {
