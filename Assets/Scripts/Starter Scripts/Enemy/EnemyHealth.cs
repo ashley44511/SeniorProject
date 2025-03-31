@@ -101,6 +101,9 @@ public class EnemyHealth : MonoBehaviour
 		
 			yield return new WaitForSeconds(2.0f);  // Adjust the delay based on your death animation duration
 			Debug.Log("Respawning enemy");
+			anim.SetBool("isDead", false);
+			anim.SetBool("isChasing", false);
+			anim.SetBool("isAttacking", false);
 			renderer.enabled = true;
 
 			Instantiate(enemyPrefab, transform.position, Quaternion.identity);

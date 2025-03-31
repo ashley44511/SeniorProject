@@ -225,7 +225,7 @@ MonoBehaviour:
   HealthBar: {fileID: 0}
   canvasRectTransform: {fileID: 0}
   respawnEnemy: 0
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 8761667831346363255}
 --- !u!114 &1375472639404179899
 MonoBehaviour:
   m_ObjectHideFlags: 0
