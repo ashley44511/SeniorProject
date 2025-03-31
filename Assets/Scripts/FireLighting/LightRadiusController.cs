@@ -35,15 +35,6 @@ public class LightRadiusController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Left-click
-        {
-            if (light2D != null && light2D.pointLightOuterRadius < maxOuterRadius && lightCollider != null)
-            {
-                light2D.pointLightOuterRadius += radiusIncrease;
-                light2D.pointLightInnerRadius += (radiusIncrease/2);
-                lightCollider.radius += radiusIncrease;
-            }
-        }
         if (!isReducing)
         {
             StartCoroutine(DecreaseRadius());

@@ -324,6 +324,10 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: healthValue
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: damageAmoumt
       value: 25
       objectReference: {fileID: 0}
