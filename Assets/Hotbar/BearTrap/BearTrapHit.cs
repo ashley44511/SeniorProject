@@ -27,9 +27,12 @@ public class BearTrapHit : MonoBehaviour
             if(animator.GetBool("isClosed") == false)
             {
                 audioSource.PlayOneShot(snapShutSound);
+                Debug.Log("Col: " + collision);
+                Debug.Log("GO: " + collision.gameObject);
+                Debug.Log("TAG: " + collision.gameObject.tag);
             }
             
-            if (collision.gameObject.tag == "Player" && animator.GetBool("isClosed") == false)
+            if (collision.gameObject.CompareTag("Player") && animator.GetBool("isClosed") == false)
             {
                 Debug.Log("Player hit the trap!");
                 animator.SetBool("isClosed", true);
@@ -40,9 +43,12 @@ public class BearTrapHit : MonoBehaviour
                     playerHealth.GetComponent<HealthBar>().TakeDamage(item.healthValue);
                 }
             }
-            else if (collision.gameObject.tag == "Enemy" && animator.GetBool("isClosed") == false)
+            else if (collision.gameObject.CompareTag("Enemy") && animator.GetBool("isClosed") == false)
             {
+                Debug.Log("Enemy hit the trap!");
                 animator.SetBool("isClosed", true);
+                EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+                enemyHealth.DecreaseHealth(item.healthValue);
 
                 //This is where you would damage the enemy (once that system is added)
             }
