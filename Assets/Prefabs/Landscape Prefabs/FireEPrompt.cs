@@ -43,9 +43,18 @@ public class FireEPrompt : MonoBehaviour
                         {
                             Debug.Log("Firewood added to fire");
                             
-                            Destroy(slot.currentItem);
-                            slot.currentItem = null;
-                            firewoodCount--;
+                            if(firewoodCount == 1)
+                            {
+                                Destroy(slot.currentItem);
+                                slot.currentItem = null;
+                                firewoodCount--;
+                            }
+                            else
+                            {
+                                firewoodCount--;
+                                item.itemQuantity--;
+                            }
+                            
                             audioSource.PlayOneShot(woodOnFire);
                             
                             if(firewoodCount == 0)
@@ -90,7 +99,7 @@ public class FireEPrompt : MonoBehaviour
                 if(slot.currentItem != null && item.itemType == ItemType.Firewood)
                 {
                     isFirewood = true;
-                    firewoodCount++;
+                    firewoodCount = item.itemQuantity;
                 }
             }
 

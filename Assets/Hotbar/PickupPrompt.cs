@@ -27,15 +27,17 @@ public class PickupPrompt : MonoBehaviour
                 InteractImage.gameObject.SetActive(false);
                 Item item = GetComponent<Item>();
 
-                if (item != null)
+                if (item != null && gameObject != null)
                 {
                     bool itemAdded = inventoryController.AddItem(gameObject);
 
                     if (itemAdded)
                     {
                         Destroy(gameObject);
+
+                        playerInItem = false;
                         
-                        if(item.pickupSound != null)
+                        if(item.pickupSound != null && audioSource != null)
                         {
                             audioSource.PlayOneShot(item.pickupSound);
                         }

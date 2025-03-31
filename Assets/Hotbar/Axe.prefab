@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 506591434248926164, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 506591434248926164, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 506591434248926164, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 506591434248926164, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 1369793862278778109, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Name
       value: Axe
@@ -208,9 +224,12 @@ MonoBehaviour:
   alignmnent: 0
   itemType: 2
   healthValue: 25
+  isStackable: 0
+  itemQuantity: 1
   placeInWorldSound: {fileID: 0}
   useSound: {fileID: 0}
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
+  quantityText: {fileID: 7155418156675221868}
   MeleeWeaponAnimator: {fileID: 0}
 --- !u!68 &1770434789634757266
 EdgeCollider2D:
@@ -264,3 +283,14 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &7155418156675221868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5460015648049197810, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+  m_PrefabInstance: {fileID: 2920858870010755998}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

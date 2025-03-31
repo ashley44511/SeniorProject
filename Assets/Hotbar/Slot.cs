@@ -7,7 +7,6 @@ public class Slot : MonoBehaviour
     public GameObject currentItem;
     public Image backgroundImage;
     public GameObject borderFrame;
-
     void Start()
     {
 

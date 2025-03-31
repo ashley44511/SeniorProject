@@ -226,6 +226,7 @@ MonoBehaviour:
   currentItem: {fileID: 0}
   backgroundImage: {fileID: 3082207234501729691}
   borderFrame: {fileID: 7997727113123921909}
+  numOfItems: {fileID: 0}
 --- !u!61 &3550273878510641980
 BoxCollider2D:
   m_ObjectHideFlags: 0

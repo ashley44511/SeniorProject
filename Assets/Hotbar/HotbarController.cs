@@ -7,7 +7,6 @@ public class HotbarController : MonoBehaviour
     // https://www.youtube.com/watch?v=wlBJ0yZOYfM
 
     public GameObject player;
-
     public GameObject inventoryPanel;
     public GameObject slotPrefab;
     public int slotCount;
@@ -16,7 +15,6 @@ public class HotbarController : MonoBehaviour
     public Color selectedBackgroundColor;
     private GameObject healthBar;
     private AudioSource audioSource;
-
     private PlayerAttack playerAttack;
 
 
@@ -47,20 +45,42 @@ public class HotbarController : MonoBehaviour
 
     public bool AddItem(GameObject itemPrefab)
     {
+        Slot itemSlot = null;
+        bool foundEmptySlot = false;
+
         foreach(Transform slotTransform in inventoryPanel.transform)
         {
             Debug.Log("Checking slot");
             Slot slot = slotTransform.GetComponent<Slot>();
-            if(slot != null && slot.currentItem == null)
+            
+            if(slot != null && slot.currentItem != null && itemPrefab.GetComponent<Item>().itemName == slot.currentItem.GetComponent<Item>().itemName 
+            && slot.currentItem.GetComponent<Item>().isStackable)
             {
-                Debug.Log("Slot is empty");
-                GameObject newItem = Instantiate(itemPrefab, slot.transform);
-                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                newItem.transform.localScale = new Vector3(1, 1, 1);
-                slot.currentItem = newItem;
+                slot.currentItem.GetComponent<Item>().itemQuantity++;
+                Debug.Log("New Quantity for " + slot.currentItem.GetComponent<Item>().itemName + " : " + slot.currentItem.GetComponent<Item>().itemQuantity);
                 return true;
             }
+
+            if(slot != null && slot.currentItem == null)
+            {
+                if(foundEmptySlot == false)
+                {
+                    itemSlot = slot;
+                    foundEmptySlot = true;
+                }
+            }
         }
+
+        if(foundEmptySlot == true && itemSlot != null)
+        {
+            Debug.Log("Slot is empty");
+            GameObject newItem = Instantiate(itemPrefab, itemSlot.transform);
+            newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            newItem.transform.localScale = new Vector3(1, 1, 1);
+            itemSlot.currentItem = newItem;
+            return true;
+        }
+        
         Debug.Log("Inventory is full");
 
         playerAttack.appendItem(itemPrefab);
@@ -118,8 +138,17 @@ public class HotbarController : MonoBehaviour
                     Debug.Log("Healing player for " + item.healthValue + " through an item");
                 }
 
-                Destroy(selectedSlot.currentItem);
-                selectedSlot.currentItem = null;
+                //Will decrement the amount of the item used if there are multiple
+                //Otherwise, it destroys the item in the hotbar
+                if(item.isStackable == true && item.itemQuantity > 1)
+                {
+                    item.itemQuantity--;
+                }
+                else
+                {
+                    Destroy(selectedSlot.currentItem);
+                    selectedSlot.currentItem = null;
+                }
 
                 if(item.useSound != null && audioSource != null)
                 {
