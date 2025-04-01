@@ -85,7 +85,7 @@ public class PlayerItem : MonoBehaviour
 
 			}
 
-			if (item is ProjectileWeapon)
+			if (item.throwable)
 				item.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection(), rb.linearVelocity);
 			else
 				item.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());

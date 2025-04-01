@@ -34,7 +34,7 @@ public class HotbarController : MonoBehaviour
                 item.transform.localScale = new Vector3(1, 1, 1);
                 item.gameObject.SetActive(true);
                 slot.currentItem = item;
-                playerAttack.appendItem(itemPrefabs[i]);
+                playerAttack.AppendItem(itemPrefabs[i]);
             }
         }
 
@@ -83,7 +83,7 @@ public class HotbarController : MonoBehaviour
         
         Debug.Log("Inventory is full");
 
-        playerAttack.appendItem(itemPrefab);
+        playerAttack.AppendItem(itemPrefab);
         return false;
     }
 
@@ -117,7 +117,7 @@ public class HotbarController : MonoBehaviour
         }
 
         Debug.Log("Selecting slot " + index);
-        playerAttack.switchWeaponAtIndex(index);
+        playerAttack.SwitchWeaponAtIndex(index);
     }
 
     public void UseItem(int currentIndex)
@@ -188,7 +188,7 @@ public class HotbarController : MonoBehaviour
         }
 
         if (selectedSlot.currentItem == null) {
-            playerAttack.removeItem(currentIndex);
+            playerAttack.RemoveItem(currentIndex);
         }
     }
 }

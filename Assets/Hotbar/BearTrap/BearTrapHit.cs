@@ -27,9 +27,6 @@ public class BearTrapHit : MonoBehaviour
             if(animator.GetBool("isClosed") == false)
             {
                 audioSource.PlayOneShot(snapShutSound);
-                Debug.Log("Col: " + collision);
-                Debug.Log("GO: " + collision.gameObject);
-                Debug.Log("TAG: " + collision.gameObject.tag);
             }
             
             if (collision.gameObject.CompareTag("Player") && animator.GetBool("isClosed") == false)
