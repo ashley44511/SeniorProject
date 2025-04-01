@@ -123,19 +123,20 @@ public class PlayerAttack : MonoBehaviour
 
 	}
 
-	public void AppendItem(GameObject prefab) {
-		Debug.Log(prefab);
+
+	public void AddItem(GameObject prefab) {
+		Debug.Log("Adding Item With Pos: " + prefab.transform.position);
 		GameObject item = Instantiate(prefab, player.transform.Find("HandPosition").transform.position + prefab.transform.position, prefab.transform.rotation, player.transform);
 		item.SetActive(false);
 
 		Item weapon = item.GetComponent<Item>();
 
 		int index = GetOpenIndex();
-		itemList[index] = weapon;
-	}
+		itemList[index] = weapon;	
+		}
 
 	public void RemoveItem(int index) {
-		if (index < itemList.Count && itemList[index]) {
+		if (index > 0 && index < itemList.Count && itemList[index]) {
 			GameObject item = itemList[index].gameObject;
 			item.SetActive(false);
 			itemList[index] = null;
@@ -145,6 +146,11 @@ public class PlayerAttack : MonoBehaviour
 		
 	public void RemoveItem(GameObject prefab) {
 		int index = GetItemIndex(prefab);
+		RemoveItem(index);
+	}
+
+	public void RemoveItem(Item item) {
+		int index = GetItemIndex(item);
 		RemoveItem(index);
 	}
 
@@ -189,10 +195,7 @@ public class PlayerAttack : MonoBehaviour
 		canAttack = true;
 	}
 
-	private int GetItemIndex(GameObject prefab) {
-		GameObject tempItem = Instantiate(prefab);
-		tempItem.SetActive(false);
-		Item weapon = tempItem.GetComponent<Item>();
+	private int GetItemIndex(Item weapon) {
 
 		int index = -1;
 		
@@ -200,7 +203,6 @@ public class PlayerAttack : MonoBehaviour
 			return index;
 		}
 	
-
 		for (int i = 0; i < itemList.Count; i++) {
 			if (itemList[i] != null && itemList[i].itemName == weapon.itemName) {
 				index = i;
@@ -208,6 +210,16 @@ public class PlayerAttack : MonoBehaviour
 			}
 		}
 
+		return index;
+	}
+
+		private int GetItemIndex(GameObject prefab) {
+		GameObject tempItem = Instantiate(prefab);
+		tempItem.SetActive(false);
+		Item weapon = tempItem.GetComponent<Item>();
+
+		int index = GetItemIndex(weapon);
+		
 		Destroy(tempItem);
 
 		return index;

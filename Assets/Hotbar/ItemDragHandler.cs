@@ -114,7 +114,6 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             //Also have to check if it's a bear trap (since that's the only item we want to place now)
             if (!MouseOverInventory(eventData.position) && pauseMenu.getOpen() == false)
             {
-                playerAttack.RemoveItem(originalSlot.currentItem);
                 DropItem(originalSlot, eventData);
             }
             else
@@ -145,6 +144,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         //Only drop the item if it's the bear trap
         if(item.itemName == "BearTrap")
         {
+            playerAttack.RemoveItem(item);
             originalSlot.currentItem = null;
 
             if(item.placeInWorldSound != null)

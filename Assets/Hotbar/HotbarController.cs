@@ -34,7 +34,7 @@ public class HotbarController : MonoBehaviour
                 item.transform.localScale = new Vector3(1, 1, 1);
                 item.gameObject.SetActive(true);
                 slot.currentItem = item;
-                playerAttack.AppendItem(itemPrefabs[i]);
+                playerAttack.AddItem(itemPrefabs[i]);
             }
         }
 
@@ -74,6 +74,7 @@ public class HotbarController : MonoBehaviour
         if(foundEmptySlot == true && itemSlot != null)
         {
             Debug.Log("Slot is empty");
+            playerAttack.AddItem(itemPrefab);
             GameObject newItem = Instantiate(itemPrefab, itemSlot.transform);
             newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             newItem.transform.localScale = new Vector3(1, 1, 1);
@@ -83,7 +84,6 @@ public class HotbarController : MonoBehaviour
         
         Debug.Log("Inventory is full");
 
-        playerAttack.AppendItem(itemPrefab);
         return false;
     }
 
