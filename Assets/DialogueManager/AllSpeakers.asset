@@ -21,3 +21,11 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 6dc7d71cb3e5ed6459579e7bfdf4d657, type: 3}
   - name: Radio
     sprite: {fileID: 1875917246518206917, guid: 3d1ac3d6af8eafc4880c1f02f71279c4, type: 3}
+  - name: TheMother
+    sprite: {fileID: 0}
+  - name: TheFather
+    sprite: {fileID: 0}
+  - name: TheSister
+    sprite: {fileID: 0}
+  - name: Minimap
+    sprite: {fileID: 21300000, guid: 091e0b43e6520e7459253b0671c2456c, type: 3}
