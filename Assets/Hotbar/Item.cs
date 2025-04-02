@@ -41,6 +41,7 @@ public class Item : MonoBehaviour
     public AudioClip useSound;
     public AudioClip pickupSound;
 	public TMP_Text quantityText;
+	public bool throwable = false;
     //public int duration;
 
 	void Update()

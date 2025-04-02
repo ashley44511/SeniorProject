@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Used/NightOne.unity
     guid: db6137c1a98514940bcff85249ede808
+  - enabled: 1
+    path: Assets/Scenes/Game Used/DayTwoMorning.unity
+    guid: 1d541f4f2cabb4f99ac81b3b09c4f15a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

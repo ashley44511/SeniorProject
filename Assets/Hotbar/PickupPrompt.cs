@@ -9,6 +9,7 @@ public class PickupPrompt : MonoBehaviour
     private PauseMenu pauseMenu;
     private bool playerInItem = false;
     private AudioSource audioSource;
+    private PlayerAttack playerAttack;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class PickupPrompt : MonoBehaviour
         inventoryController = FindObjectOfType<HotbarController>();
         pauseMenu = FindObjectOfType<PauseMenu>();
         audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
+        playerAttack = inventoryController.gameObject.GetComponent<PlayerAttack>();
     }
 
     void Update()

@@ -9,6 +9,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     CanvasGroup canvasGroup;
     private PauseMenu pauseMenu;
     private AudioSource audioSource;
+    private PlayerAttack playerAttack;
+
 
     void Start()
     {
@@ -16,6 +18,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         pauseMenu = FindObjectOfType<PauseMenu>();
         originalParent = transform.parent;
         audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
+        playerAttack = GameObject.FindWithTag("Player").GetComponent<PlayerAttack>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -90,6 +93,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             if (dropSlot.currentItem != null)
             {
                 //Slot has an item so you want to swap items
+                playerAttack.MoveItem(dropSlot.currentItem, originalSlot.currentItem);
                 dropSlot.currentItem.transform.SetParent(originalSlot.transform);
                 originalSlot.currentItem = dropSlot.currentItem;
                 dropSlot.currentItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
@@ -140,6 +144,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         //Only drop the item if it's the bear trap
         if(item.itemName == "BearTrap")
         {
+            playerAttack.RemoveItem(item);
             originalSlot.currentItem = null;
 
             if(item.placeInWorldSound != null)
