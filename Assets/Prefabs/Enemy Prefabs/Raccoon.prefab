@@ -51,9 +51,13 @@ MonoBehaviour:
   alignmnent: 1
   itemType: 2
   healthValue: 10
+  isStackable: 0
+  itemQuantity: 1
   placeInWorldSound: {fileID: 0}
   useSound: {fileID: 0}
   pickupSound: {fileID: 0}
+  quantityText: {fileID: 0}
+  throwable: 0
   MeleeWeaponAnimator: {fileID: 0}
 --- !u!58 &6209886268979973243
 CircleCollider2D:
@@ -240,9 +244,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 1832771685271118710}
-  showChaseRadius: 0
+  showChaseRadius: 1
   showAttackRadius: 1
-  chaseRadius: 4
+  chaseRadius: 12
   attackRadius: 0.6
   coolDown: 2
 --- !u!61 &7845210521473814828
