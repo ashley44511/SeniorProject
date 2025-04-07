@@ -62,15 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -102,11 +102,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -184,6 +184,10 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6119728002841280630, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: MinDistance
+      value: 1.0689087
+      objectReference: {fileID: 0}
     - target: {fileID: 8646893251478047717, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -230,6 +234,7 @@ MonoBehaviour:
   useSound: {fileID: 0}
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
   quantityText: {fileID: 7155418156675221868}
+  throwable: 0
   MeleeWeaponAnimator: {fileID: 0}
 --- !u!68 &1770434789634757266
 EdgeCollider2D:
@@ -265,20 +270,20 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.5}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.7211587, y: 0.44228107}
-  - {x: 0.60079443, y: 0.7156349}
-  - {x: 0.36462912, y: 0.8184995}
-  - {x: 0.20618185, y: 0.79058605}
-  - {x: -0.2001495, y: 0.5030698}
-  - {x: -0.20210265, y: 0.21205424}
+  - {x: 0.4570596, y: 0.178182}
+  - {x: 0.40914404, y: 0.42559582}
+  - {x: 0.19897969, y: 0.52852166}
+  - {x: 0.009404495, y: 0.4695412}
+  - {x: -0.13801575, y: 0.3373595}
+  - {x: -0.20210265, y: 0.21205425}
   - {x: 0.0003713183, y: 0.072324395}
-  - {x: -0.7032419, y: -0.60532856}
-  - {x: -0.723587, y: -0.8022686}
-  - {x: -0.3974965, y: -0.83408827}
-  - {x: 0.7252116, y: 0.41151935}
+  - {x: -0.4547067, y: -0.3464175}
+  - {x: -0.4491729, y: -0.49159974}
+  - {x: -0.27322888, y: -0.5182314}
+  - {x: 0.4507976, y: 0.17848718}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

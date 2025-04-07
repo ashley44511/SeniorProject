@@ -259,20 +259,41 @@ public class PlayerMovement : MonoBehaviour
 		//Flip the sprite so that they are facing the correct way when moving
 		if (move > 0 && !SpriteFacingRight) //if moving to the right and the sprite is not facing the right.
 		{
-			//Flip();
+			Flip();
 		}
 		else if (move < 0 && SpriteFacingRight) //if moving to the left and the sprite is facing right
 		{
-			//Flip();
+			Flip();
 		}
 	}
 
 	private void Flip()
 	{
 		SpriteFacingRight = !SpriteFacingRight; //flip whether the sprite is facing right
-		Vector3 currentScale = transform.localScale;
-		currentScale.x *= -1;
-		transform.localScale = currentScale;
+		//Vector3 currentScale = transform.localScale;
+		//currentScale.x *= -1;
+		//transform.localScale = currentScale;
+		
+		
+		foreach (Transform child in transform) // 'transform' refers to the Player's transform
+		{
+			// Check if the child has a RectTransform (UI object)
+			RectTransform itemRect = child.GetComponent<RectTransform>();
+
+			if (itemRect != null)
+			{
+				Vector3 scale = itemRect.localScale;
+				Vector3 pos = itemRect.localPosition;
+
+				// Flip the item on the X-axis (left-right)
+				scale.y *= -1;
+				pos.x = pos.x < 0 ?  0 : -1f;
+
+				// Apply the flipped scale to each item
+				itemRect.localScale = scale;
+				itemRect.localPosition = pos;
+			}
+		}
 	}
 
 	public Vector2 GetLastLookDirection()
