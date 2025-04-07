@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
 	[Header("Movement")]
 	[Tooltip("If this is false, then this controller acts as a sidescroller. If it is true, it is a top down, make sure to make gravity 0 if this is true.")]
-	public bool TopDownMovement = false;
+	public bool TopDownMovement = true;
 	[Tooltip("This is whether or not the player can actually move")]
 	public bool disabled = false;
 	[Tooltip("The speed at which the player moves")]
@@ -31,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
 	[Header("Jump -Only matters in Side Scroller-")]
 	[Tooltip("Controls whether your player can jump or not.")]
-	public bool canJump = true;
+	public bool canJump = false;
 	[Tooltip("The force of your jump (Be sure to have your gravity set to 1 for side-scroller)")]
 	public float JumpForce = 10f;
 	[Tooltip("Number of jumps your player can do each time they touch the ground. (2 = Double jump)")]
@@ -76,6 +77,12 @@ public class PlayerMovement : MonoBehaviour
 		rend = GetComponent<SpriteRenderer>(); //Get Sprite Renderer Component
 		anim = GetComponent<Animator>(); //Get Animator Component
 		playerAudio = GetComponent<PlayerAudio>();
+
+		// Set IsNight based on scene name
+		string currentScene = SceneManager.GetActiveScene().name;
+		bool isNight = currentScene.Contains("Night");
+		Debug.Log("isNight" + isNight);
+		anim.SetBool("isNight", isNight);
 	}
 
 	public void DisablePlayer(bool isDisabled)
@@ -91,7 +98,8 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		// Debug.Log("(" + HorizontalMovement + ", " + VerticalMovement + ")");
+		//Debug.Log("Disabled: " + disabled); 
+		//Debug.Log("(" + HorizontalMovement + ", " + VerticalMovement + ")");
 		if (ShowDebugRaycast)
 			Debug.DrawRay(col.bounds.center, Vector2.down * rayLength, Color.red); //draws a ray showing ray length
 
@@ -177,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		//Debug.Log("Velocity: " + rb.velocity);
 		if (!disabled)
 		{
 			if (!TopDownMovement) //If the game isn't topdown
@@ -263,14 +272,38 @@ public class PlayerMovement : MonoBehaviour
 		{
 			Flip();
 		}
+		else if (move == 0 && !SpriteFacingRight) {
+			Flip();
+		}
 	}
 
 	private void Flip()
 	{
 		SpriteFacingRight = !SpriteFacingRight; //flip whether the sprite is facing right
-		Vector3 currentScale = transform.localScale;
-		currentScale.x *= -1;
-		transform.localScale = currentScale;
+		//Vector3 currentScale = transform.localScale;
+		//currentScale.x *= -1;
+		//transform.localScale = currentScale;
+		
+		
+		foreach (Transform child in transform) // 'transform' refers to the Player's transform
+		{
+			// Check if the child has a RectTransform (UI object)
+			RectTransform itemRect = child.GetComponent<RectTransform>();
+
+			if (itemRect != null)
+			{
+				Vector3 scale = itemRect.localScale;
+				Vector3 pos = itemRect.localPosition;
+
+				// Flip the item on the X-axis (left-right)
+				scale.y *= -1;
+				pos.x = pos.x < 0 ?  0 : -1f;
+
+				// Apply the flipped scale to each item
+				itemRect.localScale = scale;
+				itemRect.localPosition = pos;
+			}
+		}
 	}
 
 	public Vector2 GetLastLookDirection()
@@ -282,4 +315,21 @@ public class PlayerMovement : MonoBehaviour
 	{
 		anim.SetTrigger("isAttacking");
 	}
+	/*
+	 * If animation breaks when persistent player is created, try this
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
+
+	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		bool isNight = scene.name.Contains("Night");
+		anim.SetBool("isNight", isNight);
+	} */
 }

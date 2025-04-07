@@ -5,6 +5,7 @@ using UnityEditor.EditorTools;
 using UnityEditor.Rendering.Universal;
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -118,7 +119,13 @@ public class PlayerAttack : MonoBehaviour
 		{
 			//Switch weapon to index then activate
 			weapon = itemList[index];
-			weapon.gameObject.SetActive(true);
+
+			// Only set active if in a night scene
+			if (IsNightScene())
+			{
+				weapon.gameObject.SetActive(true);
+			}
+			//weapon.gameObject.SetActive(true);
 		}
 
 	}
@@ -236,5 +243,10 @@ public class PlayerAttack : MonoBehaviour
 		}
 
 		return index;
+	}
+	private bool IsNightScene()
+	{
+		string sceneName = SceneManager.GetActiveScene().name;
+		return sceneName.Contains("Night");
 	}
 }
