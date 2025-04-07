@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -76,6 +77,12 @@ public class PlayerMovement : MonoBehaviour
 		rend = GetComponent<SpriteRenderer>(); //Get Sprite Renderer Component
 		anim = GetComponent<Animator>(); //Get Animator Component
 		playerAudio = GetComponent<PlayerAudio>();
+
+		// Set IsNight based on scene name
+		string currentScene = SceneManager.GetActiveScene().name;
+		bool isNight = currentScene.Contains("Night");
+		Debug.Log("isNight" + isNight);
+		anim.SetBool("isNight", isNight);
 	}
 
 	public void DisablePlayer(bool isDisabled)
@@ -308,4 +315,21 @@ public class PlayerMovement : MonoBehaviour
 	{
 		anim.SetTrigger("isAttacking");
 	}
+	/*
+	 * If animation breaks when persistent player is created, try this
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
+
+	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		bool isNight = scene.name.Contains("Night");
+		anim.SetBool("isNight", isNight);
+	} */
 }
