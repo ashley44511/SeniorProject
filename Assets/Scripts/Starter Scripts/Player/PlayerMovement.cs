@@ -265,6 +265,9 @@ public class PlayerMovement : MonoBehaviour
 		{
 			Flip();
 		}
+		else if (move == 0 && !SpriteFacingRight) {
+			Flip();
+		}
 	}
 
 	private void Flip()
