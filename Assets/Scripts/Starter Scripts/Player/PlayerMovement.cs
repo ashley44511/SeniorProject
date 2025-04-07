@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
 	[Header("Movement")]
 	[Tooltip("If this is false, then this controller acts as a sidescroller. If it is true, it is a top down, make sure to make gravity 0 if this is true.")]
-	public bool TopDownMovement = false;
+	public bool TopDownMovement = true;
 	[Tooltip("This is whether or not the player can actually move")]
 	public bool disabled = false;
 	[Tooltip("The speed at which the player moves")]
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
 	[Header("Jump -Only matters in Side Scroller-")]
 	[Tooltip("Controls whether your player can jump or not.")]
-	public bool canJump = true;
+	public bool canJump = false;
 	[Tooltip("The force of your jump (Be sure to have your gravity set to 1 for side-scroller)")]
 	public float JumpForce = 10f;
 	[Tooltip("Number of jumps your player can do each time they touch the ground. (2 = Double jump)")]
@@ -91,7 +91,8 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		// Debug.Log("(" + HorizontalMovement + ", " + VerticalMovement + ")");
+		//Debug.Log("Disabled: " + disabled); 
+		//Debug.Log("(" + HorizontalMovement + ", " + VerticalMovement + ")");
 		if (ShowDebugRaycast)
 			Debug.DrawRay(col.bounds.center, Vector2.down * rayLength, Color.red); //draws a ray showing ray length
 
@@ -177,6 +178,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		//Debug.Log("Velocity: " + rb.velocity);
 		if (!disabled)
 		{
 			if (!TopDownMovement) //If the game isn't topdown
@@ -257,11 +259,11 @@ public class PlayerMovement : MonoBehaviour
 		//Flip the sprite so that they are facing the correct way when moving
 		if (move > 0 && !SpriteFacingRight) //if moving to the right and the sprite is not facing the right.
 		{
-			Flip();
+			//Flip();
 		}
 		else if (move < 0 && SpriteFacingRight) //if moving to the left and the sprite is facing right
 		{
-			Flip();
+			//Flip();
 		}
 	}
 

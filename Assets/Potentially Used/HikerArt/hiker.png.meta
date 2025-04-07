@@ -1,0 +1,1781 @@
+fileFormatVersion: 2
+guid: 0ca9cfc5d2af7ff428b5f5a784ce52c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5169808909807879955
+    second: hiker_0
+  - first:
+      213: -5272927520259816424
+    second: hiker_1
+  - first:
+      213: -8681365144911777629
+    second: hiker_2
+  - first:
+      213: -3142243819211622672
+    second: hiker_3
+  - first:
+      213: 383338142773783634
+    second: hiker_4
+  - first:
+      213: 5998729472998325935
+    second: hiker_5
+  - first:
+      213: -972730718143404075
+    second: hiker_6
+  - first:
+      213: 8648611879448659849
+    second: hiker_7
+  - first:
+      213: -1626551581302782519
+    second: hiker_8
+  - first:
+      213: -1439545654059415184
+    second: hiker_9
+  - first:
+      213: 1348707403737079411
+    second: hiker_10
+  - first:
+      213: 1339812618539629655
+    second: hiker_11
+  - first:
+      213: -5104132224056931157
+    second: hiker_12
+  - first:
+      213: -6361166668192143564
+    second: hiker_13
+  - first:
+      213: 4814796704852652150
+    second: hiker_14
+  - first:
+      213: 7189050684035435091
+    second: hiker_15
+  - first:
+      213: -4133200124896173159
+    second: hiker_16
+  - first:
+      213: 7614693654357424554
+    second: hiker_17
+  - first:
+      213: 3062687915052656810
+    second: hiker_18
+  - first:
+      213: -8882509788616304262
+    second: hiker_19
+  - first:
+      213: -5053688953483777375
+    second: hiker_20
+  - first:
+      213: -3404683119247060327
+    second: hiker_21
+  - first:
+      213: 7109138401787269879
+    second: hiker_22
+  - first:
+      213: -7261479014111443456
+    second: hiker_23
+  - first:
+      213: -5245819872596469442
+    second: hiker_24
+  - first:
+      213: -7869804981357833568
+    second: hiker_25
+  - first:
+      213: -5559840499125305411
+    second: hiker_26
+  - first:
+      213: 4982671501772746434
+    second: hiker_27
+  - first:
+      213: 5619900357464187790
+    second: hiker_28
+  - first:
+      213: 3188862697348900502
+    second: hiker_29
+  - first:
+      213: 6845820075462371582
+    second: hiker_30
+  - first:
+      213: 3910228653971155222
+    second: hiker_31
+  - first:
+      213: 3511494333941572122
+    second: hiker_32
+  - first:
+      213: 5757736675288454352
+    second: hiker_33
+  - first:
+      213: 2497570075787786749
+    second: hiker_34
+  - first:
+      213: -5408148314744291109
+    second: hiker_35
+  - first:
+      213: 9079793938447802798
+    second: hiker_36
+  - first:
+      213: 7620706745547806534
+    second: hiker_37
+  - first:
+      213: -1953808879524700864
+    second: hiker_38
+  - first:
+      213: 7357848618329041357
+    second: hiker_39
+  - first:
+      213: 8488894390509261425
+    second: hiker_40
+  - first:
+      213: 2132160130411913078
+    second: hiker_41
+  - first:
+      213: -6434686014025271931
+    second: hiker_42
+  - first:
+      213: 6243162945986948556
+    second: hiker_43
+  - first:
+      213: 3829587318357721240
+    second: hiker_44
+  - first:
+      213: -7946592277138249555
+    second: hiker_45
+  - first:
+      213: -3470887955781698578
+    second: hiker_46
+  - first:
+      213: 3116709950099476019
+    second: hiker_47
+  - first:
+      213: 1321454293494480626
+    second: hiker_48
+  - first:
+      213: 5260005374253992876
+    second: hiker_49
+  - first:
+      213: -968382994012928953
+    second: hiker_50
+  - first:
+      213: -132756483209286864
+    second: hiker_51
+  - first:
+      213: -2894585942681649089
+    second: hiker_52
+  - first:
+      213: -3662069394308705005
+    second: hiker_53
+  - first:
+      213: -4768043954714568793
+    second: hiker_54
+  - first:
+      213: -400014197619970537
+    second: hiker_55
+  - first:
+      213: -2088674374276760080
+    second: hiker_56
+  - first:
+      213: 1881170271137646029
+    second: hiker_57
+  - first:
+      213: -8625698341927796972
+    second: hiker_58
+  - first:
+      213: -5857209981970084767
+    second: hiker_59
+  - first:
+      213: -623416597533940530
+    second: hiker_60
+  - first:
+      213: 7344378402662199526
+    second: hiker_61
+  - first:
+      213: -5934848648838522475
+    second: hiker_62
+  - first:
+      213: 447026942047958029
+    second: hiker_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hiker_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de87046ff262148b0800000000000000
+      internalID: -5169808909807879955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81448848b5cc2d6b0800000000000000
+      internalID: -5272927520259816424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a073148568958780800000000000000
+      internalID: -8681365144911777629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6793e05e18464d0800000000000000
+      internalID: -3142243819211622672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ca3e48204e15500800000000000000
+      internalID: 383338142773783634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae3bbd4ca4cf3350800000000000000
+      internalID: 5998729472998325935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7a3fac09a2082f0800000000000000
+      internalID: -972730718143404075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987c2ca9eaa060870800000000000000
+      internalID: 8648611879448659849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5099364f35d69e0800000000000000
+      internalID: -1626551581302782519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079c4dbcad4b50ce0800000000000000
+      internalID: -1439545654059415184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 15
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e10b9ec3297b210800000000000000
+      internalID: 1348707403737079411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 15
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cf3a95a78f79210800000000000000
+      internalID: 1339812618539629655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_12
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 14
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac467af8ca7a29b0800000000000000
+      internalID: -5104132224056931157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 15
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4372a514e9898b7a0800000000000000
+      internalID: -6361166668192143564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 15
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670b67ad71891d240800000000000000
+      internalID: 4814796704852652150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 14
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a06360283a4c360800000000000000
+      internalID: 7189050684035435091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 15
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993a6f1926ce3a6c0800000000000000
+      internalID: -4133200124896173159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_17
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 15
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa93565c883dca960800000000000000
+      internalID: 7614693654357424554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_18
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa868929e6ad08a20800000000000000
+      internalID: 3062687915052656810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_19
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a795897a86cfab480800000000000000
+      internalID: -8882509788616304262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_20
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaa8422ca0bdd9b0800000000000000
+      internalID: -5053688953483777375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_21
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 15
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9929288edb220c0d0800000000000000
+      internalID: -3404683119247060327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_22
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 15
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f25e99e5bbb8a260800000000000000
+      internalID: 7109138401787269879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_23
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 15
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0060fe34f4b0a3b90800000000000000
+      internalID: -7261479014111443456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_24
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39d3329e9a1337b0800000000000000
+      internalID: -5245819872596469442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_25
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 15
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a21192c016d8c290800000000000000
+      internalID: -7869804981357833568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_26
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 15
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf3ec9f58a77d2b0800000000000000
+      internalID: -5559840499125305411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_27
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce60afd451062540800000000000000
+      internalID: 4982671501772746434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_28
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 15
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e836ebf7995edfd40800000000000000
+      internalID: 5619900357464187790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 15
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696a9f85abd114c20800000000000000
+      internalID: 3188862697348900502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_30
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 15
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef82c22861d310f50800000000000000
+      internalID: 6845820075462371582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_31
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 15
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61921865e3ce34630800000000000000
+      internalID: 3910228653971155222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_32
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a126265fd755bb030800000000000000
+      internalID: 3511494333941572122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_33
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 14
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d49ec8100797ef40800000000000000
+      internalID: 5757736675288454352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_34
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 15
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9f9f050c629a220800000000000000
+      internalID: 2497570075787786749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_35
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd00a07e2c562f4b0800000000000000
+      internalID: -5408148314744291109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_36
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea12deeea78e10e70800000000000000
+      internalID: 9079793938447802798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_37
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 15
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647dcc9a86032c960800000000000000
+      internalID: 7620706745547806534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_38
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 15
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d1de00d2da2e4e0800000000000000
+      internalID: -1953808879524700864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_39
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 15
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9e996b5545c1660800000000000000
+      internalID: 7357848618329041357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_40
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1725c1ad87c9ec570800000000000000
+      internalID: 8488894390509261425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_41
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 14
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fd3798754f69d10800000000000000
+      internalID: 2132160130411913078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_42
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 15
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58579d4a92763b6a0800000000000000
+      internalID: -6434686014025271931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_43
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccdee662f9b24a650800000000000000
+      internalID: 6243162945986948556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_44
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8908d03406d652530800000000000000
+      internalID: 3829587318357721240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_45
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 15
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8ef424d6808b190800000000000000
+      internalID: -7946592277138249555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_46
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb33743bcde4dfc0800000000000000
+      internalID: -3470887955781698578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_47
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 15
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33eca93cf27c04b20800000000000000
+      internalID: 3116709950099476019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_48
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe37a6bdafb65210800000000000000
+      internalID: 1321454293494480626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_49
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 14
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab0e09e40b4ff840800000000000000
+      internalID: 5260005374253992876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_50
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 15
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74484533ccc9f82f0800000000000000
+      internalID: -968382994012928953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_51
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b2ea09eaa582ef0800000000000000
+      internalID: -132756483209286864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_52
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f300f9adb6d54d7d0800000000000000
+      internalID: -2894585942681649089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_53
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 15
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3155661d947bd2dc0800000000000000
+      internalID: -3662069394308705005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_54
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 15
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a71acd094184ddb0800000000000000
+      internalID: -4768043954714568793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_55
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 15
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71eafb5e43dd27af0800000000000000
+      internalID: -400014197619970537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_56
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdb5cd09b98303e0800000000000000
+      internalID: -2088674374276760080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_57
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 14
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc54f2d05624b1a10800000000000000
+      internalID: 1881170271137646029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_58
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 15
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fb7b51f0d5b4880800000000000000
+      internalID: -8625698341927796972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_59
+      rect:
+        serializedVersion: 2
+        x: 2846
+        y: 15
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c0dc1ed8207bea0800000000000000
+      internalID: -5857209981970084767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_60
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec428e458ed2957f0800000000000000
+      internalID: -623416597533940530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_61
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 15
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e03bbabe397ce560800000000000000
+      internalID: 7344378402662199526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_62
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 15
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599d54a199e23ada0800000000000000
+      internalID: -5934848648838522475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiker_63
+      rect:
+        serializedVersion: 2
+        x: 3038
+        y: 15
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d043cc5a2a8243600800000000000000
+      internalID: 447026942047958029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hiker_0: -5169808909807879955
+      hiker_1: -5272927520259816424
+      hiker_10: 1348707403737079411
+      hiker_11: 1339812618539629655
+      hiker_12: -5104132224056931157
+      hiker_13: -6361166668192143564
+      hiker_14: 4814796704852652150
+      hiker_15: 7189050684035435091
+      hiker_16: -4133200124896173159
+      hiker_17: 7614693654357424554
+      hiker_18: 3062687915052656810
+      hiker_19: -8882509788616304262
+      hiker_2: -8681365144911777629
+      hiker_20: -5053688953483777375
+      hiker_21: -3404683119247060327
+      hiker_22: 7109138401787269879
+      hiker_23: -7261479014111443456
+      hiker_24: -5245819872596469442
+      hiker_25: -7869804981357833568
+      hiker_26: -5559840499125305411
+      hiker_27: 4982671501772746434
+      hiker_28: 5619900357464187790
+      hiker_29: 3188862697348900502
+      hiker_3: -3142243819211622672
+      hiker_30: 6845820075462371582
+      hiker_31: 3910228653971155222
+      hiker_32: 3511494333941572122
+      hiker_33: 5757736675288454352
+      hiker_34: 2497570075787786749
+      hiker_35: -5408148314744291109
+      hiker_36: 9079793938447802798
+      hiker_37: 7620706745547806534
+      hiker_38: -1953808879524700864
+      hiker_39: 7357848618329041357
+      hiker_4: 383338142773783634
+      hiker_40: 8488894390509261425
+      hiker_41: 2132160130411913078
+      hiker_42: -6434686014025271931
+      hiker_43: 6243162945986948556
+      hiker_44: 3829587318357721240
+      hiker_45: -7946592277138249555
+      hiker_46: -3470887955781698578
+      hiker_47: 3116709950099476019
+      hiker_48: 1321454293494480626
+      hiker_49: 5260005374253992876
+      hiker_5: 5998729472998325935
+      hiker_50: -968382994012928953
+      hiker_51: -132756483209286864
+      hiker_52: -2894585942681649089
+      hiker_53: -3662069394308705005
+      hiker_54: -4768043954714568793
+      hiker_55: -400014197619970537
+      hiker_56: -2088674374276760080
+      hiker_57: 1881170271137646029
+      hiker_58: -8625698341927796972
+      hiker_59: -5857209981970084767
+      hiker_6: -972730718143404075
+      hiker_60: -623416597533940530
+      hiker_61: 7344378402662199526
+      hiker_62: -5934848648838522475
+      hiker_63: 447026942047958029
+      hiker_7: 8648611879448659849
+      hiker_8: -1626551581302782519
+      hiker_9: -1439545654059415184
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
