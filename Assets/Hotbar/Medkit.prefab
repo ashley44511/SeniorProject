@@ -264,6 +264,10 @@ PrefabInstance:
       value: MedKit_Green
       objectReference: {fileID: 0}
     - target: {fileID: 1048492398095058285, guid: 2aabcefd8d6a03e4c8057e686d3f529b, type: 3}
+      propertyPath: useSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e387db350bf92f44b12d8d6a83b2b7e, type: 3}
+    - target: {fileID: 1048492398095058285, guid: 2aabcefd8d6a03e4c8057e686d3f529b, type: 3}
       propertyPath: healAmount
       value: 50
       objectReference: {fileID: 0}

@@ -144,6 +144,10 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         //Only drop the item if it's the bear trap
         if(item.itemName == "BearTrap")
         {
+            //This means the bear trap is being placed in the world, so it needs to have the isPlaced variable toggled
+            item.transform.Find("SnapShut").GetComponent<BearTrapHit>().isPlaced = true;
+            //item.GetComponent<Animator>().SetBool("isPlaced", true);
+
             playerAttack.RemoveItem(item);
             originalSlot.currentItem = null;
 
