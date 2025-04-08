@@ -1,5 +1,63 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2969011203070913940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585755431040487117}
+  - component: {fileID: 4013096705599951082}
+  m_Layer: 0
+  m_Name: DeerHands
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1585755431040487117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969011203070913940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0347, y: -0.0847, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4216537463607342940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4013096705599951082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969011203070913940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267d34f7874044637a6869cb14d91d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  itemName: DeerHands
+  imageScale: 2.5
+  alignmnent: 1
+  itemType: 2
+  healthValue: 10
+  isStackable: 0
+  itemQuantity: 1
+  placeInWorldSound: {fileID: 0}
+  useSound: {fileID: 0}
+  pickupSound: {fileID: 0}
+  quantityText: {fileID: 0}
+  throwable: 0
+  MeleeWeaponAnimator: {fileID: 0}
 --- !u!1 &4888400604659145720
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,6 +72,7 @@ GameObject:
   - component: {fileID: 7121400676056588361}
   - component: {fileID: 1959259687000826977}
   - component: {fileID: 4798837431622324997}
+  - component: {fileID: 5552818103684970697}
   m_Layer: 0
   m_Name: Deer
   m_TagString: Enemy
@@ -33,7 +92,8 @@ Transform:
   m_LocalPosition: {x: 1.4, y: 0, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1585755431040487117}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6912683683867526577
@@ -82,7 +142,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 692292873, guid: 2815e65d24c4e0e49a4f22ca90a4840b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.15, y: 0.17}
@@ -132,6 +192,7 @@ MonoBehaviour:
   Dimensions: {x: 0, y: 0}
   HealthBar: {fileID: 0}
   canvasRectTransform: {fileID: 0}
+  respawnEnemy: 0
   enemyPrefab: {fileID: 4888400604659145720}
 --- !u!50 &1959259687000826977
 Rigidbody2D:
@@ -145,8 +206,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 20
+  m_LinearDamping: 10
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -206,3 +267,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.14029649, y: 0.1679207}
   m_EdgeRadius: 0
+--- !u!114 &5552818103684970697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4888400604659145720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c804db124c9430b94d46bbfd11afd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 4013096705599951082}
+  showChaseRadius: 1
+  showAttackRadius: 1
+  chaseRadius: 5
+  attackRadius: 0.5
+  coolDown: 0.5
