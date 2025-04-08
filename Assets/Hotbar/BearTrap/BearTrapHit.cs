@@ -6,6 +6,7 @@ public class BearTrapHit : MonoBehaviour
     Animator animator;
     GameObject healthBar;
     public GameObject parentTrap;
+    public bool isPlaced = false;
     public AudioClip snapShutSound;
     private AudioSource audioSource;
     private GameObject playerHealth;
@@ -17,12 +18,24 @@ public class BearTrapHit : MonoBehaviour
         animator = parentTrap.GetComponent<Animator>();
         playerHealth = GameObject.FindWithTag("PlayerHealthBar");
         audioSource = GetComponent<AudioSource>();
+
+/*      if(item.itemName == "BearTrap")
+        {
+            animator.enabled = false;
+        } */
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(item.itemType == ItemType.Trap)
+        if(isPlaced == false)
+        {
+            return;
+        }
+
+        //animator.enabled = true;
+        
+        if(item.itemType == ItemType.Trap && isPlaced == true)
         {
             if(animator.GetBool("isClosed") == false)
             {

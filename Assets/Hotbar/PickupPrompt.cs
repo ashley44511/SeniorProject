@@ -35,6 +35,12 @@ public class PickupPrompt : MonoBehaviour
 
                     if (itemAdded)
                     {
+                        //Have to toggle the bear trap is placed characteristic
+                        if(item.itemName == "BearTrap")
+                        {
+                            gameObject.transform.Find("SnapShut").GetComponent<BearTrapHit>().isPlaced = false;
+                        }
+
                         Destroy(gameObject);
 
                         playerInItem = false;
