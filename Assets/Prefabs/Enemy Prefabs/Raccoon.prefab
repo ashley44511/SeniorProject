@@ -50,7 +50,7 @@ MonoBehaviour:
   imageScale: 2.5
   alignmnent: 1
   itemType: 2
-  healthValue: 10
+  healthValue: 5
   isStackable: 0
   itemQuantity: 1
   placeInWorldSound: {fileID: 0}
