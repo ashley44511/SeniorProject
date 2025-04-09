@@ -1,0 +1,1 @@
+[NAME=Trail Sign][SPEAKERSPRITE=TrailSign] Mt. Cepheus Campground Trail. Elevation: 9,871 ft.
