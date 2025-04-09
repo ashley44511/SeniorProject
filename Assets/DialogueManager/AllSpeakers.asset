@@ -29,3 +29,17 @@ MonoBehaviour:
     sprite: {fileID: 0}
   - name: Minimap
     sprite: {fileID: 21300000, guid: 091e0b43e6520e7459253b0671c2456c, type: 3}
+  - name: TrailSign
+    sprite: {fileID: 21300000, guid: 12df7e6c5f343a54796760d5fdb29813, type: 3}
+  - name: FallenTree
+    sprite: {fileID: 5146164003569955726, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
+  - name: Grill
+    sprite: {fileID: -9105311577910050992, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
+  - name: BearBox
+    sprite: {fileID: 6643286095326534985, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
+  - name: MissingPoster
+    sprite: {fileID: -269579799134914800, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
+  - name: Gate
+    sprite: {fileID: -1894520275012512598, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
+  - name: CampfireRing
+    sprite: {fileID: 21300000, guid: bbdf6d99f49d02c44ac412355fb0488d, type: 3}
