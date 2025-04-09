@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerLibrary:
   - name: TheHiker
-    sprite: {fileID: 21300000, guid: b37242b453403194bbc8a6cfa6066f7f, type: 3}
+    sprite: {fileID: 21300000, guid: 4723adbdfaea8bf4c8ca68a83cc73b2d, type: 2}
   - name: Note
     sprite: {fileID: 21300000, guid: 6af73d226ad59a149bb4106a665f120e, type: 3}
   - name: BloodNote
@@ -43,3 +43,5 @@ MonoBehaviour:
     sprite: {fileID: -1894520275012512598, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
   - name: CampfireRing
     sprite: {fileID: 21300000, guid: bbdf6d99f49d02c44ac412355fb0488d, type: 3}
+  - name: ActionFigure
+    sprite: {fileID: -4854262738203611533, guid: acb8ab321f2b60d479ce9fe67a2eb127, type: 3}
