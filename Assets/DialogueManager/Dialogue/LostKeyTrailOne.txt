@@ -1,0 +1,2 @@
+[NAME=Lost Keys][SPEAKERSPRITE=LostKeys]A myseterious set of keys.
+[NAME=Nate][SPEAKERSPRITE=TheHiker]I wonder who these belong to. Could they be related to the missing kid?

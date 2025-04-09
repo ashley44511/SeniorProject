@@ -1,0 +1,1 @@
+[NAME=Hiker 1][SPEAKERSPRITE=Hiker1]Wait! Are those your keys?

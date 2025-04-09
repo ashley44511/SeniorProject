@@ -1,0 +1,3 @@
+[NAME=Shoe][SPEAKERSPRITE=Shoe]A small shoe with the laces missing.
+[NAME=Nate][SPEAKERSPRITE=TheHiker]This looks new enough to be the missing kid's shoe.
+[NAME=Nate][SPEAKERSPRITE=TheHiker]He couldn't have gone far without it.
