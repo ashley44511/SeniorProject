@@ -1,0 +1,2 @@
+[NAME=Action Figure][SPEAKERSPRITE=ActionFigure] A well-loved action figure. It is missing an arm and the paint is slightly chipped.
+[NAME=Nate][SPEAKERSPRITE=TheHiker] The kid might've dropped this. I think I'm on the right track.
