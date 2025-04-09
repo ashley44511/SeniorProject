@@ -1,1 +1,0 @@
-[NAME=Trail Sign][SPEAKERSPRITE=TrailSign] Battlebrook Forest Trailhead. Elevation: 9,871 ft.
