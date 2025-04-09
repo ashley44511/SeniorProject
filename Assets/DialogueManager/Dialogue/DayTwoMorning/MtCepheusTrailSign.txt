@@ -1,0 +1,1 @@
+[NAME=Trail Sign][SPEAKERSPRITE=TrailSign] Mt. Cepheus Peak Trailhead. Elevation: 9,871 ft.

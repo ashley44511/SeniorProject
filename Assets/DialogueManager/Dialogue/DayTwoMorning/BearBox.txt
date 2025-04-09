@@ -1,0 +1,3 @@
+[NAME=Keys][SPEAKERSPRITE=BearBox] A bear-resistant storage container.
+[NAME=Nate][SPEAKERSPRITE=TheHiker] I should store my food in here for the night.
+[NAME=Nate][SPEAKERSPRITE=TheHiker] I don't want to attract any animals, especially bears.
