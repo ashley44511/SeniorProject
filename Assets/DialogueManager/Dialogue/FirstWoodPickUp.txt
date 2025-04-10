@@ -1,0 +1,2 @@
+[NAME=Wood][SPEAKERSPRITE=Wood]A piece of wood.
+[Name=Nate][SPEAKERSPRITE=TheHiker]If I don't find the kid today, I can use this to build a fire tonight.

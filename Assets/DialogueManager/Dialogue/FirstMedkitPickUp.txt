@@ -1,0 +1,2 @@
+[NAME=Old Medkit][SPEAKERSPRITE=OldMedkit]An old medkit.
+[Name=Nate][SPEAKERSPRITE=TheHiker]It's been out here so long, who knows if it will help me or not.

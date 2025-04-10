@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentTrap: {fileID: 6279734211649887789}
+  isPlaced: 0
   snapShutSound: {fileID: 8300000, guid: 5529c8b6f75f0444a962290db2b9b177, type: 3}
 --- !u!82 &3431287415230655701
 AudioSource:
@@ -312,6 +313,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: useSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: healAmount
       value: 0
       objectReference: {fileID: 0}
@@ -349,11 +354,11 @@ PrefabInstance:
       objectReference: {fileID: 2435301500484193355, guid: 8ed1652d6d9a2e94c8726562777bbe43, type: 3}
     - target: {fileID: 5622861690836028989, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5622861690836028989, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1521137845
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8646893251478047717, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Sprite

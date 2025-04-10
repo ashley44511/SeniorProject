@@ -145,6 +145,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6906046469158927170, guid: 72b450155995ac54d88661b4db0f2d5d, type: 3}
+      propertyPath: useSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906046469158927170, guid: 72b450155995ac54d88661b4db0f2d5d, type: 3}
       propertyPath: imageScale
       value: 2.5
       objectReference: {fileID: 0}

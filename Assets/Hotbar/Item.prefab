@@ -129,9 +129,10 @@ MonoBehaviour:
   isStackable: 0
   itemQuantity: 1
   placeInWorldSound: {fileID: 0}
-  useSound: {fileID: 0}
+  useSound: {fileID: 8300000, guid: 4e387db350bf92f44b12d8d6a83b2b7e, type: 3}
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
   quantityText: {fileID: 5460015648049197810}
+  throwable: 0
 --- !u!212 &5622861690836028989
 SpriteRenderer:
   m_ObjectHideFlags: 0
