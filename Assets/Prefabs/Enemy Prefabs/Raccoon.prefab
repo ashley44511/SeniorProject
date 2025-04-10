@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHealthBar: 0
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 50
+  currentHealth: 50
   padding: 2
   Dimensions: {x: 0, y: 0}
   HealthBar: {fileID: 0}
@@ -248,7 +248,7 @@ MonoBehaviour:
   showAttackRadius: 1
   chaseRadius: 12
   attackRadius: 0.6
-  coolDown: 2
+  coolDown: 1
 --- !u!61 &7845210521473814828
 BoxCollider2D:
   m_ObjectHideFlags: 0

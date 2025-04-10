@@ -35,6 +35,7 @@ public class MeleeWeaponItem : Item
 
 	public override void WeaponFinished()
 	{
-		col.enabled = false;
+		if (col)
+			col.enabled = false;
 	}
 }
