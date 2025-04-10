@@ -239,6 +239,7 @@ MonoBehaviour:
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
   quantityText: {fileID: 7155418156675221868}
   throwable: 0
+  positionInHand: {x: 0, y: 0.2, z: 0}
   MeleeWeaponAnimator: {fileID: 0}
 --- !u!68 &1770434789634757266
 EdgeCollider2D:

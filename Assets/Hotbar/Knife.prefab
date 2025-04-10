@@ -86,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -114,7 +114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5622861690836028989, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_FlipY
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5622861690836028989, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Sprite
@@ -167,4 +167,5 @@ MonoBehaviour:
   pickupSound: {fileID: 0}
   quantityText: {fileID: 0}
   throwable: 0
+  positionInHand: {x: 0.5, y: 0.15, z: 0}
   MeleeWeaponAnimator: {fileID: 0}

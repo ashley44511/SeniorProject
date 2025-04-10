@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class PickupPrompt : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class PickupPrompt : MonoBehaviour
             {
                 InteractImage.gameObject.SetActive(false);
                 Item item = GetComponent<Item>();
+                item.transform.position = item.positionInHand;
 
                 if (item != null && gameObject != null)
                 {

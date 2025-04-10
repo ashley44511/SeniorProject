@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Numerics;
 
 //I used this source for using Text Mesh Pro: https://learn.unity.com/tutorial/working-with-textmesh-pro#5f86410eedbc2a00249a4928
 public enum ItemType
@@ -32,8 +33,8 @@ public class Item : MonoBehaviour
 	public int healthValue = 0;
 	public bool isStackable = false;
 	public int itemQuantity = 1;
-	public virtual void WeaponStart(Transform wielderPosition, Vector2 lastLookDirection) { }
-	public virtual void WeaponStart(Transform wielderPosition, Vector2 lastLookDirection, Vector2 currentVelocity) { }
+	public virtual void WeaponStart(Transform wielderPosition, UnityEngine.Vector2 lastLookDirection) { }
+	public virtual void WeaponStart(Transform wielderPosition, UnityEngine.Vector2 lastLookDirection, UnityEngine.Vector2 currentVelocity) { }
 
 	public virtual void WeaponFinished() { }
 
@@ -42,6 +43,8 @@ public class Item : MonoBehaviour
     public AudioClip pickupSound;
 	public TMP_Text quantityText;
 	public bool throwable = false;
+
+	public UnityEngine.Vector3 positionInHand;
     //public int duration;
 
 	void Update()
