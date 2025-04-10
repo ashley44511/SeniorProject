@@ -101,6 +101,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             else
             {
                 //Drop slot is empty
+                playerAttack.MoveItem(originalSlot.currentItem, dropSlot.inventoryIndex);
                 originalSlot.currentItem = null;
             }
 

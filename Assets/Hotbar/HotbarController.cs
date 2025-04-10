@@ -25,6 +25,7 @@ public class HotbarController : MonoBehaviour
         for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
+            slot.inventoryIndex = i;
 
             if (i < itemPrefabs.Length)
             {

@@ -168,7 +168,7 @@ public class PlayerAttack : MonoBehaviour
 
     	(itemList[index], itemList[moveTo]) = (itemList[moveTo], itemList[index]);
 		
-		if (weapon != null && weapon.itemName == itemList[index].itemName) {
+		if (weapon != null && itemList[index] != null && weapon.itemName == itemList[index].itemName) {
 			weapon = itemList[moveTo];
 			itemList[index].gameObject.SetActive(false);
 
