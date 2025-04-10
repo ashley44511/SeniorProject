@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHealthBar: 0
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 75
+  currentHealth: 75
   padding: 2
   Dimensions: {x: 0, y: 0}
   HealthBar: {fileID: 0}
@@ -208,7 +208,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 20
   m_LinearDamping: 10
-  m_AngularDamping: 0.05
+  m_AngularDamping: 10
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -284,4 +284,4 @@ MonoBehaviour:
   showAttackRadius: 1
   chaseRadius: 5
   attackRadius: 0.5
-  coolDown: 0.5
+  coolDown: 2

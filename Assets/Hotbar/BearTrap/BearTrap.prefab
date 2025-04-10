@@ -324,10 +324,6 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
-      propertyPath: healthValue
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: damageAmoumt
       value: 25
       objectReference: {fileID: 0}
@@ -341,6 +337,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4422779299212629130, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622861690836028989, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5622861690836028989, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
