@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1861996080628509050, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -168,4 +168,5 @@ MonoBehaviour:
   quantityText: {fileID: 0}
   throwable: 0
   positionInHand: {x: 0.5, y: 0.15, z: 0}
+  rotationInHand: {x: 0, y: 0, z: 0, w: 0}
   MeleeWeaponAnimator: {fileID: 0}

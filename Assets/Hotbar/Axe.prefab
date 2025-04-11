@@ -240,6 +240,7 @@ MonoBehaviour:
   quantityText: {fileID: 7155418156675221868}
   throwable: 0
   positionInHand: {x: 0, y: 0.2, z: 0}
+  rotationInHand: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   MeleeWeaponAnimator: {fileID: 0}
 --- !u!68 &1770434789634757266
 EdgeCollider2D:

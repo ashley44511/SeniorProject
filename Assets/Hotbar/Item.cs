@@ -45,6 +45,7 @@ public class Item : MonoBehaviour
 	public bool throwable = false;
 
 	public UnityEngine.Vector3 positionInHand;
+	public UnityEngine.Quaternion rotationInHand;
     //public int duration;
 
 	void Update()

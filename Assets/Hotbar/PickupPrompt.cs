@@ -30,6 +30,7 @@ public class PickupPrompt : MonoBehaviour
                 InteractImage.gameObject.SetActive(false);
                 Item item = GetComponent<Item>();
                 item.transform.position = item.positionInHand;
+                item.transform.rotation = item.rotationInHand;
 
                 if (item != null && gameObject != null)
                 {
