@@ -296,7 +296,7 @@ public class PlayerMovement : MonoBehaviour
 				Vector3 pos = itemRect.localPosition;
 
 				// Flip the item on the X-axis (left-right)
-				scale.y *= -1;
+				scale.x *= -1;
 				pos.x = pos.x < 0 ?  0 : -1f;
 
 				// Apply the flipped scale to each item
