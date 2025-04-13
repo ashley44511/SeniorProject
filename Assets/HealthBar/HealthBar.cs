@@ -70,20 +70,29 @@ public class HealthBar : MonoBehaviour
         fill.color = gradient.Evaluate(healthBar.normalizedValue);
     }
 
-    public void TakeDamageOverTime(int damage, float time)
+    public IEnumerator TakeDamageOverTime(int damage, float time)
     {
-        StartCoroutine(DamageOverTime(damage, time));
+        yield return StartCoroutine(DamageOverTime(damage, time));
     }
-    
-    private IEnumerator DamageOverTime(int damage, float duration)
+
+    public IEnumerator DamageOverTime(int damage, float duration)
     {
         float damagePerSecond = damage / duration;
         float damageInterval = 0.1f;
         float elapsed = 0f;
+        float damageAccumulator = 0f;
 
         while (elapsed < duration)
         {
-            TakeDamage(Mathf.CeilToInt(damagePerSecond * damageInterval));
+            damageAccumulator += damagePerSecond * damageInterval;
+
+            int wholeDamage = Mathf.FloorToInt(damageAccumulator);
+            if (wholeDamage >= 1)
+            {
+                TakeDamage(wholeDamage);
+                damageAccumulator -= wholeDamage;
+            }
+
             elapsed += damageInterval;
             yield return new WaitForSeconds(damageInterval);
         }
