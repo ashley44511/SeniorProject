@@ -1,4 +1,4 @@
 [NAME=Hiker 1][SPEAKERSPRITE=Hiker1] Hey! I keep seeing you around. Did you drop your keys again?
-[Name=Nate][SPEAKERSPRITE=TheHiker]Again? Hold on, let me check.
-[Name=Instructions][SPEAKERSPRITE=Instructions]Press Escape to open the Pause Menu. Click Quit Game to go back to the Main Menu.
-[Name=Instructions][SPEAKERSPRITE=Instructions]Click Tutorial to view the game controls. Press Resume to return to the game.
+[NAME=Nate][SPEAKERSPRITE=TheHiker]Again? Hold on, let me check.
+[NAME=Instructions][SPEAKERSPRITE=Instructions]Press Escape to open the Pause Menu. Click Quit Game to go back to the Main Menu.
+[NAME=Instructions][SPEAKERSPRITE=Instructions]Click Tutorial to view the game controls. Press Resume to return to the game.

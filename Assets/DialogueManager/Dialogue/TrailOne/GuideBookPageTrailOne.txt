@@ -1,0 +1,4 @@
+[NAME=Guidebook Page][SPEAKERSPRITE=GuidebookPage]Many mammals call Constellation National park home, including deer, raccoons, and bears.
+[NAME=Guidebook Page][SPEAKERSPRITE=GuidebookPage]The park also boasts a wide range of invertebrates, from enchanting fireflies to pesky mosquitoes.
+[NAME=Guidebook Page][SPEAKERSPRITE=GuidebookPage]If you see any wildlife, remember to stay calm. Fire is a good deterrent to keep them away at night.
+[NAME=Nate][SPEAKERSPRITE=TheHiker]That seems like useful advice I should keep in mind.

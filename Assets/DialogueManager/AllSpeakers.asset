@@ -43,3 +43,5 @@ MonoBehaviour:
     sprite: {fileID: -1894520275012512598, guid: 19cb3422a04c3a743a644efdcd02ebf6, type: 3}
   - name: CampfireRing
     sprite: {fileID: 21300000, guid: bbdf6d99f49d02c44ac412355fb0488d, type: 3}
+  - name: Wood
+    sprite: {fileID: -8907015550746980148, guid: 96e0f687f11e6d34fa05ac9bb0017ac7, type: 3}
