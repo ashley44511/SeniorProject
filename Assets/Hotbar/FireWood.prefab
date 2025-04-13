@@ -161,6 +161,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906046469158927170, guid: 72b450155995ac54d88661b4db0f2d5d, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b76adb8b83c9ed84687141819757cdf4, type: 3}
+    - target: {fileID: 6906046469158927170, guid: 72b450155995ac54d88661b4db0f2d5d, type: 3}
       propertyPath: damageAmoumt
       value: 0
       objectReference: {fileID: 0}

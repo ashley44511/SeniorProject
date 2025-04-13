@@ -20,10 +20,15 @@ public class InteractDialogueTrigger : MonoBehaviour
     bool inArea = false;
     bool triggered = false;
 
+    public bool pickupItem = false;
+    public GameObject itemPickupPrefab;
+    private HotbarController itemHotbar;
+    private bool itemAdded = false;
     void Start()
     {
         InteractImage.gameObject.SetActive(false);
         manager = FindObjectOfType<DialogueManager>();
+        itemHotbar = GameObject.FindGameObjectWithTag("GameController").GetComponent<HotbarController>();
     }
 
     void Update()
@@ -41,15 +46,26 @@ public class InteractDialogueTrigger : MonoBehaviour
             nextTime = Time.timeSinceLevelLoad + waitTime;
             manager.AdvanceDialogue();
         }
-
-            //If the queue is empty, the dialogue has finished
+     
+        //If the queue is empty, the dialogue has finished
         if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
         {
-            manager.EndDialogue();
+            //manager.EndDialogue();
 
             if (deleteWhenFinished)
             {
                 Destroy(gameObject);
+            }
+
+            //Checks if there is an item that has to be picked up
+            if(pickupItem)
+            {
+                //Will add the item to the inventory if it's added to the script
+                if(itemPickupPrefab != null && !itemAdded)
+                {
+                    itemAdded = true;
+                    itemHotbar.AddItem(itemPickupPrefab);
+                }
             }
         }
     }
@@ -125,10 +141,10 @@ public class InteractDialogueTrigger : MonoBehaviour
             InteractImage.gameObject.SetActive(false);
             playerInTrigger = false;
             
-            if(triggered)
+/*              if(triggered)
             {
                 manager.EndDialogue();
-            }
+            }  */
 
 /*             if(singleUseDialogue && deleteWhenFinished && triggered)
             {
