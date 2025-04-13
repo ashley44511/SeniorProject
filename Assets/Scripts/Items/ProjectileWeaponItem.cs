@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,11 +27,22 @@ public class ProjectileWeaponItem : Item
 
 	public override void WeaponStart(Transform wielderPosition, Vector2 lastLookDirection, Vector2 currentVelocity)
 	{
-		base.WeaponStart(wielderPosition, lastLookDirection);
+		Debug.Log("Shoot!");
+		bool shootingRight = mousePosition.x - ProjectileSpawn.position.x > 0;
+		bool shootingUp = mousePosition.y - ProjectileSpawn.position.y > 0;
 
-		GameObject bullet = Instantiate(Projectile, ProjectileSpawn.position, Quaternion.identity);
+		base.WeaponStart(wielderPosition, lastLookDirection);
+		Vector3 offset = new Vector3(0, 0);
+		Quaternion flip = new Quaternion(0, 0, -1, 0);
+		GameObject bullet = Instantiate(Projectile, ProjectileSpawn.position + offset, Quaternion.identity * flip);
 		bullet.GetComponent<ProjectileItem>().SetValues(Duration, alignmnent, healthValue);
 		Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>(); ;
+
+		
+
+		Vector2 lookDir = mousePosition - rb.position;
+		float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+		rb.rotation = angle;
 
 		if (!Gravity)
 			rb.gravityScale = 0;
