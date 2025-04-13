@@ -149,7 +149,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 8ffd5915cb06f334b8b2c21e4fc4e519, type: 3}
   m_Resource: {fileID: 8300000, guid: 8ffd5915cb06f334b8b2c21e4fc4e519, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -982,6 +982,8 @@ MonoBehaviour:
   singleUseDialogue: 1
   deleteWhenFinished: 0
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!1 &154530601
 GameObject:
   m_ObjectHideFlags: 0
@@ -14695,37 +14697,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &543315712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 543315713}
-  m_Layer: 0
-  m_Name: TestDialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &543315713
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543315712}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.778, y: 0.233, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 585063648}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582764761
 GameObject:
   m_ObjectHideFlags: 0
@@ -15178,7 +15149,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8348234173856884287}
-  - {fileID: 543315713}
   - {fileID: 7390223871793147031}
   - {fileID: 7390223872481483196}
   - {fileID: 7390223870479026567}
@@ -17281,7 +17251,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 338c6e9f967ff50418cab2f3049d742c, type: 3}
   m_Resource: {fileID: 8300000, guid: 338c6e9f967ff50418cab2f3049d742c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -17845,6 +17815,8 @@ MonoBehaviour:
   singleUseDialogue: 1
   deleteWhenFinished: 0
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!61 &1059383861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65351,6 +65323,8 @@ MonoBehaviour:
   singleUseDialogue: 1
   deleteWhenFinished: 1
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!61 &3402169317740899196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65851,6 +65825,8 @@ MonoBehaviour:
   singleUseDialogue: 1
   deleteWhenFinished: 0
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!114 &7640326175340236282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65868,6 +65844,8 @@ MonoBehaviour:
   singleUseDialogue: 0
   deleteWhenFinished: 0
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!114 &7640326176293723585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65885,6 +65863,8 @@ MonoBehaviour:
   singleUseDialogue: 0
   deleteWhenFinished: 0
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!114 &7640326176686439498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65902,6 +65882,8 @@ MonoBehaviour:
   singleUseDialogue: 0
   deleteWhenFinished: 0
   hasBeenUsed: 0
+  pickupItem: 0
+  itemPickupPrefab: {fileID: 0}
 --- !u!4 &8348234173856884287
 Transform:
   m_ObjectHideFlags: 0

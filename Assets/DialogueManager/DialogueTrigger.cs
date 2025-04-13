@@ -20,12 +20,17 @@ public class DialogueTrigger : MonoBehaviour
     public bool hasBeenUsed = false;
     bool inArea = false;
 
+    public bool pickupItem = false;
+    public GameObject itemPickupPrefab;
+    private HotbarController itemHotbar;
+    private bool itemAdded = false;
 
     // public bool useCollision; // unused for now
 
     private void Start()
     {
         manager = FindObjectOfType<DialogueManager>();
+        itemHotbar = GameObject.FindGameObjectWithTag("GameController").GetComponent<HotbarController>();
     }
 
 
@@ -41,11 +46,23 @@ public class DialogueTrigger : MonoBehaviour
         //If the queue is empty, the dialogue has finished
         if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
         {
+            Debug.Log("Dialogue over for " + gameObject.name);
             //manager.EndDialogue();
 
             if (deleteWhenFinished)
             {
                 Destroy(gameObject);
+            }
+
+            //Checks if there is an item that has to be picked up
+            if(pickupItem)
+            {
+                //Will add the item to the inventory if it's added to the script
+                if(itemPickupPrefab != null && !itemAdded)
+                {
+                    itemAdded = true;
+                    itemHotbar.AddItem(itemPickupPrefab);
+                }
             }
         }
     }
