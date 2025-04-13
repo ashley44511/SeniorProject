@@ -1,2 +1,3 @@
 [NAME=Nate][SPEAKERSPRITE=TheHiker] Here's a place to build a fire.
 [NAME=Nate][SPEAKERSPRITE=TheHiker] Luckily there's plenty of wood in the forest. I'll be warm tonight.
+[NAME=Instructions][SPEAKERSPRITE=Radio] Press Z to begin the night.
