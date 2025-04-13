@@ -131,10 +131,14 @@ public class EnemyHealth : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+		Debug.Log("ENEMY HEALTH TRIGGERED1");
+		Debug.Log("Collided with: " + collision.gameObject.name);
 		if (collision.gameObject.TryGetComponent(out Item weapon))
 		{
+			Debug.Log("ENEMY HEALTH TRIGGERED2");
 			if ((weapon.alignmnent == Item.Alignment.Player || weapon.alignmnent == Item.Alignment.Environment) && weapon.itemType == ItemType.Weapon)
 			{
+				Debug.Log("ENEMY HEALTH TRIGGERED3");
 				DecreaseHealth(weapon.healthValue);
 
 				if (EnemyHealthBar)
