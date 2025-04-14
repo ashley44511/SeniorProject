@@ -1,0 +1,1 @@
+[NAME=Axe][SPEAKERSPRITE=Axe] An old axe, perhaps left by a ranger.
