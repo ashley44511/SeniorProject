@@ -26,6 +26,8 @@ public class DialogueTrigger : MonoBehaviour
     private bool itemAdded = false;
 
     // public bool useCollision; // unused for now
+    public string dialogueID; // Unique ID to track if this dialogue has been used
+    private bool dialogueFinished = false;
 
     private void Start()
     {
@@ -36,7 +38,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad && dialogue.Count > 0)
+        if (inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad && dialogue.Count > 0)
         {
             //Debug.Log("Advance");
             nextTime = Time.timeSinceLevelLoad + waitTime;
@@ -44,21 +46,27 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         //If the queue is empty, the dialogue has finished
-        if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
-        {
-            Debug.Log("Dialogue over for " + gameObject.name);
-            //manager.EndDialogue();
+        // If the dialogue is finished
 
+        if (dialogue.Count == 0 && !dialogueFinished)
+        {
+            dialogueFinished = true;
+            // Mark as used now
+            if (singleUseDialogue && !hasBeenUsed)
+            {
+                hasBeenUsed = true;
+                GameManager.Instance.triggeredDialogues.Add(dialogueID);
+            }
             if (deleteWhenFinished)
             {
                 Destroy(gameObject);
             }
 
             //Checks if there is an item that has to be picked up
-            if(pickupItem)
+            if (pickupItem)
             {
                 //Will add the item to the inventory if it's added to the script
-                if(itemPickupPrefab != null && !itemAdded)
+                if (itemPickupPrefab != null && !itemAdded)
                 {
                     itemAdded = true;
                     itemHotbar.AddItem(itemPickupPrefab);
@@ -70,8 +78,22 @@ public class DialogueTrigger : MonoBehaviour
     /* Called when you want to start dialogue */
     void TriggerDialogue()
     {
-        ReadTextFile(); // loads in the text file
-        manager.StartDialogue(dialogue); // Accesses Dialogue Manager and Starts Dialogue
+        //ReadTextFile(); // loads in the text file
+        //manager.StartDialogue(dialogue); // Accesses Dialogue Manager and Starts Dialogue
+
+        if (!GameManager.Instance.triggeredDialogues.Contains(dialogueID)) // Check if the dialogue was triggered before
+
+        {
+
+            ReadTextFile(); // loads in the text file
+
+            manager.StartDialogue(dialogue); // Accesses Dialogue Manager and Starts Dialogue
+
+            GameManager.Instance.triggeredDialogues.Add(dialogueID); // Mark as used
+
+            hasBeenUsed = true;
+
+        }
     }
 
     /* loads in your text file */
@@ -141,7 +163,8 @@ public class DialogueTrigger : MonoBehaviour
                 Destroy(gameObject);
             } */
         }
-        
+
         inArea = false;
     }
 }
+

@@ -984,6 +984,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!1 &154530601
 GameObject:
   m_ObjectHideFlags: 0
@@ -16091,6 +16092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RespawnPlace: {x: 0, y: 0, z: 0}
   Player: {fileID: 2051204883}
+  currentDay: 1
 --- !u!4 &720592678
 Transform:
   m_ObjectHideFlags: 0
@@ -17819,6 +17821,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!61 &1059383861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65481,7 +65484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2571182546955724837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65501,6 +65504,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!61 &3402169317740899196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66003,6 +66007,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!114 &7640326175340236282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66022,6 +66027,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!114 &7640326176293723585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66041,6 +66047,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!114 &7640326176686439498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66060,6 +66067,7 @@ MonoBehaviour:
   hasBeenUsed: 0
   pickupItem: 0
   itemPickupPrefab: {fileID: 0}
+  dialogueID: 
 --- !u!4 &8348234173856884287
 Transform:
   m_ObjectHideFlags: 0
