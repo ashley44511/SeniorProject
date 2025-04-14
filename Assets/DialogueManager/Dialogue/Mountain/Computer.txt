@@ -1,0 +1,2 @@
+[NAME=Website][SPEAKERSPRITE=Computer] Hide-A-Box locations near you
+[NAME=Website][SPEAKERSPRITE=Computer] On Mt. Cepheus Peak the trees are not as solid as they seem.
