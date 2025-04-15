@@ -45,7 +45,7 @@ public class EnemyAttack : MonoBehaviour
 		Collider2D[] attackColliders = Physics2D.OverlapCircleAll(transform.position, attackRadius);
 		foreach (Collider2D other in attackColliders)
 		{
-			shouldAttack = shouldAttack || canAttack && other.CompareTag("Player") && sceneRunning;
+			shouldAttack = (shouldAttack || canAttack && other.CompareTag("Player")) && sceneRunning;
 
 			if (shouldAttack)
 				Attack(other.transform.position - this.transform.position);
@@ -56,7 +56,7 @@ public class EnemyAttack : MonoBehaviour
 		Collider2D[] chaseColliders = Physics2D.OverlapCircleAll(transform.position, chaseRadius);
 		foreach (Collider2D other in chaseColliders)
 		{
-			shouldChase = shouldChase || other.CompareTag("Player") && sceneRunning;
+			shouldChase = (shouldChase || other.CompareTag("Player")) && sceneRunning;
 		}
 
 		anim.SetBool("isChasing", shouldChase && !shouldAttack);
@@ -66,19 +66,20 @@ public class EnemyAttack : MonoBehaviour
 	public void Attack(Vector2 attackDir)
 	{
 		isAttacking = true;
-		anim.SetBool("isAttacking", isAttacking);
 		//This is where the weapon is rotated in the right direction that you are facing
 		if (weapon && canAttack)
 		{
+			anim.SetBool("isAttacking", isAttacking);
 			Debug.Log("Attacking Player!");
 
 			if(healthBar != null)
 			{
 				healthBar.TakeDamage(weapon.healthValue);
 			}
-			// anim.SetBool("isAttacking", false);
+			canAttack = false;
 			StartCoroutine(CoolDown());
 		}
+		
 	}
 
 	public void StopAttack()
@@ -89,15 +90,15 @@ public class EnemyAttack : MonoBehaviour
 		}
 	}
 
-	private IEnumerator CoolDown()
+		private IEnumerator CoolDown()
 	{
-		canAttack = false;
 		// anim.SetBool("isChasing", false);
 		yield return new WaitForSeconds(coolDown);
-		isAttacking = false;
 		anim.SetBool("isAttacking", false);
+		yield return new WaitForSeconds(0.2f);
 		canAttack = true;
 	}
+
 
 	private void OnDrawGizmos()
 	{

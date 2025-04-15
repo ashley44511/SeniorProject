@@ -5,21 +5,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 
-public class Countdown : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
-    public Slider timerBar;
-    public Gradient gradient;
-    public Image fill;
-    public int totalTime;
-    private float timeLeft;
-    private bool timerActive = true;
     public Image sceneFadeImage;
 
     public Color fadeOutColor;
+    public Button gameOverButton;
     public float fadeOutDuration;
-    public string NextScene;
-    private PlayerMovement playerMovement;
+    public Camera mainCamera;
+    // public string currentScene;
 	private HealthBar healthBar;
+    private PlayerMovement playerMovement;
+    private bool playerAlive;
 
 
 
@@ -28,36 +25,19 @@ public class Countdown : MonoBehaviour
     {
         healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        timeLeft = totalTime;
-        fill.color = gradient.Evaluate(1f);
-        timerBar.maxValue = totalTime;
-        timerBar.value = totalTime;
+        playerAlive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timeLeft > 0) {
-            timeLeft -= Time.deltaTime;
-            timerBar.value = timeLeft;
-            // fill.color = gradient.Evaluate(timerBar.normalizedValue);
-        } else if (healthBar.currentHealth > 0 ) {
-            timerActive = false; 
-            timeLeft = 0;
+        playerAlive = healthBar.currentHealth > 0;
+        if (!playerAlive) {
             playerMovement.disabled = true;
-            healthBar.SetCurrentHealth(healthBar.maxHealth + 1); // jank but setting health bar to max
             StartCoroutine(FadeOut());
             StartCoroutine(waitForFadeOut());
         }
 
-    }
-
-    bool getTimerStatus() {
-        return timerActive;
-    }
-
-    float getTimeLeft() {
-        return timeLeft;
     }
 
     public IEnumerator FadeOut() {
@@ -80,9 +60,16 @@ public class Countdown : MonoBehaviour
     private IEnumerator waitForFadeOut()
 	{
 		yield return new WaitForSeconds(fadeOutDuration + 1);
-        healthBar.SetCurrentHealth(healthBar.maxHealth);
-        SceneManager.LoadScene(NextScene);
+        gameOverButton.gameObject.SetActive(true);
+        // gameOverButton.transform.position = mainCamera.transform.position;
 	}
+
+    public void ReloadScene()
+    {
+        healthBar.SetCurrentHealth(healthBar.maxHealth);
+        gameOverButton.gameObject.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
 
 
