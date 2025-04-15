@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -19,19 +20,21 @@ public class EnemyAttack : MonoBehaviour
 	public float coolDown = 0.5f;
 	private bool canAttack = true;
 	private bool isAttacking = false;
+	private bool sceneRunning = true;
 
 	private Animator anim;
 
-	private GameObject healthBar;
+	private HealthBar healthBar;
 
     private void Start()
     {
-		healthBar = GameObject.Find("PlayerHealthBar");
+		healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
     }
 
     private void Update()
 	{
 		anim = GetComponent<Animator>();
+		sceneRunning = healthBar.maxHealth >= healthBar.currentHealth && healthBar.currentHealth > 0;
 
 		if (anim.GetBool("isDead")) // Jane Apostol Fall '23
 		{
@@ -42,7 +45,7 @@ public class EnemyAttack : MonoBehaviour
 		Collider2D[] attackColliders = Physics2D.OverlapCircleAll(transform.position, attackRadius);
 		foreach (Collider2D other in attackColliders)
 		{
-			shouldAttack = shouldAttack || canAttack && other.CompareTag("Player");
+			shouldAttack = shouldAttack || canAttack && other.CompareTag("Player") && sceneRunning;
 
 			if (shouldAttack)
 				Attack(other.transform.position - this.transform.position);
@@ -53,7 +56,7 @@ public class EnemyAttack : MonoBehaviour
 		Collider2D[] chaseColliders = Physics2D.OverlapCircleAll(transform.position, chaseRadius);
 		foreach (Collider2D other in chaseColliders)
 		{
-			shouldChase = shouldChase || other.CompareTag("Player");
+			shouldChase = shouldChase || other.CompareTag("Player") && sceneRunning;
 		}
 
 		anim.SetBool("isChasing", shouldChase && !shouldAttack);
@@ -71,7 +74,7 @@ public class EnemyAttack : MonoBehaviour
 
 			if(healthBar != null)
 			{
-				healthBar.GetComponent<HealthBar>().TakeDamage(weapon.healthValue);
+				healthBar.TakeDamage(weapon.healthValue);
 			}
 			// anim.SetBool("isAttacking", false);
 			StartCoroutine(CoolDown());

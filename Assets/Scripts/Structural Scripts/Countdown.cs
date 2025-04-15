@@ -19,10 +19,14 @@ public class Countdown : MonoBehaviour
     public float fadeOutDuration;
     public string NextScene;
     private PlayerMovement playerMovement;
+	private HealthBar healthBar;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         timeLeft = totalTime;
         fill.color = gradient.Evaluate(1f);
@@ -41,6 +45,7 @@ public class Countdown : MonoBehaviour
             timerActive = false; 
             timeLeft = 0;
             playerMovement.disabled = true;
+            healthBar.SetCurrentHealth(healthBar.maxHealth + 1); // jank but setting health bar to max
             StartCoroutine(FadeOut());
             StartCoroutine(waitForFadeOut());
         }
@@ -75,6 +80,7 @@ public class Countdown : MonoBehaviour
     private IEnumerator waitForFadeOut()
 	{
 		yield return new WaitForSeconds(fadeOutDuration + 1);
+        healthBar.SetCurrentHealth(healthBar.maxHealth);
         SceneManager.LoadScene(NextScene);
 	}
 }
