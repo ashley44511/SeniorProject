@@ -66,8 +66,8 @@ public class GameOver : MonoBehaviour
 
     public void ReloadScene()
     {
-        healthBar.SetCurrentHealth(healthBar.maxHealth);
-        gameOverButton.gameObject.SetActive(false);
+        // healthBar.SetCurrentHealth(healthBar.maxHealth);
+        // gameOverButton.gameObject.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

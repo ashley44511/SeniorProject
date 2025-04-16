@@ -106,19 +106,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Size.x
-      value: 132.3544
+      value: 1.2412807
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Size.y
-      value: 103.30252
+      value: 1.2870572
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Offset.x
-      value: 65.8022
+      value: 0.11129111
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Offset.y
-      value: -7.4080715
+      value: 0.11394486
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -150,16 +150,12 @@ PrefabInstance:
       objectReference: {fileID: -1041754904, guid: 6eb16e372762d6b4cb708c44ebfab931, type: 3}
     m_RemovedComponents:
     - {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
-    - {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1369793862278778109, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6438805081592132331}
-    - targetCorrespondingSourceObject: {fileID: 1369793862278778109, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4134477385561453896}
   m_SourcePrefab: {fileID: 100100000, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
 --- !u!1 &7661420787873615555 stripped
 GameObject:
@@ -194,56 +190,3 @@ MonoBehaviour:
   positionInHand: {x: 0.5, y: 0.15, z: 0}
   rotationInHand: {x: 0, y: 0, z: 0, w: 0}
   MeleeWeaponAnimator: {fileID: 0}
---- !u!68 &4134477385561453896
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7661420787873615555}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.31246513, y: 0.5090332}
-  - {x: 0.38272315, y: 0.49798682}
-  - {x: 0.3846414, y: 0.1322118}
-  - {x: -0.021765552, y: -0.28239128}
-  - {x: -0.06928578, y: -0.470118}
-  - {x: -0.2128928, y: -0.4510227}
-  - {x: -0.5106572, y: -0.5220851}
-  - {x: -0.5069078, y: -0.2997427}
-  - {x: -0.38780212, y: -0.21795559}
-  - {x: -0.45040676, y: -0.059264176}
-  - {x: -0.26738846, y: -0.049149796}
-  - {x: 0.28332523, y: 0.5290876}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
