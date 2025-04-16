@@ -64,10 +64,14 @@ MonoBehaviour:
   - name: Axe
     sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
   - name: Hiker1PL
-    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    sprite: {fileID: 6890831391146868289, guid: 6decdb132779a6e458d6c6046384025a, type: 3}
   - name: Hiker2PL
-    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    sprite: {fileID: -5571886845520840082, guid: 7eea1fafc4ed977429996924c6017534, type: 3}
   - name: Hiker3PL
-    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    sprite: {fileID: 974468754583691213, guid: 0a1eaed4733431a46900106f91097a5e, type: 3}
   - name: Hiker4PL
-    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    sprite: {fileID: -6070757692919151411, guid: 272d7c643dd6f1547891376787fddeef, type: 3}
+  - name: Hiker5PL
+    sprite: {fileID: 6273934216430283319, guid: 60371e1dbe0514046b5be169f99b0a3c, type: 3}
+  - name: Hiker6PL
+    sprite: {fileID: -4241535821904928604, guid: e5b84760874a0fa4ea2cb487f6e6ea68, type: 3}
