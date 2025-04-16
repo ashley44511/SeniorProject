@@ -34518,6 +34518,7 @@ MonoBehaviour:
   fill: {fileID: 3914118343464154246}
   maxHealth: 100
   currentHealth: 100
+  damageCooldownTime: 1
   healthBarTransform: {fileID: 6826357970268260672}
 --- !u!224 &2454222130589605452
 RectTransform:
@@ -34732,7 +34733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7593368720268338669, guid: a6f0b06d493d24b87b31fd931e4432dc, type: 3}
       propertyPath: NextScene
-      value: DayTwoMorning
+      value: Camp2
       objectReference: {fileID: 0}
     - target: {fileID: 7593368720268338669, guid: a6f0b06d493d24b87b31fd931e4432dc, type: 3}
       propertyPath: totalTime
