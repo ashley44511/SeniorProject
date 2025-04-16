@@ -1,0 +1,6 @@
+[NAME=Lookout Brochure][SPEAKERSPRITE=Pamphlet] The Mt. Cepheus Lookout Point Ranger Station is the perfect place to stargaze. 
+[NAME=Lookout Brochure][SPEAKERSPRITE=Pamphlet] Take a look through the telescopes to see the mountains namesake constellation, Cepheus. 
+[NAME=Lookout Brochure][SPEAKERSPRITE=Pamphlet] He is located in the northern sky with his wife, Cassiopeia. 
+[NAME=Lookout Brochure][SPEAKERSPRITE=Pamphlet] Cepheus and Cassiopeia were the king and queen of Aethiopia in Greek mythology. 
+[NAME=Lookout Brochure][SPEAKERSPRITE=Pamphlet] Legend has it that when they died, they were placed in the sky. 
+[NAME=Lookout Brochure][SPEAKERSPRITE=Pamphlet] Perhaps, they still watch over us all.

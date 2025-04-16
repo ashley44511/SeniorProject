@@ -26,5 +26,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Used/DayTwoCampgroundTrail.unity
     guid: 4686308917eb6514282167e3d86f3518
+  - enabled: 1
+    path: Assets/Scenes/Game Used/NightThree.unity
+    guid: 4f15069da31374d6f947d73920d27929
+  - enabled: 1
+    path: Assets/Scenes/Game Used/NightTwo.unity
+    guid: 7fb6967876e5b4b18ac89968df1db62a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
