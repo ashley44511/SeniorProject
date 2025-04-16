@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Cover
   - WorldAudio
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
