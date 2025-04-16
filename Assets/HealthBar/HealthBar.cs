@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class HealthBar : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class HealthBar : MonoBehaviour
     public Image fill;
     public int maxHealth = 100;
     public int currentHealth = 100;
+    public float damageCooldownTime = 1f;
     public Transform healthBarTransform;
+    private bool canTakeDamage = true;
 
     // Start is called before the first frame update
     void Start()
@@ -64,10 +67,15 @@ public class HealthBar : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (canTakeDamage)
+        {
+        canTakeDamage = false;
         currentHealth -= damage;
         healthBar.value = currentHealth;
 
         fill.color = gradient.Evaluate(healthBar.normalizedValue);
+        StartCoroutine(CoolDown());
+        }
     }
 
     public IEnumerator TakeDamageOverTime(int damage, float time)
@@ -117,8 +125,10 @@ public class HealthBar : MonoBehaviour
         }
     }
 
-    public int GetHealth()
-    {
-        return currentHealth;
-    }
+
+	private IEnumerator CoolDown()
+	{
+		yield return new WaitForSeconds(damageCooldownTime);
+		canTakeDamage = true;
+	}
 }

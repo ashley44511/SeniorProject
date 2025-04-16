@@ -90,7 +90,7 @@ public class EnemyAttack : MonoBehaviour
 		}
 	}
 
-		private IEnumerator CoolDown()
+	private IEnumerator CoolDown()
 	{
 		// anim.SetBool("isChasing", false);
 		yield return new WaitForSeconds(0.2f);
