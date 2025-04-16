@@ -1,0 +1,4 @@
+[NAME=Trail Sign][SPEAKERSPRITE=TrailSign] Lookout Point
+[NAME=Nate][SPEAKERSPRITE=TheHiker] It is too bright during the day to see anything. 
+[NAME=Nate][SPEAKERSPRITE=TheHiker] The other rangers and I used to spend hours staring at the stars last summer. 
+[NAME=Nate][SPEAKERSPRITE=TheHiker] We should do that again soon.
