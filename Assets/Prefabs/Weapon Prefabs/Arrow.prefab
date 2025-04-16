@@ -426,7 +426,7 @@ MonoBehaviour:
   imageScale: 2.5
   alignmnent: 0
   itemType: 2
-  healthValue: 10
+  healthValue: 15
   isStackable: 1
   itemQuantity: 0
   placeInWorldSound: {fileID: 0}
