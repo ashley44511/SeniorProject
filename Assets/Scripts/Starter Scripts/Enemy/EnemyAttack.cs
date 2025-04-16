@@ -93,9 +93,9 @@ public class EnemyAttack : MonoBehaviour
 		private IEnumerator CoolDown()
 	{
 		// anim.SetBool("isChasing", false);
-		yield return new WaitForSeconds(coolDown);
-		anim.SetBool("isAttacking", false);
 		yield return new WaitForSeconds(0.2f);
+		anim.SetBool("isAttacking", false);
+		yield return new WaitForSeconds(coolDown);
 		canAttack = true;
 	}
 

@@ -12,7 +12,14 @@ public class EnemyChaseBehaviour : StateMachineBehaviour
 
     private bool turnedAround = false;
 
+    private float speedDiff;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+
+    void OnEnable()
+    {
+         speedDiff = Random.Range(0, 0.5f);
+    }
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         playerPos = GameObject.FindGameObjectWithTag("Player").transform; // load in the player's position
@@ -23,7 +30,7 @@ public class EnemyChaseBehaviour : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Transform enemyPos = animator.transform;
-        float step = speed * Time.deltaTime;
+        float step = (speed + speedDiff) * Time.deltaTime;
         
         if(useBlendTree)
         {

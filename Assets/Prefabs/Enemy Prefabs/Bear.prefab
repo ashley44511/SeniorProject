@@ -90,19 +90,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_Size.x
-      value: 0.17763114
+      value: 0.24385291
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_Size.y
-      value: 0.08725117
+      value: 0.1372854
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_Offset.x
-      value: -0.003815215
+      value: -0.0016078316
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_Offset.y
-      value: -0.010627426
+      value: -0.0032694563
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -122,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5552818103684970697, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: chaseRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5552818103684970697, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: attackRadius
