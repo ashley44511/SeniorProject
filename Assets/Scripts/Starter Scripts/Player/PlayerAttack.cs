@@ -30,7 +30,8 @@ public class PlayerAttack : MonoBehaviour
 	[Header("Audio")]
 	public PlayerAudio playerAudio;
 
-	private bool canAttack = true;
+	private bool canAttack;
+	private HealthBar healthBar;
 
 
 	private void Start()
@@ -39,6 +40,8 @@ public class PlayerAttack : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		playerMoveScript = GetComponent<PlayerMovement>();
 		playerAudio = GetComponent<PlayerAudio>();
+		healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
+		canAttack = true;
 
 		for (int i = 0; i < 10; i ++) {
 			itemList.Add(null);
@@ -63,7 +66,7 @@ public class PlayerAttack : MonoBehaviour
 			}
 		}
 
-		if (Input.GetKey(KeyCode.Mouse0) && weapon && weapon.itemType == ItemType.Weapon)
+		if (Input.GetKey(KeyCode.Mouse0) && weapon && weapon.itemType == ItemType.Weapon && healthBar.currentHealth > 0)
 		{
 			Attack();
 			if (playerAudio && !playerAudio.AttackSource.isPlaying && playerAudio.AttackSource.clip != null)
@@ -90,9 +93,9 @@ public class PlayerAttack : MonoBehaviour
 
 			}
 
-			if (weapon.throwable)
+			if (weapon.throwable && PlayerHasArrows())
 				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection(), rb.linearVelocity);
-			else
+			else if (!weapon.throwable)
 				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());
 
 			StartCoroutine(CoolDown());
@@ -248,5 +251,16 @@ public class PlayerAttack : MonoBehaviour
 	{
 		string sceneName = SceneManager.GetActiveScene().name;
 		return sceneName.Contains("Night");
+	}
+
+	private bool PlayerHasArrows()
+	{
+		for (int i = 0; i < itemList.Count; i++) {
+			if (itemList[i].name.ToLower() == "arrow") {
+				return true;
+			}
+		}
+
+		return false;
 	}
 }

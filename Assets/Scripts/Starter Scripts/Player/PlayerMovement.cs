@@ -179,6 +179,12 @@ public class PlayerMovement : MonoBehaviour
 				}
 			}
 
+		} else {
+			anim.SetBool("isMoving", false);
+			if (playerAudio && playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
+			{
+				playerAudio.WalkSource.Stop();
+			}
 		}
 
 	}

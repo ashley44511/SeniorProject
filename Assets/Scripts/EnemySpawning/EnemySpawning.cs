@@ -17,11 +17,12 @@ public class EnemySpawner : MonoBehaviour
     public Transform[] spawnPoints; //Array of spawn points (just empty game objects around the scene)
 
     private bool spawningWave;
-
+    private HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
-    {
+    {        
+        healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
         StartCoroutine(SpawnEnemyWave(enemiesInWave));
     }
 
@@ -30,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
     {
         enemyCount = FindObjectsByType<EnemySpawner>(FindObjectsSortMode.None).Length;
 
-        if (!spawningWave && waveNumber <= numberOfWaves)
+        if (!spawningWave && waveNumber <= numberOfWaves && healthBar.currentHealth > 0)
         {
             waveNumber++;
             StartCoroutine(SpawnEnemyWave(enemiesInWave));
@@ -43,7 +44,7 @@ public class EnemySpawner : MonoBehaviour
         spawningWave = true;
         yield return new WaitForSeconds(timeBetweenWaves); //Wait to pause between wave spawning
 
-        for (int i = 0; i < enemiesToSpawn; i++)
+        for (int i = 0; i < enemiesToSpawn && healthBar.currentHealth > 0; i++)
         {
             GameObject randomEnemy = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
             int spawnChoice = Random.Range(0, spawnPoints.Length);

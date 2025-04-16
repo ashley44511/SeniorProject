@@ -13,7 +13,7 @@ public class HotbarController : MonoBehaviour
     public GameObject[] itemPrefabs;
     public Color defaultBackgroundColor;
     public Color selectedBackgroundColor;
-    private GameObject healthBar;
+    private HealthBar healthBar;
     private AudioSource audioSource;
     private PlayerAttack playerAttack;
 
@@ -40,7 +40,7 @@ public class HotbarController : MonoBehaviour
         }
 
         SelectSlot(0);
-        healthBar = GameObject.Find("PlayerHealthBar");
+        healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
         audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
     }
 
@@ -125,7 +125,7 @@ public class HotbarController : MonoBehaviour
     {
         Slot selectedSlot = inventoryPanel.transform.GetChild(currentIndex).GetComponent<Slot>();
         
-        if(selectedSlot != null && selectedSlot.currentItem != null)
+        if(selectedSlot != null && selectedSlot.currentItem != null && healthBar.currentHealth > 0)
         {
             Item item = selectedSlot.currentItem.GetComponent<Item>();
 
@@ -135,7 +135,7 @@ public class HotbarController : MonoBehaviour
 
                 if(healthBar != null)
                 {
-                    healthBar.GetComponent<HealthBar>().Heal(item.healthValue);
+                    healthBar.Heal(item.healthValue);
                     Debug.Log("Healing player for " + item.healthValue + " through an item");
                 }
 

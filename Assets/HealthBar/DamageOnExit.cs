@@ -57,7 +57,7 @@ public class DamageOnExit : MonoBehaviour
 
     private System.Collections.IEnumerator RepeatedExitTrigger()
     {
-        while (!playerInside && playerHealth != null)
+        while (!playerInside && playerHealth != null && playerHealth.currentHealth > 0)
         {
             Debug.Log("Damage on Exit: Player outside light radius for 1s; take dmg");
 
