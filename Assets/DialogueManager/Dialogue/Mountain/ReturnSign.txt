@@ -1,0 +1,2 @@
+[NAME=Trail Sign][SPEAKERSPRITE=TrailSign] Mt. Cepheus Lookout Point Ranger Station. Elevation: 12,900 ft.
+[NAME=Trail Sign][SPEAKERSPRITE=TrailSign] Press E to return to campsite.
