@@ -1,0 +1,2 @@
+[NAME=Note][SPEAKERSPRITE=GuidebookPage] The stars are always watching. 
+[NAME=Note][SPEAKERSPRITE=GuidebookPage] King Cepheus said that if I caught two of you then he would let me go.

@@ -1,0 +1,4 @@
+[NAME=Scorched Locket][SPEAKERSPRITE=Locket] A silver locket with a bent hinge. 
+[NAME=Scorched Locket][SPEAKERSPRITE=Locket] It is blackened at the edges, like it was thrown in a fire at one point.
+[NAME=Nate][SPEAKERSPRITE=TheHiker] Where did this come from?
+[NAME=Nate][SPEAKERSPRITE=TheHiker] It seems like whatever was inside was burned to ash.
