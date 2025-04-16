@@ -1,0 +1,3 @@
+[NAME=Poster][SPEAKERSPRITE=MissingPoster] Missing: Leah Brooks, age 12.
+[NAME=Poster][SPEAKERSPRITE=MissingPoster] Last seen on Mt. Cepheus Campground Trail wearing a green sweater,
+[NAME=Poster][SPEAKERSPRITE=MissingPoster] brown pants, white sneakers, and a necklace with a silver locket.

@@ -1,0 +1,13 @@
+[NAME=Nate][SPEAKERSPRITE=TheHiker] Finn? Is that you? I am going to get you out of here, buddy.
+[NAME=Finn][SPEAKERSPRITE=LostChild] I am here! Help, please! Before she comes back!
+[NAME=Nate][SPEAKERSPRITE=Radio] I have found Finn. He appears unharmed. 
+[NAME=Nate][SPEAKERSPRITE=Radio] Please send backup immediately to Battlebrook Forest Trail
+[NAME=Nate][SPEAKERSPRITE=Radio] to search for a suspect and notify his family.
+[NAME=Radio][SPEAKERSPRITE=Radio] *static*
+[NAME=Nate][SPEAKERSPRITE=TheHiker] Ugh, there is no signal in here. Please, please work.
+[NAME=Nate][SPEAKERSPRITE=Radio] Hello? Can anybody hear me?
+[NAME=Radio][SPEAKERSPRITE=Radio] *static*
+[NAME=Nate][SPEAKERSPRITE=TheHiker] Alright, I guess it is just me, then. 
+[NAME=Nate][SPEAKERSPRITE=TheHiker] Finn, we are going to get out of here.
+[NAME=Bear][SPEAKERSPRITE=Bear] A bear growls from within the cave.
+[NAME=Nate][SPEAKERSPRITE=TheHiker] Run!
