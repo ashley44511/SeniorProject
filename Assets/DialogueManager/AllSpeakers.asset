@@ -63,11 +63,11 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 6d96334dff3336946913ba85a97a1ed6, type: 3}
   - name: Axe
     sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
-  - name: Locket
-    sprite: {fileID: 5545280868161484710, guid: 67852ed7f907a2243b20bfde69bfe5de, type: 3}
-  - name: Pamphlet
-    sprite: {fileID: 698386239014411160, guid: f2931f5f166247a41ba5e84e650aa416, type: 3}
-  - name: LostChild
-    sprite: {fileID: 3516836272569761788, guid: 7cf60695dc5eaab44bbb66e7b18fa71b, type: 3}
-  - name: Bear
-    sprite: {fileID: -1820154042793284617, guid: 576c0c6a10a714d60952e7a760f4e091, type: 3}
+  - name: Hiker1PL
+    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+  - name: Hiker2PL
+    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+  - name: Hiker3PL
+    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+  - name: Hiker4PL
+    sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}

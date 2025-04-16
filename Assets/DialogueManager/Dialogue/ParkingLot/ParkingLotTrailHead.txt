@@ -1,0 +1,1 @@
+[NAME=Trail Sign][SPEAKERSPRITE=Minimap]Mt. Cepheus Campground Trailhead. Elevation: 9,612 ft.
