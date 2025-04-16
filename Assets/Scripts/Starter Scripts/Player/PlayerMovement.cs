@@ -338,4 +338,29 @@ public class PlayerMovement : MonoBehaviour
 		bool isNight = scene.name.Contains("Night");
 		anim.SetBool("isNight", isNight);
 	} */
+
+	//https://discussions.unity.com/t/how-to-use-scenemanager-onsceneloaded/624895/6
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
+
+	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
+		if(spawnPoint != null)
+		{
+			transform.position = spawnPoint.transform.position;	
+		}
+		else
+		{
+			Debug.Log("No spawn point found");
+		}
+		
+	}
 }
