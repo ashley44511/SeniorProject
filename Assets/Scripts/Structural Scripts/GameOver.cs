@@ -17,6 +17,8 @@ public class GameOver : MonoBehaviour
 	private HealthBar healthBar;
     private PlayerMovement playerMovement;
     private bool playerAlive;
+	private List<Item> initalItemList;
+    private GameObject initialInventoryPanel;
 
 
 
@@ -24,6 +26,8 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
+        initalItemList = GameObject.Find("Player").GetComponent<PlayerAttack>().itemList;
+        initialInventoryPanel = GameObject.Find("GameManagers").GetComponent<HotbarController>().inventoryPanel;
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         playerAlive = true;
     }
@@ -66,8 +70,9 @@ public class GameOver : MonoBehaviour
 
     public void ReloadScene()
     {
-        // healthBar.SetCurrentHealth(healthBar.maxHealth);
-        // gameOverButton.gameObject.SetActive(false);
+        healthBar.SetCurrentHealth(healthBar.maxHealth);
+        GameObject.Find("Player").GetComponent<PlayerAttack>().itemList = initalItemList;
+        GameObject.Find("GameManagers").GetComponent<HotbarController>().inventoryPanel = initialInventoryPanel;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

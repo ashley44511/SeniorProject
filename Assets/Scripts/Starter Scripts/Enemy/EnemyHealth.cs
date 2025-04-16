@@ -136,7 +136,7 @@ public class EnemyHealth : MonoBehaviour
 		if (collision.gameObject.TryGetComponent(out Item weapon))
 		{
 			Debug.Log("ENEMY HEALTH TRIGGERED2");
-			if ((weapon.alignmnent == Item.Alignment.Player || weapon.alignmnent == Item.Alignment.Environment) && weapon.itemType == ItemType.Weapon)
+			if ((weapon.alignmnent == Item.Alignment.Player || weapon.alignmnent == Item.Alignment.Environment) && weapon.itemType == ItemType.Weapon && weapon is not ProjectileWeaponItem)
 			{
 				Debug.Log("ENEMY HEALTH TRIGGERED3");
 				DecreaseHealth(weapon.healthValue);

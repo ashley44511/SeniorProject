@@ -93,8 +93,8 @@ public class PlayerAttack : MonoBehaviour
 
 			}
 
-			if (weapon.throwable && PlayerHasArrows())
-				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection(), rb.linearVelocity);
+			if (weapon.throwable && (PlayerHasArrows() >= 0))
+				FireArrow();
 			else if (!weapon.throwable)
 				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());
 
@@ -253,14 +253,34 @@ public class PlayerAttack : MonoBehaviour
 		return sceneName.Contains("Night");
 	}
 
-	private bool PlayerHasArrows()
+	private int PlayerHasArrows()
 	{
 		for (int i = 0; i < itemList.Count; i++) {
-			if (itemList[i].name.ToLower() == "arrow") {
-				return true;
+			if (itemList[i] != null && itemList[i].name == "Arrow") {
+				return i;
 			}
 		}
 
-		return false;
+		return -1;
+	}
+
+	private bool FireArrow() 
+	{
+		int arrowIndex = PlayerHasArrows();
+
+		if (arrowIndex == -1) 
+			return false;
+
+		Debug.Log("Firing Arrow");
+
+		weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection(), rb.linearVelocity);
+		
+		itemList[arrowIndex].itemQuantity -= 1;
+		if (itemList[arrowIndex].itemQuantity == 0) 
+		{
+			itemList[arrowIndex] = null;
+		}
+
+		return true;
 	}
 }
