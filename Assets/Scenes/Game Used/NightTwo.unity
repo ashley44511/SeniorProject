@@ -33606,8 +33606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 8761667831346363255, guid: bc2facd85551545369f485b7de37d7ac, type: 3}
+  - {fileID: 4888400604659145720, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
   numberOfWaves: 5
-  timeBetweenEnemySpawn: 2
+  timeBetweenEnemySpawn: 1.5
   timeBetweenWaves: 3
   spawnPoints:
   - {fileID: 214172100}
@@ -34732,11 +34733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7593368720268338669, guid: a6f0b06d493d24b87b31fd931e4432dc, type: 3}
       propertyPath: NextScene
-      value: DayTwoMorning
+      value: MountainTrail
       objectReference: {fileID: 0}
     - target: {fileID: 7593368720268338669, guid: a6f0b06d493d24b87b31fd931e4432dc, type: 3}
       propertyPath: totalTime
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
