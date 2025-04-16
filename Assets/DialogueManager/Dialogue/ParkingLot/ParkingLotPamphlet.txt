@@ -1,0 +1,3 @@
+[NAME=Pamphlet][SPEAKERSPRITE=Pamphlet]Constellation National Park boasts one of the darkest skies in the nation.
+[NAME=Pamphlet][SPEAKERSPRITE=Pamphlet]Located deep in the wilderness, there is very little light pollution from streetlights, houses, or signs.
+[NAME=Pamphlet][SPEAKERSPRITE=Pamphlet]Telescopes are located at the Visitor Center and the Mt Cepheus Lookout Point Ranger Station.
