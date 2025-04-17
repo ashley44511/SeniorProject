@@ -20,6 +20,7 @@ public class Countdown : MonoBehaviour
     public string NextScene;
     private PlayerMovement playerMovement;
 	private HealthBar healthBar;
+    private int finalHealth = -1;
 
 
 
@@ -37,7 +38,9 @@ public class Countdown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeLeft > 0) {
+        if (timeLeft > 0 && timerActive) {
+            timerBar.gameObject.SetActive(true);
+            fill.gameObject.SetActive(true);
             timeLeft -= Time.deltaTime;
             timerBar.value = timeLeft;
             // fill.color = gradient.Evaluate(timerBar.normalizedValue);
@@ -45,9 +48,18 @@ public class Countdown : MonoBehaviour
             timerActive = false; 
             timeLeft = 0;
             playerMovement.disabled = true;
+            if (finalHealth == -1) {
+                finalHealth = healthBar.currentHealth;
+            }
             healthBar.SetCurrentHealth(healthBar.maxHealth + 1); // jank but setting health bar to max
             StartCoroutine(FadeOut());
             StartCoroutine(waitForFadeOut());
+        }
+        
+        if (healthBar.currentHealth <= 0) {
+            timerActive = false;
+            timerBar.gameObject.SetActive(false);
+            fill.gameObject.SetActive(false);
         }
 
     }
@@ -80,7 +92,8 @@ public class Countdown : MonoBehaviour
     private IEnumerator waitForFadeOut()
 	{
 		yield return new WaitForSeconds(fadeOutDuration + 1);
-        healthBar.SetCurrentHealth(healthBar.maxHealth);
+        healthBar.SetCurrentHealth(finalHealth);
+        playerMovement.disabled = false;
         SceneManager.LoadScene(NextScene);
 	}
 }

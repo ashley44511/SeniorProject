@@ -3,7 +3,7 @@ using UnityEngine;
 public class FireEPrompt : MonoBehaviour
 {
     public GameObject InteractImage;
-    public GameObject InventoryPanel;
+    private GameObject InventoryPanel;
     private GameObject gameManager;
     private GameObject fire;
     private PauseMenu pauseMenu;
@@ -18,6 +18,8 @@ public class FireEPrompt : MonoBehaviour
         fire = GameObject.Find("Fire");
         pauseMenu = FindObjectOfType<PauseMenu>();
         audioSource = GameObject.FindWithTag("WorldAudio").GetComponent<AudioSource>();
+        InventoryPanel = GameObject.Find("GameManagers").GetComponent<HotbarController>().inventoryPanel;
+
     }
 
     // Update is called once per frame

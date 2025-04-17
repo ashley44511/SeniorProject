@@ -36,16 +36,16 @@ public class PlayerAttack : MonoBehaviour
 
 	private void Start()
 	{
+		while (itemList.Count < 10) {
+			itemList.Add(null);
+		}
+
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		playerMoveScript = GetComponent<PlayerMovement>();
 		playerAudio = GetComponent<PlayerAudio>();
 		healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
 		canAttack = true;
-
-		for (int i = 0; i < 10; i ++) {
-			itemList.Add(null);
-		}
 	}
 
 	// Update is called once per frame
@@ -117,6 +117,7 @@ public class PlayerAttack : MonoBehaviour
 			weapon.gameObject.SetActive(false);
 		}
 
+
 		//Makes sure that if the index exists, then a switch will occur
 		if (index < itemList.Count && itemList[index] != null)
 		{
@@ -126,23 +127,22 @@ public class PlayerAttack : MonoBehaviour
 			// Only set active if in a night scene
 			if (IsNightScene())
 			{
+				Debug.Log("Weapon at index " + index + " is activated");
 				weapon.gameObject.SetActive(true);
 			}
-			//weapon.gameObject.SetActive(true);
 		}
 
 	}
 
 
 	public void AddItem(GameObject prefab) {
-		Debug.Log("Adding Item With Pos: " + prefab.transform.position);
-		GameObject item = Instantiate(prefab, player.transform.Find("HandPosition").transform.position + prefab.transform.position, prefab.transform.rotation, player.transform);
-		item.SetActive(false);
-
-		Item weapon = item.GetComponent<Item>();
-
 		int index = GetOpenIndex();
 		if (index >= 0) {
+			GameObject item = Instantiate(prefab, player.transform.Find("HandPosition").transform.position + prefab.transform.position, prefab.transform.rotation, player.transform);
+			item.SetActive(false);
+
+			Item weapon = item.GetComponent<Item>();
+
 			itemList[index] = weapon;	
 		} else {
 			Debug.Log("COULDN'T FIND OPEN INVENTORY SLOT FOR ITEM " + weapon.name);
@@ -240,8 +240,11 @@ public class PlayerAttack : MonoBehaviour
 	}
 
 	private int GetOpenIndex() {
-		int index = -1;
+		while (itemList.Count < 10) {
+			itemList.Add(null);
+		}
 
+		int index = -1;
 		for (int i = 0; i < itemList.Count; i++) {
 			if (itemList[i] == null) {
 				index = i;
@@ -286,5 +289,12 @@ public class PlayerAttack : MonoBehaviour
 		}
 
 		return true;
+	}
+
+	private void ClearInventory() {
+		for (int i = 0; i < 10; i++) {
+			itemList[i] = null;
+			weapon = null;
+		}
 	}
 }

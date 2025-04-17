@@ -187,6 +187,6 @@ MonoBehaviour:
   pickupSound: {fileID: 0}
   quantityText: {fileID: 0}
   throwable: 0
-  positionInHand: {x: 0.5, y: 0.15, z: 0}
+  positionInHand: {x: 0.6, y: 0.15, z: 0}
   rotationInHand: {x: 0, y: 0, z: 0, w: 0}
   MeleeWeaponAnimator: {fileID: 0}

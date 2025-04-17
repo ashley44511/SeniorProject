@@ -37,7 +37,7 @@ public class SceneTransitionWithZ : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //If the player leaves the trigger, the prompt disappears and the boolean is updated accordingly
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && zPrompt != null)
         {
             playerInTrigger = false;
             zPrompt.gameObject.SetActive(false);

@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 		// Set IsNight based on scene name
 		string currentScene = SceneManager.GetActiveScene().name;
 		bool isNight = currentScene.Contains("Night");
-		Debug.Log("isNight" + isNight);
+		Debug.Log("isNight: " + isNight);
 		anim.SetBool("isNight", isNight);
 	}
 

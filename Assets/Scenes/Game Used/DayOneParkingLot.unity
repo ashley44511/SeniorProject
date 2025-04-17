@@ -64015,6 +64015,14 @@ PrefabInstance:
       propertyPath: inventoryPanel
       value: 
       objectReference: {fileID: 1748258487}
+    - target: {fileID: 4166257239193428163, guid: 34963d0e41e35674d9230e6b9d433b39, type: 3}
+      propertyPath: itemPrefabs.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166257239193428163, guid: 34963d0e41e35674d9230e6b9d433b39, type: 3}
+      propertyPath: 'itemPrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7661420787873615555, guid: 7071ac7fc39d34cc89bc50fa2d27c3e6, type: 3}
     - target: {fileID: 5925831014111713050, guid: 34963d0e41e35674d9230e6b9d433b39, type: 3}
       propertyPath: hotbar
       value: 

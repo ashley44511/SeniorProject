@@ -34,7 +34,8 @@ public class EnemyChaseBehaviour : StateMachineBehaviour
         
         if(useBlendTree)
         {
-            Vector3 blendTreePos = (playerPos.position - enemyPos.transform.position);
+            Vector3 randomizer = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5));
+            Vector3 blendTreePos = (playerPos.position + randomizer - enemyPos.transform.position);
             anim.SetFloat("Horizontal", blendTreePos.x);
             anim.SetFloat("Vertical", blendTreePos.y);
 

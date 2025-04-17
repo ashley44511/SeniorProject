@@ -128,7 +128,7 @@ public class InteractDialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && !hasBeenUsed)
+        if (collision.gameObject.tag == "Player" && !hasBeenUsed && InteractImage != null)
         {
             InteractImage.gameObject.SetActive(true);
         }

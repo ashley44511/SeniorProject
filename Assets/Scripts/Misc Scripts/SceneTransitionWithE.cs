@@ -25,7 +25,7 @@ public class SceneTransitionWithE : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //If the player enters the trigger, the prompt appears and the boolean is updated
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && ePrompt != null)
         {
             playerInTrigger = true;
             //Will change this to space bar later, when we have a sprite for it
@@ -37,7 +37,7 @@ public class SceneTransitionWithE : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //If the player leaves the trigger, the prompt disappears and the boolean is updated accordingly
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && ePrompt != null)
         {
             playerInTrigger = false;
             ePrompt.gameObject.SetActive(false);

@@ -192,4 +192,14 @@ public class HotbarController : MonoBehaviour
             playerAttack.RemoveItem(currentIndex);
         }
     }
+
+    public void ClearInventory() {
+
+       foreach(Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            Destroy(slot.currentItem);
+            slot.currentItem = null;
+        }
+    }
 }
