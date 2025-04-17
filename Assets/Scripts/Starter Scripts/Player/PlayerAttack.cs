@@ -142,7 +142,11 @@ public class PlayerAttack : MonoBehaviour
 		Item weapon = item.GetComponent<Item>();
 
 		int index = GetOpenIndex();
-		itemList[index] = weapon;	
+		if (index >= 0) {
+			itemList[index] = weapon;	
+		} else {
+			Debug.Log("COULDN'T FIND OPEN INVENTORY SLOT FOR ITEM " + weapon.name);
+		}
 		}
 
 	public void RemoveItem(int index) {

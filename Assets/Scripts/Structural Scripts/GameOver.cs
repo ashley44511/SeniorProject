@@ -12,8 +12,6 @@ public class GameOver : MonoBehaviour
     public Color fadeOutColor;
     public Button gameOverButton;
     public float fadeOutDuration;
-    public Camera mainCamera;
-    // public string currentScene;
 	private HealthBar healthBar;
     private PlayerMovement playerMovement;
     private bool playerAlive;
@@ -64,15 +62,15 @@ public class GameOver : MonoBehaviour
     private IEnumerator waitForFadeOut()
 	{
 		yield return new WaitForSeconds(fadeOutDuration + 1);
+        transform.position = GameObject.Find("Player").transform.position;
+        GameObject.Find("Player").GetComponent<PlayerAttack>().itemList = initalItemList;
+        GameObject.Find("GameManagers").GetComponent<HotbarController>().inventoryPanel = initialInventoryPanel;
         gameOverButton.gameObject.SetActive(true);
-        // gameOverButton.transform.position = mainCamera.transform.position;
 	}
 
     public void ReloadScene()
     {
         healthBar.SetCurrentHealth(healthBar.maxHealth);
-        GameObject.Find("Player").GetComponent<PlayerAttack>().itemList = initalItemList;
-        GameObject.Find("GameManagers").GetComponent<HotbarController>().inventoryPanel = initialInventoryPanel;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
