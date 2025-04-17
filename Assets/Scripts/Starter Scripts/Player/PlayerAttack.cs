@@ -145,7 +145,7 @@ public class PlayerAttack : MonoBehaviour
 
 			itemList[index] = weapon;	
 		} else {
-			Debug.Log("COULDN'T FIND OPEN INVENTORY SLOT FOR ITEM " + weapon.name);
+			Debug.Log("COULDN'T FIND OPEN INVENTORY SLOT FOR ITEM " + weapon);
 		}
 		}
 

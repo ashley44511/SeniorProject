@@ -49,7 +49,7 @@ public class DialogueTrigger : MonoBehaviour
             Debug.Log("Dialogue over for " + gameObject.name);
             //manager.EndDialogue();
 
-            if (deleteWhenFinished)
+            if (deleteWhenFinished && gameObject != null)
             {
                 Destroy(gameObject);
             }

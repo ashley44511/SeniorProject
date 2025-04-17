@@ -15,8 +15,7 @@ public class GameOver : MonoBehaviour
 	private HealthBar healthBar;
     private PlayerMovement playerMovement;
     private bool playerAlive;
-    private List<GameObject> initialInventoryPanel;
-    private List<int> itemQuantities = new List<int>();
+    private List<GameObject> initialInventoryPanel = new List<GameObject>();
     private HotbarController hotbarController;
 
 
@@ -26,18 +25,17 @@ public class GameOver : MonoBehaviour
     {
         hotbarController = GameObject.Find("GameManagers").GetComponent<HotbarController>();
         healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
-        // foreach(Transform slotTransform in hotbarController.inventoryPanel.transform)
-        // {
-        //     Slot slot = slotTransform.GetComponent<Slot>();
-        //     if (slot.currentItem != null)
-        //     {
-        //         GameObject newItem = Instantiate(slot.currentItem);
-        //         Debug.Log("New Item " + newItem);
-        //         // newItem.SetActive(false);
-        //         initialInventoryPanel.Add(newItem);
-        //         itemQuantities.Add(slot.currentItem.GetComponent<Item>().itemQuantity);
-        //     }
-        // }
+        foreach(Transform slotTransform in hotbarController.inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot.currentItem != null)
+            {
+                GameObject newItem = Instantiate(slot.currentItem);
+                Debug.Log("New Item " + newItem);
+                newItem.SetActive(false);
+                initialInventoryPanel.Add(newItem);
+            } 
+        }
             
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         playerAlive = true;
@@ -76,28 +74,24 @@ public class GameOver : MonoBehaviour
     private IEnumerator waitForFadeOut()
 	{
 		yield return new WaitForSeconds(fadeOutDuration + 1);
-
-        // hotbarController.ClearInventory();
-        // int index = 0;
-        // foreach (GameObject item in initialInventoryPanel) {
-        //         if (index < itemQuantities.Count) {
-        //             for(int i = 0; i < itemQuantities[index]; i++) {
-        //                 hotbarController.AddItem(item);
-        //             }
-        //         } else {
-        //             hotbarController.AddItem(item);
-        //         }
-        //         // item.SetActive(true);
-        //         index ++;
-        // }
-
+        gameOverButton.gameObject.SetActive(true);
 	}
 
     public void ReloadScene()
     {
         Debug.Log("Reloading Scene");
-        healthBar.SetCurrentHealth(healthBar.maxHealth);
         playerMovement.disabled = false;
+
+        hotbarController.ClearInventory();
+        int index = 0;
+        foreach (GameObject item in initialInventoryPanel) {
+            if (item != null) {
+                item.SetActive(true);
+                hotbarController.AddItem(item);
+            } 
+            index ++;
+        }
+        healthBar.SetCurrentHealth(healthBar.maxHealth);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
