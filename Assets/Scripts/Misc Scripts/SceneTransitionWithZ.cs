@@ -5,10 +5,12 @@ public class SceneTransitionWithZ : MonoBehaviour
     public string sceneName; // String name to the game scene to load
     public GameObject zPrompt; // Interact image
     private bool playerInTrigger = false; // Tracks if the player is standing in the trigger volume
+    private DialogueManager dialogueManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         zPrompt.gameObject.SetActive(false);
+        dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     //Running for every frame in the game (OnTriggerStay was skipping frames so I had to switch it)
@@ -17,8 +19,11 @@ public class SceneTransitionWithZ : MonoBehaviour
         //If the user is hitting Z and is within the trigger, then the next scene will play
         if (Input.GetKeyDown(KeyCode.Z) && playerInTrigger == true)
         {
-            playerInTrigger = false;
-            SceneManager.LoadScene(sceneName);
+            if(dialogueManager != null && dialogueManager.GetIsInDialouge() == false)
+            {
+                playerInTrigger = false;
+                SceneManager.LoadScene(sceneName);
+            }
         }
     }
 

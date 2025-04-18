@@ -74,6 +74,11 @@ public class PlayerItem : MonoBehaviour
 
 	public void Attack()
 	{
+		if(item == null)
+		{
+			return;
+		}
+		
 		//This is where the weapon is rotated in the right direction that you are facing
 		if (item && canAttack)
 		{

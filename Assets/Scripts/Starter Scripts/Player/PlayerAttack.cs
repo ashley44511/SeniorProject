@@ -78,7 +78,14 @@ public class PlayerAttack : MonoBehaviour
 
 	public void Attack()
 	{
-		//This is where the weapon is rotated in the right direction that you are facing
+		//Null weapon check
+		if (weapon == null)
+		{
+			Debug.Log("Inventory slot empty");
+			return;
+		}
+
+		//This is where the weapon is rotated in the right direction that you are facing		
 		if (weapon && canAttack)
 		{
 			Debug.Log("Kablammo!");
@@ -90,10 +97,16 @@ public class PlayerAttack : MonoBehaviour
 			}
 
 			if (weapon.throwable && (PlayerHasArrows() >= 0))
+			{
 				FireArrow();
+			}
 			else if (!weapon.throwable)
-				weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());
-
+			{
+				if(this.transform != null && playerMoveScript != null)
+				{
+					weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());
+				}
+			}
 			StartCoroutine(CoolDown());
 		}
 	}

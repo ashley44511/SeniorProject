@@ -247,4 +247,9 @@ public class DialogueManager : MonoBehaviour
 
 		inputStream.Clear();
 	}
+
+	public bool GetIsInDialouge()
+	{
+		return isInDialouge;
+	}
 }
