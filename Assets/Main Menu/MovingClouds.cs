@@ -28,7 +28,7 @@ public class MovingClouds : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Timer to spawn a new cloud
         currentTime -= Time.deltaTime;
