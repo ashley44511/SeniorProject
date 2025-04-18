@@ -63781,6 +63781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorldAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 6366101172136634387, guid: 2488421dc7baf3048be4a0ab91d9e026, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7504370383077740661, guid: 2488421dc7baf3048be4a0ab91d9e026, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0733603
