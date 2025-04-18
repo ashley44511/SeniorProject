@@ -77,3 +77,7 @@ MonoBehaviour:
     sprite: {fileID: -4241535821904928604, guid: e5b84760874a0fa4ea2cb487f6e6ea68, type: 3}
   - name: Pamphlet
     sprite: {fileID: 698386239014411160, guid: f2931f5f166247a41ba5e84e650aa416, type: 3}
+  - name: Locket
+    sprite: {fileID: 5545280868161484710, guid: 67852ed7f907a2243b20bfde69bfe5de, type: 3}
+  - name: ActionFigure
+    sprite: {fileID: -4854262738203611533, guid: ad9ae9d331d8c0b4ba68020b38dc72b5, type: 3}

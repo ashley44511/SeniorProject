@@ -46,7 +46,7 @@ public class DialogueTrigger : MonoBehaviour
         //If the queue is empty, the dialogue has finished
         if (dialogue.Count == 0 && singleUseDialogue && hasBeenUsed)
         {
-            Debug.Log("Dialogue over for " + gameObject.name);
+            //Debug.Log("Dialogue over for " + gameObject.name);
             //manager.EndDialogue();
 
             if (deleteWhenFinished && gameObject != null)
