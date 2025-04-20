@@ -1,0 +1,5 @@
+[NAME=The Mother][SPEAKERSPRITE=TheMother]Oh thank God you found him!
+[NAME=Nate][SPEAKERSPRITE=TheHiker]You're very welcome. It was no trouble. I'm going to take you all to the Visitor Center for some questions, if you don't mind.
+[NAME=Nate][SPEAKERSPRITE=TheHiker]We're currently searching for a suspect related to your son's kidnapping.
+[NAME=The Mother][SPEAKERSPRITE=TheMother]Kidnapping?!
+[NAME=Nate][SPEAKERSPRITE=TheHiker]Yes, kidnapping. Someone or something is out there in those woods.

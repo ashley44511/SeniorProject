@@ -15966,7 +15966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7593368720268338669, guid: a6f0b06d493d24b87b31fd931e4432dc, type: 3}
       propertyPath: NextScene
-      value: MountainTrail
+      value: Camp2
       objectReference: {fileID: 0}
     - target: {fileID: 7593368720268338669, guid: a6f0b06d493d24b87b31fd931e4432dc, type: 3}
       propertyPath: totalTime
