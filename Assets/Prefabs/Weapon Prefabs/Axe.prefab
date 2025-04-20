@@ -150,11 +150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Size.x
-      value: 0.7924803
+      value: 1.0622559
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Size.y
-      value: 0.75390625
+      value: 1.0011597
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Enabled
@@ -162,23 +162,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Offset.x
-      value: 0.18184921
+      value: -0.32678223
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_Offset.y
-      value: 0.41460955
+      value: 0.4736023
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_EdgeRadius
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4422779299212629130, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       propertyPath: m_SortingLayer
@@ -220,17 +232,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
-    m_RemovedComponents:
-    - {fileID: 2746554828386645880, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1369793862278778109, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5461371165435624226}
-    - targetCorrespondingSourceObject: {fileID: 1369793862278778109, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1770434789634757266}
   m_SourcePrefab: {fileID: 100100000, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
 --- !u!1 &4290388826950023011 stripped
 GameObject:
@@ -262,61 +270,10 @@ MonoBehaviour:
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
   quantityText: {fileID: 7155418156675221868}
   throwable: 0
-  positionInHand: {x: 0, y: 0, z: 0}
+  positionInHand: {x: 0.6, y: 0, z: 0}
+  negPositionInHand: {x: -1, y: 0, z: 0}
   rotationInHand: {x: 0, y: 0, z: 0, w: 1}
   MeleeWeaponAnimator: {fileID: 0}
---- !u!68 &1770434789634757266
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4290388826950023011}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.5}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.09967041, y: -0.5032959}
-  - {x: -0.34155273, y: -0.070373535}
-  - {x: -0.4371338, y: -0.20910645}
-  - {x: -0.6269531, y: -0.1963501}
-  - {x: -0.8800049, y: 0.12628174}
-  - {x: -0.7408447, y: 0.3161621}
-  - {x: -0.5003662, y: 0.37945557}
-  - {x: -0.0068359375, y: -0.101501465}
-  - {x: 0.1784668, y: -0.31097412}
-  - {x: 0.23510742, y: -0.51049805}
-  - {x: 0.10534668, y: -0.51031494}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &7155418156675221868 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5460015648049197810, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}

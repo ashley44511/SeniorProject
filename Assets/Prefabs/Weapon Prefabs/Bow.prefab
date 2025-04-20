@@ -24,6 +24,14 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6867163490180511046, guid: 7071ac7fc39d34cc89bc50fa2d27c3e6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867163490180511046, guid: 7071ac7fc39d34cc89bc50fa2d27c3e6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.16
+      objectReference: {fileID: 0}
     - target: {fileID: 6955680217506196292, guid: 7071ac7fc39d34cc89bc50fa2d27c3e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -173,7 +181,8 @@ MonoBehaviour:
   pickupSound: {fileID: 0}
   quantityText: {fileID: 0}
   throwable: 1
-  positionInHand: {x: 0, y: 0, z: 0}
+  positionInHand: {x: -2, y: 0.1, z: 0}
+  negPositionInHand: {x: -0.3, y: 0, z: 0}
   rotationInHand: {x: 0, y: 0, z: 0, w: 0}
   Projectile: {fileID: 524782608369617129, guid: d6c20189b4a544b73a38197e2395d12f, type: 3}
   ProjectileSpawn: {fileID: 2813303021611709393}

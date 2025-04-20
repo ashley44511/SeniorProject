@@ -28,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
 
 	private bool canAttack;
 	private HealthBar healthBar;
+    private HotbarController hotbarController;
 
 
 	private void Start()
@@ -41,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
 		playerMoveScript = GetComponent<PlayerMovement>();
 		playerAudio = GetComponent<PlayerAudio>();
 		healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
+        hotbarController = FindObjectOfType<HotbarController>();
 		canAttack = true;
 	}
 
@@ -96,12 +98,13 @@ public class PlayerAttack : MonoBehaviour
 
 			}
 
-			if (weapon.throwable && (PlayerHasArrows() >= 0))
+			if (weapon.throwable && PlayerHasArrows() >= 0)
 			{
 				FireArrow();
 			}
-			else if (!weapon.throwable)
+			else if (!weapon.throwable && weapon && weapon.gameObject.activeSelf)
 			{
+
 				if(this.transform != null && playerMoveScript != null)
 				{
 					weapon.WeaponStart(this.transform, playerMoveScript.GetLastLookDirection());
@@ -286,6 +289,8 @@ public class PlayerAttack : MonoBehaviour
 
 		if (arrowIndex == -1) 
 			return false;
+		
+		hotbarController.UseArrow();
 
 		Debug.Log("Firing Arrow");
 

@@ -202,4 +202,26 @@ public class HotbarController : MonoBehaviour
             slot.currentItem = null;
         }
     }
+
+    public void UseArrow() {
+        foreach(Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            
+            if(slot != null && slot.currentItem != null && slot.currentItem.GetComponent<Item>().itemName == "Arrow")
+            {
+                Item item = slot.currentItem.GetComponent<Item>();
+                if(item.isStackable == true && item.itemQuantity > 1)
+                {
+                    item.itemQuantity--;
+                }
+                else
+                {
+                    Destroy(slot.currentItem);
+                    slot.currentItem = null;
+                }
+                break;
+            }
+        }
+    }
 }

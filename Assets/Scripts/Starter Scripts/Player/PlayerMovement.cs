@@ -295,6 +295,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			// Check if the child has a RectTransform (UI object)
 			RectTransform itemRect = child.GetComponent<RectTransform>();
+			Item item = child.GetComponent<Item>();
 
 			if (itemRect != null)
 			{
@@ -303,7 +304,7 @@ public class PlayerMovement : MonoBehaviour
 
 				// Flip the item on the X-axis (left-right)
 				scale.x *= -1;
-				pos.x = pos.x < 0 ?  0 : -1f;
+				pos.x = pos.x > 0 ?  item.positionInHand.x : item.negPositionInHand.x;;
 
 				// Apply the flipped scale to each item
 				itemRect.localScale = scale;
