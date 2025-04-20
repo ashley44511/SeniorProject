@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerLibrary:
   - name: TheHiker
-    sprite: {fileID: 21300000, guid: b37242b453403194bbc8a6cfa6066f7f, type: 3}
+    sprite: {fileID: -3616831379093298688, guid: c8339b06b19d6fa469831908d89e5f6d, type: 3}
   - name: Note
     sprite: {fileID: 21300000, guid: 6af73d226ad59a149bb4106a665f120e, type: 3}
   - name: BloodNote
@@ -47,8 +47,6 @@ MonoBehaviour:
     sprite: {fileID: -8907015550746980148, guid: 96e0f687f11e6d34fa05ac9bb0017ac7, type: 3}
   - name: OldMedkit
     sprite: {fileID: 3207372165212617614, guid: fe6d7b0df13c4e647a00d0887f8f620a, type: 3}
-  - name: Hiker1
-    sprite: {fileID: 8668574404313897240, guid: c0a61f5e579af3c4284477d88bd98e68, type: 3}
   - name: LostKeys
     sprite: {fileID: 2756344388622074482, guid: 1f1e6580db1a9be4b8b7a5d7df6b5b12, type: 3}
   - name: GuidebookPage
@@ -64,17 +62,19 @@ MonoBehaviour:
   - name: Axe
     sprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
   - name: Hiker1PL
-    sprite: {fileID: 6890831391146868289, guid: 6decdb132779a6e458d6c6046384025a, type: 3}
-  - name: Hiker2PL
-    sprite: {fileID: -5571886845520840082, guid: 7eea1fafc4ed977429996924c6017534, type: 3}
-  - name: Hiker3PL
     sprite: {fileID: 974468754583691213, guid: 0a1eaed4733431a46900106f91097a5e, type: 3}
+  - name: Hiker2PL
+    sprite: {fileID: -4241535821904928604, guid: e5b84760874a0fa4ea2cb487f6e6ea68, type: 3}
+  - name: Hiker3PL
+    sprite: {fileID: 6890831391146868289, guid: 6decdb132779a6e458d6c6046384025a, type: 3}
   - name: Hiker4PL
     sprite: {fileID: -6070757692919151411, guid: 272d7c643dd6f1547891376787fddeef, type: 3}
   - name: Hiker5PL
-    sprite: {fileID: 6273934216430283319, guid: 60371e1dbe0514046b5be169f99b0a3c, type: 3}
+    sprite: {fileID: 8668574404313897240, guid: c0a61f5e579af3c4284477d88bd98e68, type: 3}
   - name: Hiker6PL
-    sprite: {fileID: -4241535821904928604, guid: e5b84760874a0fa4ea2cb487f6e6ea68, type: 3}
+    sprite: {fileID: -5571886845520840082, guid: 7eea1fafc4ed977429996924c6017534, type: 3}
+  - name: Hiker7PL
+    sprite: {fileID: 6273934216430283319, guid: 60371e1dbe0514046b5be169f99b0a3c, type: 3}
   - name: Pamphlet
     sprite: {fileID: 698386239014411160, guid: f2931f5f166247a41ba5e84e650aa416, type: 3}
   - name: Locket
