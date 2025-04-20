@@ -232,7 +232,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2014041489582041490, guid: c06d80007ffde67499d1d7b050ccbacd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -270,8 +271,8 @@ MonoBehaviour:
   pickupSound: {fileID: 8300000, guid: 6a212df316334f04cabb694a1f3c46c8, type: 3}
   quantityText: {fileID: 7155418156675221868}
   throwable: 0
-  positionInHand: {x: 0.6, y: 0, z: 0}
-  negPositionInHand: {x: -1, y: 0, z: 0}
+  positionInHand: {x: -0.8, y: 0, z: 0}
+  negPositionInHand: {x: 0.4, y: 0, z: 0}
   rotationInHand: {x: 0, y: 0, z: 0, w: 1}
   MeleeWeaponAnimator: {fileID: 0}
 --- !u!114 &7155418156675221868 stripped

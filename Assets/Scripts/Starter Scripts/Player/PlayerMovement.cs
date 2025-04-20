@@ -304,7 +304,7 @@ public class PlayerMovement : MonoBehaviour
 
 				// Flip the item on the X-axis (left-right)
 				scale.x *= -1;
-				pos.x = pos.x > 0 ?  item.positionInHand.x : item.negPositionInHand.x;;
+				pos.x = scale.x > 0 ?  item.positionInHand.x : item.negPositionInHand.x;;
 
 				// Apply the flipped scale to each item
 				itemRect.localScale = scale;
