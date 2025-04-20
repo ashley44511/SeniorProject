@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 public class LoadGameWonScene : MonoBehaviour
 {
     public bool hitDialouge = false;
-    public bool dialogueFinished = true;
+    public bool hasBeenInDialogue = false;
+    public bool dialogueFinished = false;
     private DialogueManager dialogueManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,22 +16,27 @@ public class LoadGameWonScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogueManager.GetIsInDialouge() && !dialogueFinished)
+        if(dialogueManager.GetIsInDialouge() == true && dialogueFinished == false)
         {
-            dialogueFinished = false;
-            hitDialouge = true;
-            Debug.Log("Hit Dialogue: " + hitDialouge);
+            hasBeenInDialogue = true;
         }
 
-        if(hitDialouge && !dialogueManager.GetIsInDialouge())
+        if(hitDialouge && dialogueManager.GetIsInDialouge() == false && hasBeenInDialogue == true)
         {
             dialogueFinished = true;
-            Debug.Log("Hit Dialogue: " + dialogueFinished);
         }
 
-        if(hitDialouge && dialogueFinished)
+        if(hitDialouge && dialogueFinished && hasBeenInDialogue)
         {
             SceneManager.LoadScene("Credits");
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            hitDialouge = true;
         }
     }
 }
