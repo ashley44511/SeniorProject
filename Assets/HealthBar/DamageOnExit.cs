@@ -7,7 +7,7 @@ public class DamageOnExit : MonoBehaviour
 {
     public int DamageToPlayer = 1;
     public float TimeToDamage = 1f;
-    public HealthBar playerHealth;
+    private HealthBar playerHealth;
     private bool playerInside = false;
     private Coroutine exitCoroutine;
 
@@ -23,6 +23,11 @@ public class DamageOnExit : MonoBehaviour
         }
     }
     */
+
+    private void Start()
+    {
+        playerHealth = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
