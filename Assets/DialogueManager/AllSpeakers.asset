@@ -55,8 +55,8 @@ MonoBehaviour:
     sprite: {fileID: 8731552625211210737, guid: 88b498f45d67b1547871da541fc75aa6, type: 3}
   - name: Instructions
     sprite: {fileID: 698386239014411160, guid: f2931f5f166247a41ba5e84e650aa416, type: 3}
-  - name: Hiker2
-    sprite: {fileID: 0}
+  - name: LostChild
+    sprite: {fileID: 3516836272569761788, guid: 7cf60695dc5eaab44bbb66e7b18fa71b, type: 3}
   - name: Computer
     sprite: {fileID: 21300000, guid: 6d96334dff3336946913ba85a97a1ed6, type: 3}
   - name: Axe
