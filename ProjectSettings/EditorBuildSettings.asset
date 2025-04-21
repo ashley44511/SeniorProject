@@ -41,11 +41,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Used/Camp3.unity
     guid: d69fb4029c8ab0d40affb1a5d06aed0a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game Used/Camp4.unity
     guid: 4013705fc0df4c24ba3d7d8a0543f16c
   - enabled: 1
     path: Assets/Scenes/Game Used/Credits.unity
     guid: a8684fcde054aac4191359de52c33b1e
+  - enabled: 1
+    path: Assets/Scenes/Game Used/DayThreeParkingLot.unity
+    guid: 1ef6636562ccdb44aa1d61f1f2f3f789
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
