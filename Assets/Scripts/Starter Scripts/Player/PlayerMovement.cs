@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -187,6 +188,13 @@ public class PlayerMovement : MonoBehaviour
 			}
 		}
 
+		if (Input.GetKeyDown(KeyCode.D)) {
+			FlipItems(true);
+		} else if (Input.GetKeyDown(KeyCode.A)) {
+			FlipItems(false);
+
+		}
+
 	}
 
 	private void FixedUpdate()
@@ -285,12 +293,11 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Flip()
 	{
-		SpriteFacingRight = !SpriteFacingRight; //flip whether the sprite is facing right
-		//Vector3 currentScale = transform.localScale;
-		//currentScale.x *= -1;
-		//transform.localScale = currentScale;
-		
-		
+		SpriteFacingRight = !SpriteFacingRight;
+	}
+
+	private void FlipItems(bool facingRight)
+	{
 		foreach (Transform child in transform) // 'transform' refers to the Player's transform
 		{
 			// Check if the child has a RectTransform (UI object)
@@ -303,8 +310,14 @@ public class PlayerMovement : MonoBehaviour
 				Vector3 pos = itemRect.localPosition;
 
 				// Flip the item on the X-axis (left-right)
-				scale.x *= -1;
-				pos.x = scale.x > 0 ?  item.positionInHand.x : item.negPositionInHand.x;;
+				if (facingRight) {
+					scale.x = Math.Abs(scale.x);
+					pos.x =  item.positionInHand.x;
+				} else 
+				{
+					scale.x = -1 * Math.Abs(scale.x);
+					pos.x = item.negPositionInHand.x;;
+				}
 
 				// Apply the flipped scale to each item
 				itemRect.localScale = scale;
