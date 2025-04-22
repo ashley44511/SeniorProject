@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1959259687000826977, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_Mass
-      value: 22
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1959259687000826977, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_Constraints
@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4798837431622324997, guid: 2d171a8d1f7e489488e2094c5e3cb2a6, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
