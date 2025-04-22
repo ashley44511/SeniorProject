@@ -29,6 +29,7 @@ public class PlayerAttack : MonoBehaviour
 	private bool canAttack;
 	private HealthBar healthBar;
     private HotbarController hotbarController;
+	private bool isNightSc = false;
 
 
 	private void Start()
@@ -75,6 +76,11 @@ public class PlayerAttack : MonoBehaviour
 		else
 		{
 			StopAttack();
+		}
+
+		if (IsNightScene() != isNightSc) {
+			isNightSc = IsNightScene();
+			SwitchWeaponAtIndex(GetItemIndex(weapon));
 		}
 	}
 
